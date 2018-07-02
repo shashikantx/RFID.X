@@ -1,38 +1,26 @@
 004-005 @WRITE_PROGRAM_MEMORY8.P1
 004-005 @READ_PROGRAM_MEMORY8.P2
 008     PSP_DATA
-015     CCP_1_LOW
 015     CCP_1
+015     CCP_1_LOW
 016     CCP_1_HIGH
-01B     CCP_2
 01B     CCP_2_LOW
+01B     CCP_2
 01C     CCP_2_HIGH
-020-021 strtok.save
-022-025 _Randseed
-026-027 @sprintf_string
-028     lcd_init.i
-028     MAIN.@SCRATCH1
-028     @PSTRINGC7_661.@SCRATCH1
-029-02C lcd_init.LCD_INIT_STRING
-029     @PSTRINGC7_661.@SCRATCH2
-02A     @PSTRINGC7_661.@SCRATCH3
-02B     lcd_putc.c
-02B     @PSTRINGC7_661.@SCRATCH4
-02C     lcd_gotoxy.x
-02D     @delay_ms1.P1
-02D     lcd_gotoxy.y
-02D     lcd_init.@SCRATCH1
-02E     lcd_gotoxy.address
-02F     lcd_gotoxy.@SCRATCH1
-030     lcd_send_byte.address
-031     lcd_send_byte.n
-032     lcd_read_byte.low
-032     lcd_send_byte.@SCRATCH1
-033     lcd_read_byte.high
-033     lcd_send_nibble.n
-034     lcd_read_nibble.n
-034     lcd_read_byte.@SCRATCH1
-035     lcd_read_nibble.@SCRATCH1
+020     rs232_errors
+021-022 strtok.save
+023-026 _Randseed
+027     FoundTag
+028     ReadTag
+029-038 TagData
+039-03C GoodTagSerialNumber
+03D     i
+03E-051 buffer
+052-065 buffer2
+066     version
+067     GoodTag
+068-069 @sprintf_string
+06A     @TRIS_C
 077     @SCRATCH
 078     @SCRATCH
 078     _RETURN_
@@ -40,27 +28,107 @@
 07A     @SCRATCH
 09C.6   C1OUT
 09C.7   C2OUT
-10D-10E @READ_PROGRAM_MEMORY8.P1
-10D-10E @WRITE_PROGRAM_MEMORY8.P2
+0A0-0B3 text
+0B4     @PRINTF_X_666.P1
+0B4     @PSTRINGCN7_666.P2
+0B4     lcd_init.i
+0B4     requestTag.mode
+0B4     CheckRFIDHardware.@SCRATCH1
+0B4     @PSTRINGC7_666.@SCRATCH1
+0B4     MAIN.@SCRATCH1
+0B5-0B8 lcd_init.LCD_INIT_STRING
+0B5-0B6 requestTag.data
+0B5     @PRINTF_X_666.P1
+0B5     @PSTRINGC7_666.@SCRATCH2
+0B5     @PSTRINGCN7_666.@SCRATCH1
+0B6     @PSTRINGC7_666.@SCRATCH3
+0B6     @PSTRINGCN7_666.@SCRATCH2
+0B7     requestTag.status
+0B7     @PSTRINGC7_666.@SCRATCH4
+0B7     @PSTRINGCN7_666.@SCRATCH3
+0B8     requestTag.len
+0B8     lcd_putc.c
+0B8     @PSTRINGCN7_666.@SCRATCH4
+0B9     commandTag.cmd
+0B9     lcd_gotoxy.x
+0B9     lcd_init.@SCRATCH1
+0B9     requestTag.@SCRATCH1
+0BA-0BB commandTag.data
+0BA     lcd_gotoxy.y
+0BA     requestTag.@SCRATCH2
+0BB     lcd_gotoxy.address
+0BC     commandTag.dlen
+0BC     lcd_gotoxy.@SCRATCH1
+0BD-0BE commandTag.result
+0BD     lcd_send_byte.address
+0BE     lcd_send_byte.n
+0BF-0C0 commandTag.rlen
+0BF     lcd_read_byte.low
+0BF     lcd_send_byte.@SCRATCH1
+0C0     lcd_send_nibble.n
+0C0     lcd_read_byte.high
+0C1     commandTag.status
+0C1     lcd_read_nibble.n
+0C1     lcd_read_byte.@SCRATCH1
+0C2     commandTag.irqEn
+0C2     lcd_read_nibble.@SCRATCH1
+0C3     commandTag.waitIRq
+0C4     commandTag.lastBits
+0C5     commandTag.n
+0C6     commandTag.i
+0C7     @delay_ms1.P1
+0C7     clearBitMask.addr
+0C7     setBitMask.addr
+0C7     commandTag.@SCRATCH1
+0C8     clearBitMask.mask
+0C8     setBitMask.mask
+0C8     commandTag.@SCRATCH2
+0C9     clearBitMask.current
+0C9     setBitMask.current
+0C9     commandTag.@SCRATCH3
+0CA     readFromRegister.addr
+0CA     setBitMask.@SCRATCH1
+0CA     clearBitMask.@SCRATCH1
+0CB     writeToRegister.addr
+0CB     readFromRegister.val
+0CC     writeToRegister.val
+0CC     readFromRegister.@SCRATCH1
+0CD     writeToRegister.@SCRATCH1
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
 
 ROM Allocation:
-000004  @const947.call
-000007  @const952.call
-00000B  @const953.call
-00000C  @const954.call
-00000D  @const955.call
-00000E  @delay_ms1
-000022  lcd_send_nibble
-00004E  lcd_read_nibble
-00007F  lcd_send_byte
-000087  lcd_read_byte
-0000DB  lcd_init
-000121  lcd_gotoxy
-000133  lcd_putc
-00015F  @PSTRINGC7_661
-0001B5  MAIN
-0001B5  @cinit1
-0001C1  @cinit2
+000004  @const1008.call
+00000E  @const1013.call
+00001F  @const1014.call
+000026  @const1015.call
+00002A  @const1025.call
+000031  @const1026.call
+00003C  @const1027.call
+000042  @const1028.call
+00004A  @delay_ms1
+00005E  lcd_send_nibble
+000094  lcd_read_nibble
+0000C7  lcd_send_byte
+0000CF  lcd_read_byte
+000129  lcd_init
+00017D  lcd_gotoxy
+000191  lcd_putc
+0001CB  @PSTRINGC7_666
+00023F  writeToRegister
+000260  readFromRegister
+000287  setBitMask
+000299  MFRC_begin
+00029D  reset
+0002FA  CheckRFIDHardware
+00033C  @PSTRINGCN7_666
+0003B8  @PRINTF_X_666
+0003E9  clearBitMask
+0003FC  requestTag
+00041A  commandTag
+000523  MAIN
+000523  @cinit1
+00053C  @cinit2
 0136  StrtoulGO
 0136  StrtolGO
 
@@ -68,7 +136,7 @@ Project Directory:
     C:\Users\Shashikant\Documents\GitHub\RFID.X\
 
 Project Files:
-    main.c                                                  [02-Jul-18 12:50  CRC=63B0316D]
+    main.c                                                  [02-Jul-18 18:29  CRC=5D917A2C]
     ..\..\..\..\..\Program Files (x86)\PICC\devices\16F877A.h [02-Apr-18 08:19  CRC=63418C39]
     ..\..\..\..\..\Program Files (x86)\PICC\drivers\lcd.c   [22-Feb-16 10:05  CRC=D1A6378A]
     ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdio.h [31-Jul-07 15:24  CRC=4E4534F4]
@@ -76,11 +144,12 @@ Project Files:
     ..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h [05-Sep-14 12:47  CRC=897CEC6C]
     ..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h [03-Jan-08 15:55  CRC=2D1F019F]
     ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h [29-Jun-16 10:34  CRC=7E9CC16B]
+    rfid.h                                                  [02-Jul-18 18:00  CRC=55FED340]
 
-Source signature=5F33DD9C
+Source signature=86760B70
 Program memory checksum=0000
 Program memory CRC=0000
-Hex file CRC=ABEB
+Hex file CRC=3F05
 
 Units:
     main (main)
