@@ -9,8 +9,8 @@
 #include <16F877A.h>
 //#include<18F45K22.h>
 #fuses NOPROTECT,NOLVP
-#use delay(crystal=8000000)
-
+#use delay(crystal=4000000)
+#use rs232( baud=9600, xmit=PIN_C6, rcv=PIN_C7, bits=8)
 
 //LCD module connections
 #define LCD_RS_PIN PIN_D0
@@ -23,7 +23,7 @@
 //End LCD module connections
 
 #define CS PIN_A5
-#use rs232( baud=9600, parity=N, xmit=PIN_C6, rcv=PIN_C7, bits=8, ERRORS)
+
 
 
 #include <lcd.c>
@@ -50,13 +50,6 @@ byte version;
 int GoodTag=0; // Variable used to confirm good Tag Detected 
 
 
-void readRFID()
-{
-    // Get anti-collision value to properly read information from the Tag
-    ReadTag = antiCollision(TagData);
- 
-}
-
 void CheckRFIDHardware(){
 lcd_putc("\f Checking RFID...");
 //check request
@@ -76,30 +69,86 @@ if(version){
 
 } 
 
+void readRFID()
+{
+    
+    lcd_putc("\fHold Tag Still");
+    
+    delay_ms(500);
+    // Get anti-collision value to properly read information from the Tag
+    ReadTag = antiCollision(TagData);
+    
+    lcd_putc("\f");
+    
+    lcd_putc("Data: ");
+     
+   for(i=0;i<=2;i++)
+   {
+    sprintf(buffer2,"%2X",(TagData[i])); //display version in hexadecimal
+    delay_ms(20);
+    printf(lcd_putc,buffer2);
+  
+   }
+    sprintf(buffer2,"%2X",(TagData[i])); //display version in hexadecimal
+    delay_ms(20);
+    printf(lcd_putc,buffer2); 
+    
+    
+    delay_ms(2000);
+ 
+}
+
+
+
 
 
 void main() {   
- 
-   setup_spi(SPI_MASTER|SPI_MODE_0|SPI_CLK_DIV_16); 
     
+    //setup spi line 
+    setup_spi(SPI_MASTER|SPI_MODE_0|SPI_CLK_DIV_16); 
     
+    //init lcd and put some string
     lcd_init();    
     lcd_putc("\f Starting...");    
+    printf("starting..");
     delay_ms(500);
+    
+    //initialize RFID Reader
     MFRC_begin();
+    
+    //check if the card reader is connected.
     CheckRFIDHardware();
+    
+    
     while(TRUE){
         
       //  Check to see if a Tag was detected
      // If yes, then the variable FoundTag will contain "MI_OK"
     FoundTag = requestTag(MF1_REQIDL, TagData);
+    
     lcd_putc("\fChecking for Tag \r\n");
+    printf("\r\n Check For Tag");
     delay_ms(500);
    
+    
+    //tag is found
     if(FoundTag == MI_OK){
+        
+        //if tag is found PIN_B0 is set to high,
+        output_high(PIN_B0);
+        
+        //put that rfid is found on display
         lcd_putc("\f Tag Found");
-        delay_ms(1000);
-    }else{
+        
+        delay_ms(200);
+
+        
+        readRFID();
+        
+        //set PIN_BO to low
+        output_low(PIN_B0);
+       
+    }else{//tag not found
         lcd_putc("\f Tag Not Found");
         delay_ms(1000);
     }
