@@ -1,0 +1,88 @@
+
+ROM used:   1542/7936 (19%)
+            1542/7936 (19%) including unused fragments
+
+            0.4 Average locations per line
+            2.2 Average locations per statement
+
+RAM used:   112/357 (31%) at main() level
+            127/357 (36%) worst case
+
+Stack used: 1 worst case (0 in main + 1 for interrupts)
+Stack size: 7
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  201    51   7  main.c
+  684     0   0  ..\..\..\..\..\Program Files (x86)\PICC\devices\16F877A.h
+  456   100  15  ..\..\..\..\..\Program Files (x86)\PICC\drivers\lcd.c
+   37     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdio.h
+  435     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h
+   32     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h
+   28     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+ 1352   359  52  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
+  606   179  26  rfid.h
+----- -----
+ 3831   689 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     21   1    1             @delay_ms1
+ Inline         3    760  4.5  lcd_read_byte
+0     51   3    2    262  3.7  lcd_read_nibble
+0     53   3    1    399  2.4  lcd_send_nibble
+0     98   6    3    415  3.7  lcd_send_byte
+0     84   5    6    852  6.2  lcd_init
+0     20   1    4    208  6.3  lcd_gotoxy
+0     58   4    1    354  4.7  lcd_putc
+0     33   2    3    123  2.8  writeToRegister
+0     39   3    3    169  3.8  readFromRegister
+ Inline         4    100  3.3  setBitMask
+ Inline         0     25  1.2  reset
+0    113   7    0    431  1.9  MFRC_begin
+0      5   0    0     22  1.2  ext_isr
+0    429  28    1    331  3.2  CheckRFIDHardware
+0     10   1    0             @const1041
+0    116   8    4             @PSTRINGC7_666
+0     16   1    0             @const1046
+0    118   8    4             @PSTRINGC7_9600_62_63
+0     17   1    0             @const1048
+0     10   1    0             @const1049
+0      7   0    0             @const1050
+0      4   0    0             @const1051
+ Inline         5             @PSTRINGCN7_666
+ Inline         2             @PRINTF_X_666
+0     19   1    0             @const1057
+ Inline         5             @PSTRINGCN7_9600_62_63
+ Inline         2             @PRINTF_X_9600_62_63
+0      8   1    0             @const1064
+0      1   0    0             @const1065
+0      4   0    0             @const1066
+0    115   7    0    439  3.7  MAIN
+0      7   0    0             @const1077
+0      7   0    0             @const1078
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               15
+    Statements              689
+    Comments                1114
+    Volume (V)              8194
+    Difficulty (D)          50.6
+    Effort to implement (E) 414439
+    Time to implement (T)   6 hours, 24 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   11
+    Maintainability (MI)    111
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-0004E    75  0  
+0004F-007FF  1463  506  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01EFF     0  1792  
+
+
+

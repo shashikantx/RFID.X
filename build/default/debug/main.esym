@@ -1,9 +1,10 @@
 D G "__PCM__" 0 0 ""5.078""
 D G "__DEVICE__" 0 0 ""
-D G "__DATE__" 0 0 ""5-JUL-18""
-D G "__TIME__" 0 0 ""13:49:20""
+D G "__DATE__" 0 0 ""4-JUL-18""
+D G "__TIME__" 0 0 ""14:24:52""
 D G "_UNICODE" 0 0 ""?""
 D G "__EVAL" 0 0 ""?""
+D G "__DEBUG" 0 0 "1"
 D G "__16F877A" 0 0 "1" "* File:   main.c"
 C G "" 0 1 1 "*"
 C G "" 0 1 2 "*"
@@ -1854,52 +1855,36 @@ V L "status" 8 596 "int8" `1025
 V L "len" 8 596 "int8" `1026 
 V L "buffer" 8 597 "int8[4]" `1027 
 C L "haltTag" 8 1 1 "FUNCTION"
-E G "UID_FAILED" 0 47 "0" `1029 
-E G "UID_NOT_COMPLETE" 0 48 "4" `1030 
-E G "MIFARE_MINI" 0 49 "9" `1031 
-E G "MIFARE_CLASSIC_1K" 0 50 "8" `1032 
-E G "MIFARE_CLASSIC_4K" 0 51 "24" `1033 
-E G "MIFARE_DESFIRE" 0 52 "32" `1034 
-V G "" 0 52 ""
-V G "FoundTag" 0 57 "int8" `1035  "Variable used to check if Tag was found"
-V G "ReadTag" 0 58 "int8" `1036  "Variable used to store anti-collision value to read Tag information"
-V G "TagData" 0 59 "int8[16]" `1037  "Variable used to store Full Tag Data"
-V G "serial" 0 60 "int8[5]" `1038 
-V G "i" 0 61 "int8" `1039  "for looping"
-V G "j" 0 62 "int8" `1040  "for looping again"
-V G "status" 0 63 "int8" `1041  "to store the return status of command operations"
-V G "data" 0 64 "int8[16]" `1042  "to store any data"
-V G "buffer2" 0 66 "int8[20]" `1043  "keys for the card"
-V G "keyA" 0 69 "int8[6]" `1044 
-V G "keyB" 0 70 "int8[6]" `1045 
-C L "CheckRFIDHardware" 0 43 1 "FUNCTION"
-F N "CheckRFIDHardware" 0 78 ""
-F G "CheckRFIDHardware" 0 78 "void()" `1046 
-V L "version" 0 80 "int8" `1047  "/Version of RFID read/writer is stored 0x92 is version 2.0"
-C L "CheckRFIDHardware" 0 43 1 "FUNCTION"
-C L "CheckRFIDHardware" 0 43 1 "FUNCTION"
-C L "CheckRFIDHardware" 0 43 1 "FUNCTION"
-F N "MAIN" 0 106 ""
-F G "MAIN" 0 106 "void()" `1070  "setup spi line"
-C L "MAIN" 0 43 1 "FUNCTION"
-C L "MAIN" 0 43 2 "FUNCTION"
-C L "MAIN" 0 43 1 "FUNCTION"
-C L "MAIN" 0 43 2 "FUNCTION"
-C L "MAIN" 0 43 1 "FUNCTION"
-C L "MAIN" 0 43 1 "FUNCTION"
-C L "MAIN" 0 43 1 "FUNCTION"
-C L "MAIN" 0 43 1 "FUNCTION"
-C L "MAIN" 0 43 1 "FUNCTION"
-C L "MAIN" 0 43 1 "FUNCTION"
-V L "sak" 0 165 "int8" `1084 
-C L "MAIN" 0 43 1 "FUNCTION"
-C L "MAIN" 0 43 3 "FUNCTION"
-C L "MAIN" 0 43 1 "FUNCTION"
-C L "MAIN" 0 43 1 "FUNCTION"
-C L "MAIN" 0 43 2 "FUNCTION"
-C L "MAIN" 0 43 1 "FUNCTION"
-C L "MAIN" 0 43 1 "FUNCTION"
-C L "MAIN" 0 43 2 "FUNCTION"
+V G "intrb" 0 44 "int1" `1028 
+F N "ext_isr" 0 47 ""
+F G "ext_isr" 0 48 "void()" `1029 
+V G "FoundTag" 0 56 "int8" `1030  "Variable used to check if Tag was found"
+V G "ReadTag" 0 57 "int8" `1031  "Variable used to store anti-collision value to read Tag information"
+V G "TagData" 0 58 "int8[16]" `1032  "Variable used to store Full Tag Data"
+V G "GoodTagSerialNumber" 0 59 "int8[4]" `1033 
+V G "i" 0 60 "int8" `1034 
+V G "buffer" 0 61 "int8[20]" `1035 
+V G "buffer2" 0 61 "int8[20]" `1036 
+V G "text" 0 61 "int8[20]" `1037 
+V G "version" 0 62 "int8" `1038 
+V G "GoodTag" 0 63 "int8" `1039 
+C L "CheckRFIDHardware" 0 59 1 "FUNCTION"
+F N "CheckRFIDHardware" 0 66 ""
+F G "CheckRFIDHardware" 0 66 "void()" `1040 
+C L "CheckRFIDHardware" 0 59 1 "FUNCTION"
+C L "CheckRFIDHardware" 0 59 1 "FUNCTION"
+F N "readRFID" 0 88 ""
+F G "readRFID" 0 89 "void()" `1063 
+C L "readRFID" 0 59 1 "FUNCTION"
+C L "readRFID" 0 59 1 "FUNCTION"
+C L "readRFID" 0 59 1 "FUNCTION"
+F N "MAIN" 0 121 ""
+F G "MAIN" 0 121 "void()" `1073  "setup spi line"
+C L "MAIN" 0 59 1 "FUNCTION"
+C L "MAIN" 0 59 1 "FUNCTION"
+C L "MAIN" 0 59 1 "FUNCTION"
+C L "MAIN" 0 59 1 "FUNCTION"
+C L "MAIN" 0 59 16 "FUNCTION"
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 0

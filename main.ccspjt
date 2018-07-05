@@ -19,6 +19,8 @@ D1=02-07-2018
 D1_L=2
 D1_L1=[47599]Project Opened.
 D1_L2=[47606]Project Closed.
+[build\default\debug\main.c]
+Type=4
 [Units]
 Count=1
 1=main (main)

@@ -1,8 +1,4 @@
-Compiling C:\Users\Shashikant\Documents\GitHub\RFID.X\main on 03-Jul-18 at 16:34
-C:\Users\Shashikant\Documents\GitHub\RFID.X\main.c:46:6:  Warning#202  Variable never used:   GoodTagSerialNumber
-C:\Users\Shashikant\Documents\GitHub\RFID.X\main.c:48:6:  Warning#202  Variable never used:   buffer
-C:\Users\Shashikant\Documents\GitHub\RFID.X\main.c:48:29:  Warning#202  Variable never used:   text
-C:\Users\Shashikant\Documents\GitHub\RFID.X\main.c:50:5:  Warning#202  Variable never used:   GoodTag
-      Memory usage:   ROM=23%      RAM=27% - 34%
-      0 Errors,  4 Warnings.
+Compiling C:\Users\Shashikant\Documents\GitHub\RFID.X\main on 05-Jul-18 at 13:49
+      Memory usage:   ROM=32%      RAM=25% - 36%
+      0 Errors,  0 Warnings.
 Build Successful.

@@ -127,7 +127,29 @@ extern "C" {
 #define     Reserved34            0x3F
 //----------------------------------------------- 
 
-//Reads the value at a register.
+
+/**************************************************************************/
+/*!
+  @brief   Writes value to a register.
+  @param   addr  The address a register.
+  @param   val   The value to write to a register.
+ */
+/**************************************************************************/
+void writeToRegister(byte addr, byte val) {
+  output_low(CS);
+  //Address format: 0XXXXXX0
+  spi_write((addr<<1)&0x7E);
+  spi_write(val);
+  output_high(CS);
+}
+
+/**************************************************************************/
+/*!
+  @brief   Reads the value at a register.
+  @param   addr  The address a register.
+  @returns The byte at the register.
+ */
+/**************************************************************************/
 byte readFromRegister(byte addr) {
   byte val;
   output_low(CS);
@@ -137,37 +159,50 @@ byte readFromRegister(byte addr) {
   return val;
 }
 
-//writes Values to specified registers.
-void writeToRegister(byte addr, byte val) {
-  output_low(CS);
-  //Address format: 0XXXXXX0
-  spi_write((addr<<1)&0x7E);
-  spi_write(val);
-  output_high(CS);
-}
 
-//Mask to update registers
+/**************************************************************************/
+/*!
+  @brief   Adds a bitmask to a register.
+  @param   addr   The address a register.
+  @param   mask  The mask to update the register with.
+ */
+/**************************************************************************/
 void setBitMask(byte addr, byte mask) {
   byte current;
   current = readFromRegister(addr);
   writeToRegister(addr, current | mask);
 }
 
-//remove bitmask  maybe not necessary
+/**************************************************************************/
+/*!
+  @brief   Removes a bitmask from the register.
+  @param   reg   The address a register.
+  @param   mask  The mask to update the register with.
+ */
+/**************************************************************************/
 void clearBitMask(byte addr, byte mask) {
   byte current;
   current = readFromRegister(addr);
   writeToRegister(addr, current & (~mask));
 }
 
-//Initialize RFID Reader
-//Does the setup for the MFRC522.
+
+/**************************************************************************/
+/*!
+  @brief   Sends a SOFTRESET command to the MFRC522 chip.
+ */
+/**************************************************************************/
 void reset() {
   writeToRegister(CommandReg, MFRC522_SOFTRESET);
 }
 
 
 
+/**************************************************************************/
+/*!
+  @brief   Does the setup for the MFRC522.
+ */
+/**************************************************************************/
 void MFRC_begin() {
   output_high(CS);
   reset();
@@ -189,7 +224,12 @@ void MFRC_begin() {
  setBitMask(TxControlReg, 0x03);        // Turn antenna on.
 }
 
-//Checking MFRC522 Firmwareversion
+/**************************************************************************/
+/*!
+  @brief   Checks the firmware version of the chip.
+  @returns The firmware version of the MFRC522 chip.
+ */
+/**************************************************************************/
 byte getFirmwareVersion() {
   byte response;
   response = readFromRegister(VersionReg);
@@ -411,4 +451,155 @@ void calculateCRC(byte *data, int len, byte *result) {
   // Read the result from the CRC calculation.
   result[0] = readFromRegister(CRCResultRegL);
   result[1] = readFromRegister(CRCResultRegM);
+}
+
+/**************************************************************************/
+/*!
+  @brief   Selects a tag for processing.
+  @param   serial  The serial number of the tag that is to be selected.
+  @returns The SAK response from the tag.
+ */
+/**************************************************************************/
+byte selectTag(byte *serial) {
+  int i, status, len;
+  byte sak;
+  byte buffer[9];
+
+  buffer[0] = MF1_SELECTTAG;
+  buffer[1] = 0x70;
+  for (i = 0; i < 5; i++) {
+    buffer[i+2] = serial[i];
+  }
+  calculateCRC(buffer, 7, &buffer[7]);
+
+  status = commandTag(MFRC522_TRANSCEIVE, buffer, 9, buffer, &len);
+
+  if ((status == MI_OK) && (len == 0x18)) {
+    sak = buffer[0];
+  }
+  else {
+    sak = 0;
+  }
+
+  return sak;
+}
+
+/**************************************************************************/
+/*!
+  @brief   Handles the authentication between the tag and the reader.
+  @param   mode    What authentication key to use.
+  @param   block   The block that we want to read.
+  @param   key     The authentication key.
+  @param   serial  The serial of the tag.
+  @returns Returns the status of the collision detection.
+           MI_ERR        if something went wrong,
+           MI_OK         if everything went OK.
+ */
+/**************************************************************************/
+int authenticate(byte mode, byte block, byte *key, byte *serial) {
+  int i, status, len;
+  byte buffer[12];
+
+  //Verify the command block address + sector + password + tag serial number
+  buffer[0] = mode;          // 0th byte is the mode
+  buffer[1] = block;         // 1st byte is the block to address.
+  for (i = 0; i < 6; i++) {  // 2nd to 7th byte is the authentication key.
+    buffer[i+2] = key[i];
+  }
+  for (i = 0; i < 4; i++) {  // 8th to 11th byte is the serial of the tag.
+    buffer[i+8] = serial[i];
+  }
+
+  status = commandTag(MFRC522_AUTHENT, buffer, 12, buffer, &len);
+
+  if ((status != MI_OK) || (!(readFromRegister(Status2Reg) & 0x08))) {
+    status = MI_ERR;
+  }
+
+  return status;
+}
+
+
+/**************************************************************************/
+/*!
+  @brief   Tries to read from the current (authenticated) tag.
+  @param   block   The block that we want to read.
+  @param   result  The resulting value returned from the tag.
+  @returns Returns the status of the collision detection.
+           MI_ERR        if something went wrong,
+           MI_OK         if everything went OK.
+ */
+/**************************************************************************/
+int readFromTag(byte block, byte *result) {
+  int status, len;
+
+  result[0] = MF1_READ;
+  result[1] = block;
+  calculateCRC(result, 2, &result[2]);
+  status = commandTag(MFRC522_TRANSCEIVE, result, 4, result, &len);
+
+  if ((status != MI_OK) || (len != 0x90)) {
+    status = MI_ERR;
+  }
+
+  return status;
+}
+
+/**************************************************************************/
+/*!
+  @brief   Tries to write to a block on the current tag.
+  @param   block  The block that we want to write to.
+  @param   data   The data that we shoudl write to the block.
+  @returns Returns the status of the collision detection.
+           MI_ERR        if something went wrong,
+           MI_OK         if everything went OK.
+ */
+/**************************************************************************/
+int writeToTag(byte block, byte *data) {
+  int status, i, len;
+  byte buffer[18];
+
+  buffer[0] = MF1_WRITE;
+  buffer[1] = block;
+  calculateCRC(buffer, 2, &buffer[2]);
+  status = commandTag(MFRC522_TRANSCEIVE, buffer, 4, buffer, &len);
+
+  if ((status != MI_OK) || (len != 4) || ((buffer[0] & 0x0F) != 0x0A)) {
+    status = MI_ERR;
+  }
+
+  if (status == MI_OK) {
+    for (i = 0; i < 16; i++) {
+      buffer[i] = data[i];
+    }
+    calculateCRC(buffer, 16, &buffer[16]);
+    status = commandTag(MFRC522_TRANSCEIVE, buffer, 18, buffer, &len);
+
+    if ((status != MI_OK) || (len != 4) || ((buffer[0] & 0x0F) != 0x0A)) {
+      status = MI_ERR;
+    }
+  }
+
+  return status;
+}
+
+
+/**************************************************************************/
+/*!
+  @brief   Sends a halt command to the current tag.
+  @returns Returns the result of the halt.
+           MI_ERR        If the command didn't complete properly.
+           MI_OK         If the command completed.
+ */
+/**************************************************************************/
+int haltTag() {
+  int status, len;
+  byte buffer[4];
+
+  buffer[0] = MF1_HALT;
+  buffer[1] = 0;
+  calculateCRC(buffer, 2, &buffer[2]);
+  status = commandTag(MFRC522_TRANSCEIVE, buffer, 4, buffer, &len);
+  clearBitMask(Status2Reg, 0x08);  // turn off encryption
+  return status;
 }
