@@ -1,18 +1,18 @@
-CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
+CCS PCM C Compiler, Version 5.078, 43599               07-Jul-18 13:31
 
                Filename:   C:\Users\Shashikant\Documents\GitHub\RFID.X\build\default\production\main.lst
 
-               ROM used:   2641 words (32%)
+               ROM used:   3001 words (37%)
                            Largest free fragment is 2048
-               RAM used:   91 (25%) at main() level
-                           132 (36%) worst case
+               RAM used:   107 (29%) at main() level
+                           148 (40%) worst case
                Stack used: 5 locations
                Stack size: 8
 
 *
-0000:  MOVLW  08
+0000:  MOVLW  0A
 0001:  MOVWF  0A
-0002:  GOTO   078
+0002:  GOTO   26E
 0003:  NOP
 .................... /*  
 ....................  * File:   main.c 
@@ -118,573 +118,815 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 0055:  DATA 25,19
 0056:  DATA D8,06
 0057:  DATA 0A,00
-0058:  DATA 0C,10
-0059:  DATA 53,3A
-005A:  DATA 61,39
-005B:  DATA F4,34
-005C:  DATA EE,33
-005D:  DATA 2E,17
-005E:  DATA 2E,00
-005F:  DATA 0D,05
-0060:  DATA 73,3A
-0061:  DATA 61,39
-0062:  DATA F4,34
-0063:  DATA EE,33
-0064:  DATA 2E,17
-0065:  DATA 00,01
-0066:  DATA 0D,05
-0067:  DATA C6,37
-0068:  DATA 75,37
-0069:  DATA 64,10
-006A:  DATA D4,30
-006B:  DATA 67,1D
-006C:  DATA 20,00
-006D:  DATA 0D,05
-006E:  DATA D3,20
-006F:  DATA 4B,1D
-0070:  DATA 20,18
-0071:  DATA F8,12
-0072:  DATA 32,3C
-0073:  DATA 00,01
-0074:  DATA 0D,05
-0075:  DATA 20,23
-0076:  DATA E1,34
-0077:  DATA EC,32
-0078:  DATA 64,10
-0079:  DATA F4,37
-007A:  DATA 20,39
-007B:  DATA E5,30
+0058:  DATA D2,32
+0059:  DATA 61,32
+005A:  DATA 20,33
+005B:  DATA E1,34
+005C:  DATA EC,32
+005D:  DATA E4,06
+005E:  DATA 0A,00
+005F:  DATA D2,32
+0060:  DATA 61,32
+0061:  DATA 20,33
+0062:  DATA E1,34
+0063:  DATA EC,32
+0064:  DATA 64,10
+0065:  DATA 0D,05
+0066:  DATA 00,01
+0067:  DATA C1,31
+0068:  DATA E3,32
+0069:  DATA F3,39
+006A:  DATA 20,32
+006B:  DATA 65,37
+006C:  DATA E9,32
+006D:  DATA 64,10
+006E:  DATA 61,3A
+006F:  DATA 20,31
+0070:  DATA EC,37
+0071:  DATA E3,35
+0072:  DATA 20,18
+0073:  DATA F8,12
+0074:  DATA 32,2C
+0075:  DATA 00,00
+0076:  DATA C1,3A
+0077:  DATA 74,34
+0078:  DATA 65,37
+0079:  DATA F4,34
+007A:  DATA E3,30
+007B:  DATA F4,32
 007C:  DATA 64,10
-007D:  DATA E3,30
-007E:  DATA 72,32
-007F:  DATA 00,01
-0080:  DATA 0D,05
-0081:  DATA A0,24
-0082:  DATA EE,31
-0083:  DATA EF,36
-0084:  DATA 70,36
-0085:  DATA 65,3A
+007D:  DATA F7,34
+007E:  DATA 74,34
+007F:  DATA A0,35
+0080:  DATA E5,3C
+0081:  DATA A0,20
+0082:  DATA A0,06
+0083:  DATA 0A,00
+0084:  DATA 57,39
+0085:  DATA 69,3A
 0086:  DATA 65,10
-0087:  DATA D5,24
-0088:  DATA 44,00
-0089:  DATA 0D,05
-008A:  DATA A0,24
-008B:  DATA 73,10
-008C:  DATA 61,10
-008D:  DATA CD,34
-008E:  DATA E6,30
-008F:  DATA F2,32
-0090:  DATA A0,21
-0091:  DATA 61,39
-0092:  DATA 64,00
-0093:  DATA D2,32
-0094:  DATA 61,32
-0095:  DATA 20,33
-0096:  DATA E1,34
-0097:  DATA EC,32
-0098:  DATA E4,06
-0099:  DATA 0A,00
-009A:  DATA D2,32
-009B:  DATA 61,32
-009C:  DATA 20,33
-009D:  DATA E1,34
-009E:  DATA EC,32
-009F:  DATA 64,10
-00A0:  DATA 0D,05
-00A1:  DATA 00,01
-00A2:  DATA C1,31
-00A3:  DATA E3,32
-00A4:  DATA F3,39
-00A5:  DATA 20,32
-00A6:  DATA 65,37
-00A7:  DATA E9,32
-00A8:  DATA 64,10
-00A9:  DATA 61,3A
-00AA:  DATA 20,31
-00AB:  DATA EC,37
-00AC:  DATA E3,35
-00AD:  DATA 20,18
-00AE:  DATA F8,12
-00AF:  DATA 32,2C
-00B0:  DATA 00,00
+0087:  DATA D3,3A
+0088:  DATA E3,31
+0089:  DATA E5,39
+008A:  DATA 73,33
+008B:  DATA 75,36
+008C:  DATA 0D,05
+008D:  DATA 00,01
+008E:  DATA 57,39
+008F:  DATA 69,3A
+0090:  DATA 65,10
+0091:  DATA E6,30
+0092:  DATA 69,36
+0093:  DATA 65,32
+0094:  DATA 0D,05
+0095:  DATA 00,01
+0096:  DATA C1,3A
+0097:  DATA 74,34
+0098:  DATA 65,37
+0099:  DATA F4,34
+009A:  DATA E3,30
+009B:  DATA F4,32
+009C:  DATA 64,10
+009D:  DATA F7,34
+009E:  DATA 74,34
+009F:  DATA A0,35
+00A0:  DATA E5,3C
+00A1:  DATA 20,21
+00A2:  DATA A0,06
+00A3:  DATA 0A,00
+00A4:  DATA 57,39
+00A5:  DATA 69,3A
+00A6:  DATA 65,10
+00A7:  DATA D3,3A
+00A8:  DATA E3,31
+00A9:  DATA E5,39
+00AA:  DATA 73,33
+00AB:  DATA 75,36
+00AC:  DATA 0D,05
+00AD:  DATA 00,01
+00AE:  DATA 57,39
+00AF:  DATA 69,3A
+00B0:  DATA 65,10
+00B1:  DATA C6,30
+00B2:  DATA 69,36
+00B3:  DATA 65,32
+00B4:  DATA 00,01
+00B5:  DATA C3,37
+00B6:  DATA 75,36
+00B7:  DATA 64,37
+00B8:  DATA 27,3A
+00B9:  DATA A0,30
+00BA:  DATA E3,31
+00BB:  DATA E5,39
+00BC:  DATA 73,10
+00BD:  DATA 62,36
+00BE:  DATA EF,31
+00BF:  DATA 6B,10
+00C0:  DATA 30,3C
+00C1:  DATA 25,2C
+00C2:  DATA A0,3B
+00C3:  DATA F2,34
+00C4:  DATA F4,32
+00C5:  DATA 20,33
+00C6:  DATA E1,34
+00C7:  DATA EC,32
+00C8:  DATA 64,00
+00C9:  DATA 0C,10
+00CA:  DATA 53,3A
+00CB:  DATA 61,39
+00CC:  DATA F4,34
+00CD:  DATA EE,33
+00CE:  DATA 2E,17
+00CF:  DATA 2E,00
+00D0:  DATA 0D,05
+00D1:  DATA 73,3A
+00D2:  DATA 61,39
+00D3:  DATA F4,34
+00D4:  DATA EE,33
+00D5:  DATA 2E,17
+00D6:  DATA 00,01
+00D7:  DATA 0D,05
+00D8:  DATA C6,37
+00D9:  DATA 75,37
+00DA:  DATA 64,10
+00DB:  DATA D4,30
+00DC:  DATA 67,1D
+00DD:  DATA 20,00
+00DE:  DATA 0D,05
+00DF:  DATA D3,20
+00E0:  DATA 4B,1D
+00E1:  DATA 20,18
+00E2:  DATA F8,12
+00E3:  DATA 32,3C
+00E4:  DATA 00,01
+00E5:  DATA 0D,05
+00E6:  DATA 20,23
+00E7:  DATA E1,34
+00E8:  DATA EC,32
+00E9:  DATA 64,10
+00EA:  DATA F4,37
+00EB:  DATA 20,39
+00EC:  DATA E5,30
+00ED:  DATA 64,10
+00EE:  DATA E3,30
+00EF:  DATA 72,32
+00F0:  DATA 00,01
+00F1:  DATA 0D,05
+00F2:  DATA A0,24
+00F3:  DATA EE,31
+00F4:  DATA EF,36
+00F5:  DATA 70,36
+00F6:  DATA 65,3A
+00F7:  DATA 65,10
+00F8:  DATA D5,24
+00F9:  DATA 44,00
+00FA:  DATA 0D,05
+00FB:  DATA A0,24
+00FC:  DATA 73,10
+00FD:  DATA 61,10
+00FE:  DATA CD,34
+00FF:  DATA E6,30
+0100:  DATA F2,32
+0101:  DATA A0,21
+0102:  DATA 61,39
+0103:  DATA 64,00
 *
-022C:  MOVF   0B,W
-022D:  MOVWF  7B
-022E:  BCF    0B.7
-022F:  BSF    03.5
-0230:  BSF    03.6
-0231:  BSF    0C.7
-0232:  BSF    0C.0
-0233:  NOP
-0234:  NOP
-0235:  BTFSS  7B.7
-0236:  GOTO   23C
-0237:  BCF    03.5
-0238:  BCF    03.6
-0239:  BSF    0B.7
-023A:  BSF    03.5
-023B:  BSF    03.6
-023C:  BCF    03.5
-023D:  MOVF   0C,W
-023E:  ANDLW  7F
-023F:  BTFSC  03.2
-0240:  GOTO   27A
-0241:  MOVWF  7B
-0242:  MOVF   0D,W
-0243:  MOVWF  7C
-0244:  MOVF   0F,W
-0245:  MOVWF  7D
-0246:  MOVF   7B,W
-0247:  MOVWF  7E
-0248:  BCF    03.6
-0249:  CALL   1F4
-024A:  MOVF   7C,W
-024B:  BSF    03.6
-024C:  MOVWF  0D
-024D:  MOVF   7D,W
-024E:  MOVWF  0F
-024F:  BCF    03.6
-0250:  MOVF   0B,W
-0251:  MOVWF  7E
-0252:  BCF    0B.7
-0253:  BSF    03.5
-0254:  BSF    03.6
-0255:  BSF    0C.7
-0256:  BSF    0C.0
-0257:  NOP
-0258:  NOP
-0259:  BTFSS  7E.7
-025A:  GOTO   260
-025B:  BCF    03.5
-025C:  BCF    03.6
-025D:  BSF    0B.7
-025E:  BSF    03.5
-025F:  BSF    03.6
-0260:  BCF    03.5
-0261:  RLF    0C,W
-0262:  RLF    0E,W
-0263:  ANDLW  7F
-0264:  BTFSC  03.2
-0265:  GOTO   27A
-0266:  MOVWF  7B
-0267:  MOVF   0D,W
-0268:  MOVWF  7C
-0269:  MOVF   0F,W
-026A:  MOVWF  7D
-026B:  MOVF   7B,W
-026C:  MOVWF  7E
-026D:  BCF    03.6
-026E:  CALL   1F4
-026F:  MOVF   7C,W
-0270:  BSF    03.6
-0271:  MOVWF  0D
-0272:  MOVF   7D,W
-0273:  MOVWF  0F
-0274:  INCF   0D,F
-0275:  BTFSC  03.2
-0276:  INCF   0F,F
-0277:  BCF    03.6
-0278:  GOTO   22C
-0279:  BSF    03.6
-027A:  BCF    03.6
-027B:  RETURN
-027C:  MOVF   0B,W
-027D:  MOVWF  7B
-027E:  BCF    0B.7
-027F:  BSF    03.5
-0280:  BSF    03.6
-0281:  BSF    0C.7
-0282:  BSF    0C.0
-0283:  NOP
-0284:  NOP
-0285:  BTFSS  7B.7
-0286:  GOTO   28C
-0287:  BCF    03.5
-0288:  BCF    03.6
-0289:  BSF    0B.7
+0285:  MOVF   0B,W
+0286:  BSF    03.5
+0287:  MOVWF  32
+0288:  BCF    03.5
+0289:  BCF    0B.7
 028A:  BSF    03.5
 028B:  BSF    03.6
-028C:  BCF    03.5
-028D:  MOVF   0C,W
-028E:  ANDLW  7F
-028F:  BTFSC  03.2
-0290:  GOTO   2CC
-0291:  MOVWF  7B
-0292:  MOVF   0D,W
-0293:  MOVWF  7C
-0294:  MOVF   0F,W
-0295:  MOVWF  7D
-0296:  MOVF   7B,W
-0297:  BCF    03.6
-0298:  BTFSS  0C.4
-0299:  GOTO   298
-029A:  MOVWF  19
-029B:  MOVF   7C,W
-029C:  BSF    03.6
-029D:  MOVWF  0D
-029E:  MOVF   7D,W
-029F:  MOVWF  0F
-02A0:  BCF    03.6
-02A1:  MOVF   0B,W
-02A2:  MOVWF  7E
-02A3:  BCF    0B.7
-02A4:  BSF    03.5
-02A5:  BSF    03.6
-02A6:  BSF    0C.7
-02A7:  BSF    0C.0
-02A8:  NOP
-02A9:  NOP
-02AA:  BTFSS  7E.7
-02AB:  GOTO   2B1
-02AC:  BCF    03.5
-02AD:  BCF    03.6
-02AE:  BSF    0B.7
+028C:  BSF    0C.7
+028D:  BSF    0C.0
+028E:  NOP
+028F:  NOP
+0290:  BCF    03.6
+0291:  BTFSS  32.7
+0292:  GOTO   296
+0293:  BCF    03.5
+0294:  BSF    0B.7
+0295:  BSF    03.5
+0296:  BCF    03.5
+0297:  BSF    03.6
+0298:  MOVF   0C,W
+0299:  ANDLW  7F
+029A:  BTFSC  03.2
+029B:  GOTO   2F7
+029C:  BSF    03.5
+029D:  BCF    03.6
+029E:  MOVWF  32
+029F:  BCF    03.5
+02A0:  BSF    03.6
+02A1:  MOVF   0D,W
+02A2:  BSF    03.5
+02A3:  BCF    03.6
+02A4:  MOVWF  33
+02A5:  BCF    03.5
+02A6:  BSF    03.6
+02A7:  MOVF   0F,W
+02A8:  BSF    03.5
+02A9:  BCF    03.6
+02AA:  MOVWF  34
+02AB:  MOVF   32,W
+02AC:  MOVWF  36
+02AD:  BCF    03.5
+02AE:  CALL   24B
 02AF:  BSF    03.5
-02B0:  BSF    03.6
+02B0:  MOVF   33,W
 02B1:  BCF    03.5
-02B2:  RLF    0C,W
-02B3:  RLF    0E,W
-02B4:  ANDLW  7F
-02B5:  BTFSC  03.2
-02B6:  GOTO   2CC
-02B7:  MOVWF  7B
-02B8:  MOVF   0D,W
-02B9:  MOVWF  7C
-02BA:  MOVF   0F,W
-02BB:  MOVWF  7D
-02BC:  MOVF   7B,W
-02BD:  BCF    03.6
-02BE:  BTFSS  0C.4
-02BF:  GOTO   2BE
-02C0:  MOVWF  19
-02C1:  MOVF   7C,W
-02C2:  BSF    03.6
-02C3:  MOVWF  0D
-02C4:  MOVF   7D,W
-02C5:  MOVWF  0F
-02C6:  INCF   0D,F
-02C7:  BTFSC  03.2
-02C8:  INCF   0F,F
-02C9:  BCF    03.6
-02CA:  GOTO   27C
-02CB:  BSF    03.6
-02CC:  BCF    03.6
-02CD:  RETURN
+02B2:  BSF    03.6
+02B3:  MOVWF  0D
+02B4:  BSF    03.5
+02B5:  BCF    03.6
+02B6:  MOVF   34,W
+02B7:  BCF    03.5
+02B8:  BSF    03.6
+02B9:  MOVWF  0F
+02BA:  BCF    03.6
+02BB:  MOVF   0B,W
+02BC:  BSF    03.5
+02BD:  MOVWF  35
+02BE:  BCF    03.5
+02BF:  BCF    0B.7
+02C0:  BSF    03.5
+02C1:  BSF    03.6
+02C2:  BSF    0C.7
+02C3:  BSF    0C.0
+02C4:  NOP
+02C5:  NOP
+02C6:  BCF    03.6
+02C7:  BTFSS  35.7
+02C8:  GOTO   2CC
+02C9:  BCF    03.5
+02CA:  BSF    0B.7
+02CB:  BSF    03.5
+02CC:  BCF    03.5
+02CD:  BSF    03.6
+02CE:  RLF    0C,W
+02CF:  RLF    0E,W
+02D0:  ANDLW  7F
+02D1:  BTFSC  03.2
+02D2:  GOTO   2F7
+02D3:  BSF    03.5
+02D4:  BCF    03.6
+02D5:  MOVWF  32
+02D6:  BCF    03.5
+02D7:  BSF    03.6
+02D8:  MOVF   0D,W
+02D9:  BSF    03.5
+02DA:  BCF    03.6
+02DB:  MOVWF  33
+02DC:  BCF    03.5
+02DD:  BSF    03.6
+02DE:  MOVF   0F,W
+02DF:  BSF    03.5
+02E0:  BCF    03.6
+02E1:  MOVWF  34
+02E2:  MOVF   32,W
+02E3:  MOVWF  36
+02E4:  BCF    03.5
+02E5:  CALL   24B
+02E6:  BSF    03.5
+02E7:  MOVF   33,W
+02E8:  BCF    03.5
+02E9:  BSF    03.6
+02EA:  MOVWF  0D
+02EB:  BSF    03.5
+02EC:  BCF    03.6
+02ED:  MOVF   34,W
+02EE:  BCF    03.5
+02EF:  BSF    03.6
+02F0:  MOVWF  0F
+02F1:  INCF   0D,F
+02F2:  BTFSC  03.2
+02F3:  INCF   0F,F
+02F4:  BCF    03.6
+02F5:  GOTO   285
+02F6:  BSF    03.6
+02F7:  BCF    03.6
+02F8:  RETURN
+02F9:  MOVF   0B,W
+02FA:  BSF    03.5
+02FB:  MOVWF  32
+02FC:  BCF    03.5
+02FD:  BCF    0B.7
+02FE:  BSF    03.5
+02FF:  BSF    03.6
+0300:  BSF    0C.7
+0301:  BSF    0C.0
+0302:  NOP
+0303:  NOP
+0304:  BCF    03.6
+0305:  BTFSS  32.7
+0306:  GOTO   30A
+0307:  BCF    03.5
+0308:  BSF    0B.7
+0309:  BSF    03.5
+030A:  BCF    03.5
+030B:  BSF    03.6
+030C:  MOVF   0C,W
+030D:  ANDLW  7F
+030E:  BTFSC  03.2
+030F:  GOTO   36D
+0310:  BSF    03.5
+0311:  BCF    03.6
+0312:  MOVWF  32
+0313:  BCF    03.5
+0314:  BSF    03.6
+0315:  MOVF   0D,W
+0316:  BSF    03.5
+0317:  BCF    03.6
+0318:  MOVWF  33
+0319:  BCF    03.5
+031A:  BSF    03.6
+031B:  MOVF   0F,W
+031C:  BSF    03.5
+031D:  BCF    03.6
+031E:  MOVWF  34
+031F:  MOVF   32,W
+0320:  BCF    03.5
+0321:  BTFSS  0C.4
+0322:  GOTO   321
+0323:  MOVWF  19
+0324:  BSF    03.5
+0325:  MOVF   33,W
+0326:  BCF    03.5
+0327:  BSF    03.6
+0328:  MOVWF  0D
+0329:  BSF    03.5
+032A:  BCF    03.6
+032B:  MOVF   34,W
+032C:  BCF    03.5
+032D:  BSF    03.6
+032E:  MOVWF  0F
+032F:  BCF    03.6
+0330:  MOVF   0B,W
+0331:  BSF    03.5
+0332:  MOVWF  35
+0333:  BCF    03.5
+0334:  BCF    0B.7
+0335:  BSF    03.5
+0336:  BSF    03.6
+0337:  BSF    0C.7
+0338:  BSF    0C.0
+0339:  NOP
+033A:  NOP
+033B:  BCF    03.6
+033C:  BTFSS  35.7
+033D:  GOTO   341
+033E:  BCF    03.5
+033F:  BSF    0B.7
+0340:  BSF    03.5
+0341:  BCF    03.5
+0342:  BSF    03.6
+0343:  RLF    0C,W
+0344:  RLF    0E,W
+0345:  ANDLW  7F
+0346:  BTFSC  03.2
+0347:  GOTO   36D
+0348:  BSF    03.5
+0349:  BCF    03.6
+034A:  MOVWF  32
+034B:  BCF    03.5
+034C:  BSF    03.6
+034D:  MOVF   0D,W
+034E:  BSF    03.5
+034F:  BCF    03.6
+0350:  MOVWF  33
+0351:  BCF    03.5
+0352:  BSF    03.6
+0353:  MOVF   0F,W
+0354:  BSF    03.5
+0355:  BCF    03.6
+0356:  MOVWF  34
+0357:  MOVF   32,W
+0358:  BCF    03.5
+0359:  BTFSS  0C.4
+035A:  GOTO   359
+035B:  MOVWF  19
+035C:  BSF    03.5
+035D:  MOVF   33,W
+035E:  BCF    03.5
+035F:  BSF    03.6
+0360:  MOVWF  0D
+0361:  BSF    03.5
+0362:  BCF    03.6
+0363:  MOVF   34,W
+0364:  BCF    03.5
+0365:  BSF    03.6
+0366:  MOVWF  0F
+0367:  INCF   0D,F
+0368:  BTFSC  03.2
+0369:  INCF   0F,F
+036A:  BCF    03.6
+036B:  GOTO   2F9
+036C:  BSF    03.6
+036D:  BCF    03.6
+036E:  RETURN
 *
-0389:  MOVF   0B,W
-038A:  MOVWF  7B
-038B:  BCF    0B.7
-038C:  BSF    03.5
-038D:  BSF    03.6
-038E:  BSF    0C.7
-038F:  BSF    0C.0
-0390:  NOP
-0391:  NOP
-0392:  BTFSS  7B.7
-0393:  GOTO   399
-0394:  BCF    03.5
-0395:  BCF    03.6
-0396:  BSF    0B.7
-0397:  BSF    03.5
-0398:  BSF    03.6
-0399:  BTFSC  03.0
-039A:  GOTO   3C1
-039B:  BCF    03.5
-039C:  MOVF   0C,W
-039D:  ANDLW  7F
-039E:  MOVWF  7B
-039F:  MOVF   0D,W
-03A0:  MOVWF  7C
-03A1:  MOVF   0F,W
-03A2:  MOVWF  7D
-03A3:  MOVF   7B,W
-03A4:  BCF    03.6
-03A5:  BTFSS  0C.4
-03A6:  GOTO   3A5
-03A7:  MOVWF  19
-03A8:  MOVF   7C,W
-03A9:  BSF    03.6
-03AA:  MOVWF  0D
-03AB:  MOVF   7D,W
-03AC:  MOVWF  0F
-03AD:  BCF    03.6
-03AE:  MOVF   0B,W
-03AF:  MOVWF  7E
-03B0:  BCF    0B.7
-03B1:  BSF    03.5
-03B2:  BSF    03.6
-03B3:  BSF    0C.7
-03B4:  BSF    0C.0
-03B5:  NOP
-03B6:  NOP
-03B7:  BTFSS  7E.7
-03B8:  GOTO   3BE
-03B9:  BCF    03.5
-03BA:  BCF    03.6
-03BB:  BSF    0B.7
-03BC:  BSF    03.5
-03BD:  BSF    03.6
-03BE:  DECFSZ 76,F
-03BF:  GOTO   3C1
-03C0:  GOTO   3DE
-03C1:  BCF    03.5
-03C2:  RLF    0C,W
-03C3:  RLF    0E,W
-03C4:  ANDLW  7F
-03C5:  MOVWF  7B
-03C6:  MOVF   0D,W
-03C7:  MOVWF  7C
-03C8:  MOVF   0F,W
-03C9:  MOVWF  7D
-03CA:  MOVF   7B,W
-03CB:  BCF    03.6
-03CC:  BTFSS  0C.4
-03CD:  GOTO   3CC
-03CE:  MOVWF  19
-03CF:  MOVF   7C,W
-03D0:  BSF    03.6
-03D1:  MOVWF  0D
-03D2:  MOVF   7D,W
-03D3:  MOVWF  0F
-03D4:  INCF   0D,F
-03D5:  BTFSC  03.2
-03D6:  INCF   0F,F
-03D7:  BCF    03.0
-03D8:  DECFSZ 76,F
-03D9:  GOTO   3DB
-03DA:  GOTO   3DD
-03DB:  BCF    03.6
-03DC:  GOTO   389
-03DD:  BSF    03.5
-03DE:  BCF    03.5
-03DF:  BCF    03.6
-03E0:  RETURN
-03E1:  BTFSC  7B.7
-03E2:  GOTO   3F4
-03E3:  MOVLW  0F
-03E4:  MOVWF  77
-03E5:  SWAPF  76,W
-03E6:  ANDWF  77,F
-03E7:  MOVLW  0A
-03E8:  SUBWF  77,W
-03E9:  BTFSC  03.0
-03EA:  GOTO   3EE
-03EB:  MOVLW  30
-03EC:  ADDWF  77,F
-03ED:  GOTO   3F0
-03EE:  MOVF   7B,W
-03EF:  ADDWF  77,F
-03F0:  MOVF   77,W
-03F1:  BTFSS  0C.4
-03F2:  GOTO   3F1
-03F3:  MOVWF  19
-03F4:  MOVLW  0F
-03F5:  ANDWF  76,F
-03F6:  MOVLW  0A
-03F7:  SUBWF  76,W
-03F8:  BTFSC  03.0
-03F9:  GOTO   3FC
-03FA:  MOVLW  30
-03FB:  GOTO   3FE
-03FC:  BCF    7B.7
-03FD:  MOVF   7B,W
-03FE:  ADDWF  76,F
-03FF:  MOVF   76,W
-0400:  BTFSS  0C.4
-0401:  GOTO   400
-0402:  MOVWF  19
-0403:  RETURN
-*
-044A:  BCF    03.6
-044B:  MOVF   0B,W
-044C:  MOVWF  7B
-044D:  BCF    0B.7
-044E:  BSF    03.5
-044F:  BSF    03.6
-0450:  BSF    0C.7
-0451:  BSF    0C.0
-0452:  NOP
-0453:  NOP
-0454:  BTFSS  7B.7
-0455:  GOTO   45B
-0456:  BCF    03.5
-0457:  BCF    03.6
-0458:  BSF    0B.7
-0459:  BSF    03.5
-045A:  BSF    03.6
-045B:  BTFSC  03.0
-045C:  GOTO   482
+042A:  MOVF   0B,W
+042B:  BSF    03.5
+042C:  MOVWF  33
+042D:  BCF    03.5
+042E:  BCF    0B.7
+042F:  BSF    03.5
+0430:  BSF    03.6
+0431:  BSF    0C.7
+0432:  BSF    0C.0
+0433:  NOP
+0434:  NOP
+0435:  BCF    03.6
+0436:  BTFSS  33.7
+0437:  GOTO   43B
+0438:  BCF    03.5
+0439:  BSF    0B.7
+043A:  BSF    03.5
+043B:  BTFSC  03.0
+043C:  GOTO   475
+043D:  BCF    03.5
+043E:  BSF    03.6
+043F:  MOVF   0C,W
+0440:  ANDLW  7F
+0441:  BSF    03.5
+0442:  BCF    03.6
+0443:  MOVWF  33
+0444:  BCF    03.5
+0445:  BSF    03.6
+0446:  MOVF   0D,W
+0447:  BSF    03.5
+0448:  BCF    03.6
+0449:  MOVWF  34
+044A:  BCF    03.5
+044B:  BSF    03.6
+044C:  MOVF   0F,W
+044D:  BSF    03.5
+044E:  BCF    03.6
+044F:  MOVWF  35
+0450:  MOVF   33,W
+0451:  BCF    03.5
+0452:  BTFSS  0C.4
+0453:  GOTO   452
+0454:  MOVWF  19
+0455:  BSF    03.5
+0456:  MOVF   34,W
+0457:  BCF    03.5
+0458:  BSF    03.6
+0459:  MOVWF  0D
+045A:  BSF    03.5
+045B:  BCF    03.6
+045C:  MOVF   35,W
 045D:  BCF    03.5
-045E:  MOVF   0C,W
-045F:  ANDLW  7F
-0460:  MOVWF  7B
-0461:  MOVF   0D,W
-0462:  MOVWF  7C
-0463:  MOVF   0F,W
-0464:  MOVWF  7D
-0465:  MOVF   7B,W
-0466:  MOVWF  7E
-0467:  BCF    03.6
-0468:  CALL   1F4
-0469:  MOVF   7C,W
-046A:  BSF    03.6
-046B:  MOVWF  0D
-046C:  MOVF   7D,W
-046D:  MOVWF  0F
-046E:  BCF    03.6
-046F:  MOVF   0B,W
-0470:  MOVWF  7E
-0471:  BCF    0B.7
-0472:  BSF    03.5
-0473:  BSF    03.6
-0474:  BSF    0C.7
-0475:  BSF    0C.0
-0476:  NOP
-0477:  NOP
-0478:  BTFSS  7E.7
-0479:  GOTO   47F
-047A:  BCF    03.5
+045E:  BSF    03.6
+045F:  MOVWF  0F
+0460:  BCF    03.6
+0461:  MOVF   0B,W
+0462:  BSF    03.5
+0463:  MOVWF  36
+0464:  BCF    03.5
+0465:  BCF    0B.7
+0466:  BSF    03.5
+0467:  BSF    03.6
+0468:  BSF    0C.7
+0469:  BSF    0C.0
+046A:  NOP
+046B:  NOP
+046C:  BCF    03.6
+046D:  BTFSS  36.7
+046E:  GOTO   472
+046F:  BCF    03.5
+0470:  BSF    0B.7
+0471:  BSF    03.5
+0472:  DECFSZ 32,F
+0473:  GOTO   475
+0474:  GOTO   4A4
+0475:  BCF    03.5
+0476:  BSF    03.6
+0477:  RLF    0C,W
+0478:  RLF    0E,W
+0479:  ANDLW  7F
+047A:  BSF    03.5
 047B:  BCF    03.6
-047C:  BSF    0B.7
-047D:  BSF    03.5
+047C:  MOVWF  33
+047D:  BCF    03.5
 047E:  BSF    03.6
-047F:  DECFSZ 76,F
-0480:  GOTO   482
-0481:  GOTO   49B
-0482:  BCF    03.5
-0483:  RLF    0C,W
-0484:  RLF    0E,W
-0485:  ANDLW  7F
-0486:  MOVWF  7B
-0487:  MOVF   0D,W
-0488:  MOVWF  7C
-0489:  MOVF   0F,W
-048A:  MOVWF  7D
-048B:  MOVF   7B,W
-048C:  MOVWF  7E
-048D:  BCF    03.6
-048E:  CALL   1F4
-048F:  MOVF   7C,W
-0490:  BSF    03.6
-0491:  MOVWF  0D
-0492:  MOVF   7D,W
-0493:  MOVWF  0F
-0494:  INCF   0D,F
-0495:  BTFSC  03.2
-0496:  INCF   0F,F
-0497:  BCF    03.0
-0498:  DECFSZ 76,F
-0499:  GOTO   44A
-049A:  BSF    03.5
+047F:  MOVF   0D,W
+0480:  BSF    03.5
+0481:  BCF    03.6
+0482:  MOVWF  34
+0483:  BCF    03.5
+0484:  BSF    03.6
+0485:  MOVF   0F,W
+0486:  BSF    03.5
+0487:  BCF    03.6
+0488:  MOVWF  35
+0489:  MOVF   33,W
+048A:  BCF    03.5
+048B:  BTFSS  0C.4
+048C:  GOTO   48B
+048D:  MOVWF  19
+048E:  BSF    03.5
+048F:  MOVF   34,W
+0490:  BCF    03.5
+0491:  BSF    03.6
+0492:  MOVWF  0D
+0493:  BSF    03.5
+0494:  BCF    03.6
+0495:  MOVF   35,W
+0496:  BCF    03.5
+0497:  BSF    03.6
+0498:  MOVWF  0F
+0499:  INCF   0D,F
+049A:  BTFSC  03.2
+049B:  INCF   0F,F
+049C:  BCF    03.0
+049D:  BSF    03.5
+049E:  BCF    03.6
+049F:  DECFSZ 32,F
+04A0:  GOTO   4A2
+04A1:  GOTO   4A4
+04A2:  BCF    03.5
+04A3:  GOTO   42A
+04A4:  BCF    03.5
+04A5:  RETURN
+04A6:  BSF    03.5
+04A7:  BTFSC  33.7
+04A8:  GOTO   4BC
+04A9:  MOVLW  0F
+04AA:  MOVWF  77
+04AB:  SWAPF  32,W
+04AC:  ANDWF  77,F
+04AD:  MOVLW  0A
+04AE:  SUBWF  77,W
+04AF:  BTFSC  03.0
+04B0:  GOTO   4B4
+04B1:  MOVLW  30
+04B2:  ADDWF  77,F
+04B3:  GOTO   4B6
+04B4:  MOVF   33,W
+04B5:  ADDWF  77,F
+04B6:  MOVF   77,W
+04B7:  BCF    03.5
+04B8:  BTFSS  0C.4
+04B9:  GOTO   4B8
+04BA:  MOVWF  19
+04BB:  BSF    03.5
+04BC:  MOVLW  0F
+04BD:  ANDWF  32,F
+04BE:  MOVLW  0A
+04BF:  SUBWF  32,W
+04C0:  BTFSC  03.0
+04C1:  GOTO   4C4
+04C2:  MOVLW  30
+04C3:  GOTO   4C6
+04C4:  BCF    33.7
+04C5:  MOVF   33,W
+04C6:  ADDWF  32,F
+04C7:  MOVF   32,W
+04C8:  BCF    03.5
+04C9:  BTFSS  0C.4
+04CA:  GOTO   4C9
+04CB:  MOVWF  19
+04CC:  RETURN
 *
-049F:  BTFSC  7B.7
-04A0:  GOTO   4B5
-04A1:  MOVLW  0F
-04A2:  MOVWF  77
-04A3:  SWAPF  76,W
-04A4:  ANDWF  77,F
-04A5:  MOVLW  0A
-04A6:  SUBWF  77,W
-04A7:  BTFSC  03.0
-04A8:  GOTO   4AC
-04A9:  MOVLW  30
-04AA:  ADDWF  77,F
-04AB:  GOTO   4AE
-04AC:  MOVF   7B,W
-04AD:  ADDWF  77,F
-04AE:  MOVF   77,W
-04AF:  MOVWF  7E
-04B0:  BCF    03.5
-04B1:  BCF    03.6
-04B2:  CALL   1F4
-04B3:  BSF    03.5
-04B4:  BSF    03.6
-04B5:  MOVLW  0F
-04B6:  ANDWF  76,F
-04B7:  MOVLW  0A
-04B8:  SUBWF  76,W
-04B9:  BTFSC  03.0
-04BA:  GOTO   4BD
-04BB:  MOVLW  30
-04BC:  GOTO   4BF
-04BD:  BCF    7B.7
-04BE:  MOVF   7B,W
-04BF:  ADDWF  76,F
-04C0:  MOVF   76,W
-04C1:  MOVWF  7E
-04C2:  BCF    03.5
-04C3:  BCF    03.6
-04C4:  CALL   1F4
+0519:  BCF    03.5
+051A:  MOVF   0B,W
+051B:  BSF    03.5
+051C:  MOVWF  33
+051D:  BCF    03.5
+051E:  BCF    0B.7
+051F:  BSF    03.5
+0520:  BSF    03.6
+0521:  BSF    0C.7
+0522:  BSF    0C.0
+0523:  NOP
+0524:  NOP
+0525:  BCF    03.6
+0526:  BTFSS  33.7
+0527:  GOTO   52B
+0528:  BCF    03.5
+0529:  BSF    0B.7
+052A:  BSF    03.5
+052B:  BTFSC  03.0
+052C:  GOTO   564
+052D:  BCF    03.5
+052E:  BSF    03.6
+052F:  MOVF   0C,W
+0530:  ANDLW  7F
+0531:  BSF    03.5
+0532:  BCF    03.6
+0533:  MOVWF  33
+0534:  BCF    03.5
+0535:  BSF    03.6
+0536:  MOVF   0D,W
+0537:  BSF    03.5
+0538:  BCF    03.6
+0539:  MOVWF  34
+053A:  BCF    03.5
+053B:  BSF    03.6
+053C:  MOVF   0F,W
+053D:  BSF    03.5
+053E:  BCF    03.6
+053F:  MOVWF  35
+0540:  MOVF   33,W
+0541:  MOVWF  36
+0542:  BCF    03.5
+0543:  CALL   24B
+0544:  BSF    03.5
+0545:  MOVF   34,W
+0546:  BCF    03.5
+0547:  BSF    03.6
+0548:  MOVWF  0D
+0549:  BSF    03.5
+054A:  BCF    03.6
+054B:  MOVF   35,W
+054C:  BCF    03.5
+054D:  BSF    03.6
+054E:  MOVWF  0F
+054F:  BCF    03.6
+0550:  MOVF   0B,W
+0551:  BSF    03.5
+0552:  MOVWF  36
+0553:  BCF    03.5
+0554:  BCF    0B.7
+0555:  BSF    03.5
+0556:  BSF    03.6
+0557:  BSF    0C.7
+0558:  BSF    0C.0
+0559:  NOP
+055A:  NOP
+055B:  BCF    03.6
+055C:  BTFSS  36.7
+055D:  GOTO   561
+055E:  BCF    03.5
+055F:  BSF    0B.7
+0560:  BSF    03.5
+0561:  DECFSZ 32,F
+0562:  GOTO   564
+0563:  GOTO   58F
+0564:  BCF    03.5
+0565:  BSF    03.6
+0566:  RLF    0C,W
+0567:  RLF    0E,W
+0568:  ANDLW  7F
+0569:  BSF    03.5
+056A:  BCF    03.6
+056B:  MOVWF  33
+056C:  BCF    03.5
+056D:  BSF    03.6
+056E:  MOVF   0D,W
+056F:  BSF    03.5
+0570:  BCF    03.6
+0571:  MOVWF  34
+0572:  BCF    03.5
+0573:  BSF    03.6
+0574:  MOVF   0F,W
+0575:  BSF    03.5
+0576:  BCF    03.6
+0577:  MOVWF  35
+0578:  MOVF   33,W
+0579:  MOVWF  36
+057A:  BCF    03.5
+057B:  CALL   24B
+057C:  BSF    03.5
+057D:  MOVF   34,W
+057E:  BCF    03.5
+057F:  BSF    03.6
+0580:  MOVWF  0D
+0581:  BSF    03.5
+0582:  BCF    03.6
+0583:  MOVF   35,W
+0584:  BCF    03.5
+0585:  BSF    03.6
+0586:  MOVWF  0F
+0587:  INCF   0D,F
+0588:  BTFSC  03.2
+0589:  INCF   0F,F
+058A:  BCF    03.0
+058B:  BSF    03.5
+058C:  BCF    03.6
+058D:  DECFSZ 32,F
+058E:  GOTO   519
 *
-0679:  MOVF   71,W
-067A:  MOVWF  04
-067B:  BCF    03.7
-067C:  BTFSC  72.0
-067D:  BSF    03.7
-067E:  MOVF   7C,W
-067F:  MOVWF  00
-0680:  INCF   04,F
-0681:  CLRF   00
-0682:  INCF   71,F
-0683:  BTFSC  03.2
-0684:  INCF   72,F
-0685:  RETURN
-0686:  BTFSC  7B.7
-0687:  GOTO   698
-0688:  MOVLW  0F
-0689:  MOVWF  77
-068A:  SWAPF  76,W
-068B:  ANDWF  77,F
-068C:  MOVLW  0A
-068D:  SUBWF  77,W
-068E:  BTFSC  03.0
-068F:  GOTO   693
-0690:  MOVLW  30
-0691:  ADDWF  77,F
-0692:  GOTO   695
-0693:  MOVF   7B,W
-0694:  ADDWF  77,F
-0695:  MOVF   77,W
-0696:  MOVWF  7C
-0697:  CALL   679
-0698:  MOVLW  0F
-0699:  ANDWF  76,F
-069A:  MOVLW  0A
-069B:  SUBWF  76,W
-069C:  BTFSC  03.0
-069D:  GOTO   6A0
-069E:  MOVLW  30
-069F:  GOTO   6A2
-06A0:  BCF    7B.7
-06A1:  MOVF   7B,W
-06A2:  ADDWF  76,F
-06A3:  MOVF   76,W
-06A4:  MOVWF  7C
-06A5:  CALL   679
-06A6:  RETURN
-06A7:  MOVF   00,F
-06A8:  BTFSC  03.2
-06A9:  GOTO   6BD
-06AA:  CLRF   76
-06AB:  MOVF   04,W
-06AC:  MOVWF  75
-06AD:  BCF    76.0
-06AE:  BTFSC  03.7
-06AF:  BSF    76.0
-06B0:  MOVF   00,W
-06B1:  BTFSS  0C.4
-06B2:  GOTO   6B1
-06B3:  MOVWF  19
-06B4:  MOVF   75,W
-06B5:  MOVWF  04
-06B6:  BCF    03.7
-06B7:  BTFSC  76.0
-06B8:  BSF    03.7
-06B9:  INCF   04,F
-06BA:  BTFSC  03.2
-06BB:  INCF   05,F
-06BC:  GOTO   6A7
-06BD:  RETURN
+0593:  BTFSC  33.7
+0594:  GOTO   5A7
+0595:  MOVLW  0F
+0596:  MOVWF  77
+0597:  SWAPF  32,W
+0598:  ANDWF  77,F
+0599:  MOVLW  0A
+059A:  SUBWF  77,W
+059B:  BTFSC  03.0
+059C:  GOTO   5A0
+059D:  MOVLW  30
+059E:  ADDWF  77,F
+059F:  GOTO   5A2
+05A0:  MOVF   33,W
+05A1:  ADDWF  77,F
+05A2:  MOVF   77,W
+05A3:  MOVWF  36
+05A4:  BCF    03.5
+05A5:  CALL   24B
+05A6:  BSF    03.5
+05A7:  MOVLW  0F
+05A8:  ANDWF  32,F
+05A9:  MOVLW  0A
+05AA:  SUBWF  32,W
+05AB:  BTFSC  03.0
+05AC:  GOTO   5AF
+05AD:  MOVLW  30
+05AE:  GOTO   5B1
+05AF:  BCF    33.7
+05B0:  MOVF   33,W
+05B1:  ADDWF  32,F
+05B2:  MOVF   32,W
+05B3:  MOVWF  36
+05B4:  BCF    03.5
+05B5:  CALL   24B
+*
+0774:  MOVF   71,W
+0775:  MOVWF  04
+0776:  BCF    03.7
+0777:  BTFSC  72.0
+0778:  BSF    03.7
+0779:  BSF    03.5
+077A:  MOVF   34,W
+077B:  MOVWF  00
+077C:  INCF   04,F
+077D:  CLRF   00
+077E:  INCF   71,F
+077F:  BTFSC  03.2
+0780:  INCF   72,F
+0781:  BCF    03.5
+0782:  RETURN
+0783:  BSF    03.5
+0784:  BTFSC  33.7
+0785:  GOTO   798
+0786:  MOVLW  0F
+0787:  MOVWF  77
+0788:  SWAPF  32,W
+0789:  ANDWF  77,F
+078A:  MOVLW  0A
+078B:  SUBWF  77,W
+078C:  BTFSC  03.0
+078D:  GOTO   791
+078E:  MOVLW  30
+078F:  ADDWF  77,F
+0790:  GOTO   793
+0791:  MOVF   33,W
+0792:  ADDWF  77,F
+0793:  MOVF   77,W
+0794:  MOVWF  34
+0795:  BCF    03.5
+0796:  CALL   774
+0797:  BSF    03.5
+0798:  MOVLW  0F
+0799:  ANDWF  32,F
+079A:  MOVLW  0A
+079B:  SUBWF  32,W
+079C:  BTFSC  03.0
+079D:  GOTO   7A0
+079E:  MOVLW  30
+079F:  GOTO   7A2
+07A0:  BCF    33.7
+07A1:  MOVF   33,W
+07A2:  ADDWF  32,F
+07A3:  MOVF   32,W
+07A4:  MOVWF  34
+07A5:  BCF    03.5
+07A6:  CALL   774
+07A7:  RETURN
+07A8:  MOVF   00,F
+07A9:  BTFSC  03.2
+07AA:  GOTO   7C5
+07AB:  BSF    03.5
+07AC:  CLRF   32
+07AD:  MOVF   04,W
+07AE:  MOVWF  31
+07AF:  BCF    32.0
+07B0:  BTFSC  03.7
+07B1:  BSF    32.0
+07B2:  MOVF   00,W
+07B3:  BCF    03.5
+07B4:  BTFSS  0C.4
+07B5:  GOTO   7B4
+07B6:  MOVWF  19
+07B7:  BSF    03.5
+07B8:  MOVF   31,W
+07B9:  MOVWF  04
+07BA:  BCF    03.7
+07BB:  BTFSC  32.0
+07BC:  BSF    03.7
+07BD:  INCF   04,F
+07BE:  BTFSS  03.2
+07BF:  GOTO   7C3
+07C0:  BCF    03.5
+07C1:  INCF   05,F
+07C2:  BSF    03.5
+07C3:  BCF    03.5
+07C4:  GOTO   7A8
+07C5:  RETURN
 ....................  
 .................... #list 
 ....................  
@@ -692,27 +934,27 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 .................... #fuses NOPROTECT,NOLVP,NOWDT 
 .................... #use delay(crystal=4000000) 
 *
-00B1:  MOVLW  BD
-00B2:  MOVWF  04
-00B3:  BCF    03.7
-00B4:  MOVF   00,W
-00B5:  BTFSC  03.2
-00B6:  GOTO   0C5
-00B7:  MOVLW  01
-00B8:  MOVWF  78
-00B9:  CLRF   77
-00BA:  DECFSZ 77,F
-00BB:  GOTO   0BA
-00BC:  DECFSZ 78,F
-00BD:  GOTO   0B9
-00BE:  MOVLW  4A
-00BF:  MOVWF  77
-00C0:  DECFSZ 77,F
-00C1:  GOTO   0C0
-00C2:  GOTO   0C3
-00C3:  DECFSZ 00,F
-00C4:  GOTO   0B7
-00C5:  RETURN
+0104:  MOVLW  D4
+0105:  MOVWF  04
+0106:  BCF    03.7
+0107:  MOVF   00,W
+0108:  BTFSC  03.2
+0109:  GOTO   118
+010A:  MOVLW  01
+010B:  MOVWF  78
+010C:  CLRF   77
+010D:  DECFSZ 77,F
+010E:  GOTO   10D
+010F:  DECFSZ 78,F
+0110:  GOTO   10C
+0111:  MOVLW  4A
+0112:  MOVWF  77
+0113:  DECFSZ 77,F
+0114:  GOTO   113
+0115:  GOTO   116
+0116:  DECFSZ 00,F
+0117:  GOTO   10A
+0118:  RETURN
 .................... #use rs232( baud=19200, xmit=PIN_C6, rcv=PIN_C7, bits=8,ERRORS) 
 ....................  
 .................... //LCD module connections 
@@ -931,158 +1173,158 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 ....................   #if (defined(LCD_DATA4) && defined(LCD_DATA5) && defined(LCD_DATA6) && defined(LCD_DATA7)) 
 ....................    output_float(LCD_DATA4); 
 *
-0136:  BSF    08.4
+0189:  BSF    08.4
 ....................    output_float(LCD_DATA5); 
-0137:  BSF    08.5
+018A:  BSF    08.5
 ....................    output_float(LCD_DATA6); 
-0138:  BSF    08.6
+018B:  BSF    08.6
 ....................    output_float(LCD_DATA7); 
-0139:  BSF    08.7
+018C:  BSF    08.7
 ....................   #else 
 ....................    lcdtris.data = 0xF; 
 ....................   #endif 
 ....................  #endif 
 ....................          
 ....................    lcd_output_rw(1); 
-013A:  BCF    03.5
-013B:  BSF    08.1
-013C:  BSF    03.5
-013D:  BCF    08.1
+018D:  BCF    03.5
+018E:  BSF    08.1
+018F:  BSF    03.5
+0190:  BCF    08.1
 ....................    delay_cycles(1); 
-013E:  NOP
+0191:  NOP
 ....................    lcd_output_enable(1); 
-013F:  BCF    03.5
-0140:  BSF    08.2
-0141:  BSF    03.5
-0142:  BCF    08.2
+0192:  BCF    03.5
+0193:  BSF    08.2
+0194:  BSF    03.5
+0195:  BCF    08.2
 ....................    delay_cycles(1); 
-0143:  NOP
+0196:  NOP
 ....................    high = lcd_read_nibble(); 
-0144:  BCF    03.5
-0145:  CALL   0FB
-0146:  MOVF   78,W
-0147:  BSF    03.5
-0148:  MOVWF  27
+0197:  BCF    03.5
+0198:  CALL   14E
+0199:  MOVF   78,W
+019A:  BSF    03.5
+019B:  MOVWF  3E
 ....................        
 ....................    lcd_output_enable(0); 
-0149:  BCF    03.5
-014A:  BCF    08.2
-014B:  BSF    03.5
-014C:  BCF    08.2
+019C:  BCF    03.5
+019D:  BCF    08.2
+019E:  BSF    03.5
+019F:  BCF    08.2
 ....................    delay_cycles(1); 
-014D:  NOP
+01A0:  NOP
 ....................    lcd_output_enable(1); 
-014E:  BCF    03.5
-014F:  BSF    08.2
-0150:  BSF    03.5
-0151:  BCF    08.2
+01A1:  BCF    03.5
+01A2:  BSF    08.2
+01A3:  BSF    03.5
+01A4:  BCF    08.2
 ....................    delay_us(1); 
-0152:  NOP
+01A5:  NOP
 ....................    low = lcd_read_nibble(); 
-0153:  BCF    03.5
-0154:  CALL   0FB
-0155:  MOVF   78,W
-0156:  BSF    03.5
-0157:  MOVWF  26
+01A6:  BCF    03.5
+01A7:  CALL   14E
+01A8:  MOVF   78,W
+01A9:  BSF    03.5
+01AA:  MOVWF  3D
 ....................        
 ....................    lcd_output_enable(0); 
-0158:  BCF    03.5
-0159:  BCF    08.2
-015A:  BSF    03.5
-015B:  BCF    08.2
+01AB:  BCF    03.5
+01AC:  BCF    08.2
+01AD:  BSF    03.5
+01AE:  BCF    08.2
 ....................  
 ....................  #if defined(__PCB__) 
 ....................    set_tris_lcd(LCD_OUTPUT_MAP); 
 ....................  #else 
 ....................   #if (defined(LCD_DATA4) && defined(LCD_DATA5) && defined(LCD_DATA6) && defined(LCD_DATA7)) 
 ....................    output_drive(LCD_DATA4); 
-015C:  BCF    08.4
+01AF:  BCF    08.4
 ....................    output_drive(LCD_DATA5); 
-015D:  BCF    08.5
+01B0:  BCF    08.5
 ....................    output_drive(LCD_DATA6); 
-015E:  BCF    08.6
+01B1:  BCF    08.6
 ....................    output_drive(LCD_DATA7); 
-015F:  BCF    08.7
+01B2:  BCF    08.7
 ....................   #else 
 ....................    lcdtris.data = 0x0; 
 ....................   #endif 
 ....................  #endif 
 ....................  
 ....................    return( (high<<4) | low); 
-0160:  SWAPF  27,W
-0161:  MOVWF  77
-0162:  MOVLW  F0
-0163:  ANDWF  77,F
-0164:  MOVF   77,W
-0165:  IORWF  26,W
-0166:  MOVWF  78
+01B3:  SWAPF  3E,W
+01B4:  MOVWF  77
+01B5:  MOVLW  F0
+01B6:  ANDWF  77,F
+01B7:  MOVF   77,W
+01B8:  IORWF  3D,W
+01B9:  MOVWF  78
 .................... } 
 ....................  
 .................... unsigned int8 lcd_read_nibble(void) 
 .................... { 
 ....................   #if (defined(LCD_DATA4) && defined(LCD_DATA5) && defined(LCD_DATA6) && defined(LCD_DATA7)) 
 *
-00FB:  BSF    03.5
-00FC:  CLRF   28
+014E:  BSF    03.5
+014F:  CLRF   3F
 ....................    unsigned int8 n = 0x00; 
 ....................  
 ....................    /* Read the data port */ 
 ....................    n |= input(LCD_DATA4); 
-00FD:  BSF    08.4
-00FE:  MOVLW  00
-00FF:  BCF    03.5
-0100:  BTFSC  08.4
-0101:  MOVLW  01
-0102:  BSF    03.5
-0103:  IORWF  28,F
+0150:  BSF    08.4
+0151:  MOVLW  00
+0152:  BCF    03.5
+0153:  BTFSC  08.4
+0154:  MOVLW  01
+0155:  BSF    03.5
+0156:  IORWF  3F,F
 ....................    n |= input(LCD_DATA5) << 1; 
-0104:  BSF    08.5
-0105:  MOVLW  00
-0106:  BCF    03.5
-0107:  BTFSC  08.5
-0108:  MOVLW  01
-0109:  MOVWF  77
-010A:  BCF    03.0
-010B:  RLF    77,F
-010C:  MOVF   77,W
-010D:  BSF    03.5
-010E:  IORWF  28,F
+0157:  BSF    08.5
+0158:  MOVLW  00
+0159:  BCF    03.5
+015A:  BTFSC  08.5
+015B:  MOVLW  01
+015C:  MOVWF  77
+015D:  BCF    03.0
+015E:  RLF    77,F
+015F:  MOVF   77,W
+0160:  BSF    03.5
+0161:  IORWF  3F,F
 ....................    n |= input(LCD_DATA6) << 2; 
-010F:  BSF    08.6
-0110:  MOVLW  00
-0111:  BCF    03.5
-0112:  BTFSC  08.6
-0113:  MOVLW  01
-0114:  MOVWF  77
-0115:  RLF    77,F
-0116:  RLF    77,F
-0117:  MOVLW  FC
-0118:  ANDWF  77,F
-0119:  MOVF   77,W
-011A:  BSF    03.5
-011B:  IORWF  28,F
+0162:  BSF    08.6
+0163:  MOVLW  00
+0164:  BCF    03.5
+0165:  BTFSC  08.6
+0166:  MOVLW  01
+0167:  MOVWF  77
+0168:  RLF    77,F
+0169:  RLF    77,F
+016A:  MOVLW  FC
+016B:  ANDWF  77,F
+016C:  MOVF   77,W
+016D:  BSF    03.5
+016E:  IORWF  3F,F
 ....................    n |= input(LCD_DATA7) << 3; 
-011C:  BSF    08.7
-011D:  MOVLW  00
-011E:  BCF    03.5
-011F:  BTFSC  08.7
-0120:  MOVLW  01
-0121:  MOVWF  77
-0122:  RLF    77,F
-0123:  RLF    77,F
-0124:  RLF    77,F
-0125:  MOVLW  F8
-0126:  ANDWF  77,F
-0127:  MOVF   77,W
-0128:  BSF    03.5
-0129:  IORWF  28,F
+016F:  BSF    08.7
+0170:  MOVLW  00
+0171:  BCF    03.5
+0172:  BTFSC  08.7
+0173:  MOVLW  01
+0174:  MOVWF  77
+0175:  RLF    77,F
+0176:  RLF    77,F
+0177:  RLF    77,F
+0178:  MOVLW  F8
+0179:  ANDWF  77,F
+017A:  MOVF   77,W
+017B:  BSF    03.5
+017C:  IORWF  3F,F
 ....................     
 ....................    return(n); 
-012A:  MOVF   28,W
-012B:  MOVWF  78
+017D:  MOVF   3F,W
+017E:  MOVWF  78
 ....................   #else 
-012C:  BCF    03.5
-012D:  RETURN
+017F:  BCF    03.5
+0180:  RETURN
 ....................    return(lcd.data); 
 ....................   #endif 
 .................... } 
@@ -1093,70 +1335,70 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 ....................    /* Write to the data port */ 
 ....................    output_bit(LCD_DATA4, bit_test(n, 0)); 
 *
-00C6:  BSF    03.5
-00C7:  BTFSC  27.0
-00C8:  GOTO   0CD
-00C9:  BCF    03.5
-00CA:  BCF    08.4
-00CB:  GOTO   0CF
-00CC:  BSF    03.5
-00CD:  BCF    03.5
-00CE:  BSF    08.4
-00CF:  BSF    03.5
-00D0:  BCF    08.4
+0119:  BSF    03.5
+011A:  BTFSC  3E.0
+011B:  GOTO   120
+011C:  BCF    03.5
+011D:  BCF    08.4
+011E:  GOTO   122
+011F:  BSF    03.5
+0120:  BCF    03.5
+0121:  BSF    08.4
+0122:  BSF    03.5
+0123:  BCF    08.4
 ....................    output_bit(LCD_DATA5, bit_test(n, 1)); 
-00D1:  BTFSC  27.1
-00D2:  GOTO   0D7
-00D3:  BCF    03.5
-00D4:  BCF    08.5
-00D5:  GOTO   0D9
-00D6:  BSF    03.5
-00D7:  BCF    03.5
-00D8:  BSF    08.5
-00D9:  BSF    03.5
-00DA:  BCF    08.5
+0124:  BTFSC  3E.1
+0125:  GOTO   12A
+0126:  BCF    03.5
+0127:  BCF    08.5
+0128:  GOTO   12C
+0129:  BSF    03.5
+012A:  BCF    03.5
+012B:  BSF    08.5
+012C:  BSF    03.5
+012D:  BCF    08.5
 ....................    output_bit(LCD_DATA6, bit_test(n, 2)); 
-00DB:  BTFSC  27.2
-00DC:  GOTO   0E1
-00DD:  BCF    03.5
-00DE:  BCF    08.6
-00DF:  GOTO   0E3
-00E0:  BSF    03.5
-00E1:  BCF    03.5
-00E2:  BSF    08.6
-00E3:  BSF    03.5
-00E4:  BCF    08.6
+012E:  BTFSC  3E.2
+012F:  GOTO   134
+0130:  BCF    03.5
+0131:  BCF    08.6
+0132:  GOTO   136
+0133:  BSF    03.5
+0134:  BCF    03.5
+0135:  BSF    08.6
+0136:  BSF    03.5
+0137:  BCF    08.6
 ....................    output_bit(LCD_DATA7, bit_test(n, 3)); 
-00E5:  BTFSC  27.3
-00E6:  GOTO   0EB
-00E7:  BCF    03.5
-00E8:  BCF    08.7
-00E9:  GOTO   0ED
-00EA:  BSF    03.5
-00EB:  BCF    03.5
-00EC:  BSF    08.7
-00ED:  BSF    03.5
-00EE:  BCF    08.7
+0138:  BTFSC  3E.3
+0139:  GOTO   13E
+013A:  BCF    03.5
+013B:  BCF    08.7
+013C:  GOTO   140
+013D:  BSF    03.5
+013E:  BCF    03.5
+013F:  BSF    08.7
+0140:  BSF    03.5
+0141:  BCF    08.7
 ....................   #else       
 ....................    lcdlat.data = n; 
 ....................   #endif 
 ....................        
 ....................    delay_cycles(1); 
-00EF:  NOP
+0142:  NOP
 ....................    lcd_output_enable(1); 
-00F0:  BCF    03.5
-00F1:  BSF    08.2
-00F2:  BSF    03.5
-00F3:  BCF    08.2
+0143:  BCF    03.5
+0144:  BSF    08.2
+0145:  BSF    03.5
+0146:  BCF    08.2
 ....................    delay_us(2); 
-00F4:  GOTO   0F5
+0147:  GOTO   148
 ....................    lcd_output_enable(0); 
-00F5:  BCF    03.5
-00F6:  BCF    08.2
-00F7:  BSF    03.5
-00F8:  BCF    08.2
-00F9:  BCF    03.5
-00FA:  RETURN
+0148:  BCF    03.5
+0149:  BCF    08.2
+014A:  BSF    03.5
+014B:  BCF    08.2
+014C:  BCF    03.5
+014D:  RETURN
 .................... } 
 ....................  
 .................... void lcd_send_byte(unsigned int8 address, unsigned int8 n) 
@@ -1166,69 +1408,69 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 ....................   #else 
 ....................    lcd_enable_tris(); 
 *
-012E:  BSF    03.5
-012F:  BCF    08.2
+0181:  BSF    03.5
+0182:  BCF    08.2
 ....................    lcd_rs_tris(); 
-0130:  BCF    08.0
+0183:  BCF    08.0
 ....................    lcd_rw_tris(); 
-0131:  BCF    08.1
+0184:  BCF    08.1
 ....................   #endif 
 ....................  
 ....................    lcd_output_rs(0); 
-0132:  BCF    03.5
-0133:  BCF    08.0
-0134:  BSF    03.5
-0135:  BCF    08.0
+0185:  BCF    03.5
+0186:  BCF    08.0
+0187:  BSF    03.5
+0188:  BCF    08.0
 ....................    while ( bit_test(lcd_read_byte(),7) ) ; 
 *
-0167:  MOVF   78,W
-0168:  MOVWF  26
-0169:  BTFSC  26.7
-016A:  GOTO   136
+01BA:  MOVF   78,W
+01BB:  MOVWF  3D
+01BC:  BTFSC  3D.7
+01BD:  GOTO   189
 ....................    lcd_output_rs(address); 
-016B:  MOVF   24,F
-016C:  BTFSS  03.2
-016D:  GOTO   172
-016E:  BCF    03.5
-016F:  BCF    08.0
-0170:  GOTO   174
-0171:  BSF    03.5
-0172:  BCF    03.5
-0173:  BSF    08.0
-0174:  BSF    03.5
-0175:  BCF    08.0
+01BE:  MOVF   3B,F
+01BF:  BTFSS  03.2
+01C0:  GOTO   1C5
+01C1:  BCF    03.5
+01C2:  BCF    08.0
+01C3:  GOTO   1C7
+01C4:  BSF    03.5
+01C5:  BCF    03.5
+01C6:  BSF    08.0
+01C7:  BSF    03.5
+01C8:  BCF    08.0
 ....................    delay_cycles(1); 
-0176:  NOP
+01C9:  NOP
 ....................    lcd_output_rw(0); 
-0177:  BCF    03.5
-0178:  BCF    08.1
-0179:  BSF    03.5
-017A:  BCF    08.1
+01CA:  BCF    03.5
+01CB:  BCF    08.1
+01CC:  BSF    03.5
+01CD:  BCF    08.1
 ....................    delay_cycles(1); 
-017B:  NOP
+01CE:  NOP
 ....................    lcd_output_enable(0); 
-017C:  BCF    03.5
-017D:  BCF    08.2
-017E:  BSF    03.5
-017F:  BCF    08.2
+01CF:  BCF    03.5
+01D0:  BCF    08.2
+01D1:  BSF    03.5
+01D2:  BCF    08.2
 ....................    lcd_send_nibble(n >> 4); 
-0180:  SWAPF  25,W
-0181:  MOVWF  26
-0182:  MOVLW  0F
-0183:  ANDWF  26,F
-0184:  MOVF   26,W
-0185:  MOVWF  27
-0186:  BCF    03.5
-0187:  CALL   0C6
+01D3:  SWAPF  3C,W
+01D4:  MOVWF  3D
+01D5:  MOVLW  0F
+01D6:  ANDWF  3D,F
+01D7:  MOVF   3D,W
+01D8:  MOVWF  3E
+01D9:  BCF    03.5
+01DA:  CALL   119
 ....................    lcd_send_nibble(n & 0xf); 
-0188:  BSF    03.5
-0189:  MOVF   25,W
-018A:  ANDLW  0F
-018B:  MOVWF  26
-018C:  MOVWF  27
-018D:  BCF    03.5
-018E:  CALL   0C6
-018F:  RETURN
+01DB:  BSF    03.5
+01DC:  MOVF   3C,W
+01DD:  ANDLW  0F
+01DE:  MOVWF  3D
+01DF:  MOVWF  3E
+01E0:  BCF    03.5
+01E1:  CALL   119
+01E2:  RETURN
 .................... } 
 ....................  
 .................... #if defined(LCD_EXTENDED_NEWLINE) 
@@ -1239,123 +1481,127 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 .................... { 
 ....................    unsigned int8 i; 
 ....................    unsigned int8 LCD_INIT_STRING[4] = {0x20 | (LCD_TYPE << 2), 0xc, 1, 6}; 
-0190:  MOVLW  28
-0191:  MOVWF  7B
-0192:  MOVLW  0C
-0193:  MOVWF  7C
-0194:  MOVLW  01
-0195:  MOVWF  7D
-0196:  MOVLW  06
-0197:  MOVWF  7E
+01E3:  MOVLW  28
+01E4:  BSF    03.5
+01E5:  MOVWF  32
+01E6:  MOVLW  0C
+01E7:  MOVWF  33
+01E8:  MOVLW  01
+01E9:  MOVWF  34
+01EA:  MOVLW  06
+01EB:  MOVWF  35
 ....................                              // These bytes need to be sent to the LCD 
 ....................                              // to start it up. 
 ....................     
 ....................  
 ....................    lcd_output_enable(0); 
-0198:  BCF    08.2
-0199:  BSF    03.5
-019A:  BCF    08.2
+01EC:  BCF    03.5
+01ED:  BCF    08.2
+01EE:  BSF    03.5
+01EF:  BCF    08.2
 ....................    lcd_output_rs(0); 
-019B:  BCF    03.5
-019C:  BCF    08.0
-019D:  BSF    03.5
-019E:  BCF    08.0
+01F0:  BCF    03.5
+01F1:  BCF    08.0
+01F2:  BSF    03.5
+01F3:  BCF    08.0
 ....................    lcd_output_rw(0); 
-019F:  BCF    03.5
-01A0:  BCF    08.1
-01A1:  BSF    03.5
-01A2:  BCF    08.1
+01F4:  BCF    03.5
+01F5:  BCF    08.1
+01F6:  BSF    03.5
+01F7:  BCF    08.1
 ....................  
 ....................  #if defined(__PCB__) 
 ....................    set_tris_lcd(LCD_OUTPUT_MAP); 
 ....................  #else 
 ....................   #if (defined(LCD_DATA4) && defined(LCD_DATA5) && defined(LCD_DATA6) && defined(LCD_DATA7)) 
 ....................    output_drive(LCD_DATA4); 
-01A3:  BCF    08.4
+01F8:  BCF    08.4
 ....................    output_drive(LCD_DATA5); 
-01A4:  BCF    08.5
+01F9:  BCF    08.5
 ....................    output_drive(LCD_DATA6); 
-01A5:  BCF    08.6
+01FA:  BCF    08.6
 ....................    output_drive(LCD_DATA7); 
-01A6:  BCF    08.7
+01FB:  BCF    08.7
 ....................   #else 
 ....................    lcdtris.data = 0x0; 
 ....................   #endif 
 ....................    lcd_enable_tris(); 
-01A7:  BCF    08.2
+01FC:  BCF    08.2
 ....................    lcd_rs_tris(); 
-01A8:  BCF    08.0
+01FD:  BCF    08.0
 ....................    lcd_rw_tris(); 
-01A9:  BCF    08.1
+01FE:  BCF    08.1
 ....................  #endif 
 ....................      
 ....................    delay_ms(15); 
-01AA:  MOVLW  0F
-01AB:  MOVWF  3D
-01AC:  BCF    03.5
-01AD:  CALL   0B1
+01FF:  MOVLW  0F
+0200:  MOVWF  54
+0201:  BCF    03.5
+0202:  CALL   104
 ....................    for(i=1;i<=3;++i) 
-01AE:  MOVLW  01
-01AF:  MOVWF  75
-01B0:  MOVF   75,W
-01B1:  SUBLW  03
-01B2:  BTFSS  03.0
-01B3:  GOTO   1C0
+0203:  MOVLW  01
+0204:  BSF    03.5
+0205:  MOVWF  31
+0206:  MOVF   31,W
+0207:  SUBLW  03
+0208:  BTFSS  03.0
+0209:  GOTO   216
 ....................    { 
 ....................        lcd_send_nibble(3); 
-01B4:  MOVLW  03
-01B5:  BSF    03.5
-01B6:  MOVWF  27
-01B7:  BCF    03.5
-01B8:  CALL   0C6
+020A:  MOVLW  03
+020B:  MOVWF  3E
+020C:  BCF    03.5
+020D:  CALL   119
 ....................        delay_ms(5); 
-01B9:  MOVLW  05
-01BA:  BSF    03.5
-01BB:  MOVWF  3D
-01BC:  BCF    03.5
-01BD:  CALL   0B1
-01BE:  INCF   75,F
-01BF:  GOTO   1B0
+020E:  MOVLW  05
+020F:  BSF    03.5
+0210:  MOVWF  54
+0211:  BCF    03.5
+0212:  CALL   104
+0213:  BSF    03.5
+0214:  INCF   31,F
+0215:  GOTO   206
 ....................    } 
 ....................     
 ....................    lcd_send_nibble(2); 
-01C0:  MOVLW  02
-01C1:  BSF    03.5
-01C2:  MOVWF  27
-01C3:  BCF    03.5
-01C4:  CALL   0C6
+0216:  MOVLW  02
+0217:  MOVWF  3E
+0218:  BCF    03.5
+0219:  CALL   119
 ....................    delay_ms(5); 
-01C5:  MOVLW  05
-01C6:  BSF    03.5
-01C7:  MOVWF  3D
-01C8:  BCF    03.5
-01C9:  CALL   0B1
+021A:  MOVLW  05
+021B:  BSF    03.5
+021C:  MOVWF  54
+021D:  BCF    03.5
+021E:  CALL   104
 ....................    for(i=0;i<=3;++i) 
-01CA:  CLRF   75
-01CB:  MOVF   75,W
-01CC:  SUBLW  03
-01CD:  BTFSS  03.0
-01CE:  GOTO   1DD
+021F:  BSF    03.5
+0220:  CLRF   31
+0221:  MOVF   31,W
+0222:  SUBLW  03
+0223:  BTFSS  03.0
+0224:  GOTO   233
 ....................       lcd_send_byte(0,LCD_INIT_STRING[i]); 
-01CF:  MOVLW  7B
-01D0:  ADDWF  75,W
-01D1:  MOVWF  04
-01D2:  BCF    03.7
-01D3:  MOVF   00,W
-01D4:  MOVWF  76
-01D5:  BSF    03.5
-01D6:  CLRF   24
-01D7:  MOVF   76,W
-01D8:  MOVWF  25
-01D9:  BCF    03.5
-01DA:  CALL   12E
+0225:  MOVLW  B2
+0226:  ADDWF  31,W
+0227:  MOVWF  04
+0228:  BCF    03.7
+0229:  MOVF   00,W
+022A:  MOVWF  36
+022B:  CLRF   3B
+022C:  MOVF   36,W
+022D:  MOVWF  3C
+022E:  BCF    03.5
+022F:  CALL   181
 ....................  
 ....................   #if defined(LCD_EXTENDED_NEWLINE) 
-01DB:  INCF   75,F
-01DC:  GOTO   1CB
-01DD:  BSF    0A.3
-01DE:  BCF    0A.4
-01DF:  GOTO   0B9 (RETURN)
+0230:  BSF    03.5
+0231:  INCF   31,F
+0232:  GOTO   221
+0233:  BCF    03.5
+0234:  BSF    0A.3
+0235:  BCF    0A.4
+0236:  GOTO   2D1 (RETURN)
 ....................    g_LcdX = 0; 
 ....................    g_LcdY = 0; 
 ....................   #endif 
@@ -1366,34 +1612,34 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 ....................    unsigned int8 address; 
 ....................     
 ....................    if(y!=1) 
-01E0:  BSF    03.5
-01E1:  DECFSZ 21,W
-01E2:  GOTO   1E4
-01E3:  GOTO   1E7
+0237:  BSF    03.5
+0238:  DECFSZ 38,W
+0239:  GOTO   23B
+023A:  GOTO   23E
 ....................       address=LCD_LINE_TWO; 
-01E4:  MOVLW  40
-01E5:  MOVWF  22
-01E6:  GOTO   1E8
+023B:  MOVLW  40
+023C:  MOVWF  39
+023D:  GOTO   23F
 ....................    else 
 ....................       address=0; 
-01E7:  CLRF   22
+023E:  CLRF   39
 ....................       
 ....................    address+=x-1; 
-01E8:  MOVLW  01
-01E9:  SUBWF  20,W
-01EA:  ADDWF  22,F
+023F:  MOVLW  01
+0240:  SUBWF  37,W
+0241:  ADDWF  39,F
 ....................    lcd_send_byte(0,0x80|address); 
-01EB:  MOVF   22,W
-01EC:  IORLW  80
-01ED:  MOVWF  23
-01EE:  CLRF   24
-01EF:  MOVF   23,W
-01F0:  MOVWF  25
-01F1:  BCF    03.5
-01F2:  CALL   12E
+0242:  MOVF   39,W
+0243:  IORLW  80
+0244:  MOVWF  3A
+0245:  CLRF   3B
+0246:  MOVF   3A,W
+0247:  MOVWF  3C
+0248:  BCF    03.5
+0249:  CALL   181
 ....................  
 ....................   #if defined(LCD_EXTENDED_NEWLINE) 
-01F3:  RETURN
+024A:  RETURN
 ....................    g_LcdX = x - 1; 
 ....................    g_LcdY = y - 1; 
 ....................   #endif 
@@ -1402,49 +1648,51 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 .................... void lcd_putc(char c) 
 .................... { 
 ....................    switch (c) 
-01F4:  MOVF   7E,W
-01F5:  XORLW  07
-01F6:  BTFSC  03.2
-01F7:  GOTO   202
-01F8:  XORLW  0B
-01F9:  BTFSC  03.2
-01FA:  GOTO   209
-01FB:  XORLW  06
-01FC:  BTFSC  03.2
-01FD:  GOTO   215
-01FE:  XORLW  02
-01FF:  BTFSC  03.2
-0200:  GOTO   21D
-0201:  GOTO   224
+024B:  BSF    03.5
+024C:  MOVF   36,W
+024D:  XORLW  07
+024E:  BCF    03.5
+024F:  BTFSC  03.2
+0250:  GOTO   25B
+0251:  XORLW  0B
+0252:  BTFSC  03.2
+0253:  GOTO   262
+0254:  XORLW  06
+0255:  BTFSC  03.2
+0256:  GOTO   26E
+0257:  XORLW  02
+0258:  BTFSC  03.2
+0259:  GOTO   276
+025A:  GOTO   27D
 ....................    { 
 ....................       case '\a'   :  lcd_gotoxy(1,1);     break; 
-0202:  MOVLW  01
-0203:  BSF    03.5
-0204:  MOVWF  20
-0205:  MOVWF  21
-0206:  BCF    03.5
-0207:  CALL   1E0
-0208:  GOTO   22B
+025B:  MOVLW  01
+025C:  BSF    03.5
+025D:  MOVWF  37
+025E:  MOVWF  38
+025F:  BCF    03.5
+0260:  CALL   237
+0261:  GOTO   284
 ....................  
 ....................       case '\f'   :  lcd_send_byte(0,1); 
-0209:  BSF    03.5
-020A:  CLRF   24
-020B:  MOVLW  01
-020C:  MOVWF  25
-020D:  BCF    03.5
-020E:  CALL   12E
+0262:  BSF    03.5
+0263:  CLRF   3B
+0264:  MOVLW  01
+0265:  MOVWF  3C
+0266:  BCF    03.5
+0267:  CALL   181
 ....................                      delay_ms(2); 
-020F:  MOVLW  02
-0210:  BSF    03.5
-0211:  MOVWF  3D
-0212:  BCF    03.5
-0213:  CALL   0B1
+0268:  MOVLW  02
+0269:  BSF    03.5
+026A:  MOVWF  54
+026B:  BCF    03.5
+026C:  CALL   104
 ....................                     #if defined(LCD_EXTENDED_NEWLINE) 
 ....................                      g_LcdX = 0; 
 ....................                      g_LcdY = 0; 
 ....................                     #endif 
 ....................                      break; 
-0214:  GOTO   22B
+026D:  GOTO   284
 ....................  
 ....................      #if defined(LCD_EXTENDED_NEWLINE) 
 ....................       case '\r'   :  lcd_gotoxy(1, g_LcdY+1);   break; 
@@ -1457,24 +1705,24 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 ....................          break; 
 ....................      #else 
 ....................       case '\n'   : lcd_gotoxy(1,2);        break; 
-0215:  MOVLW  01
-0216:  BSF    03.5
-0217:  MOVWF  20
-0218:  MOVLW  02
-0219:  MOVWF  21
-021A:  BCF    03.5
-021B:  CALL   1E0
-021C:  GOTO   22B
+026E:  MOVLW  01
+026F:  BSF    03.5
+0270:  MOVWF  37
+0271:  MOVLW  02
+0272:  MOVWF  38
+0273:  BCF    03.5
+0274:  CALL   237
+0275:  GOTO   284
 ....................      #endif 
 ....................       
 ....................       case '\b'   : lcd_send_byte(0,0x10);  break; 
-021D:  BSF    03.5
-021E:  CLRF   24
-021F:  MOVLW  10
-0220:  MOVWF  25
-0221:  BCF    03.5
-0222:  CALL   12E
-0223:  GOTO   22B
+0276:  BSF    03.5
+0277:  CLRF   3B
+0278:  MOVLW  10
+0279:  MOVWF  3C
+027A:  BCF    03.5
+027B:  CALL   181
+027C:  GOTO   284
 ....................       
 ....................      #if defined(LCD_EXTENDED_NEWLINE) 
 ....................       default     :  
@@ -1486,16 +1734,16 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 ....................          break; 
 ....................      #else 
 ....................       default     : lcd_send_byte(1,c);     break; 
-0224:  MOVLW  01
-0225:  BSF    03.5
-0226:  MOVWF  24
-0227:  MOVF   7E,W
-0228:  MOVWF  25
-0229:  BCF    03.5
-022A:  CALL   12E
+027D:  MOVLW  01
+027E:  BSF    03.5
+027F:  MOVWF  3B
+0280:  MOVF   36,W
+0281:  MOVWF  3C
+0282:  BCF    03.5
+0283:  CALL   181
 ....................      #endif 
 ....................    } 
-022B:  RETURN
+0284:  RETURN
 .................... } 
 ....................   
 .................... char lcd_getc(unsigned int8 x, unsigned int8 y) 
@@ -1969,9 +2217,9 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 ....................    unsigned char *beg, *end; 
 ....................    static char *save; 
 *
-0890:  BCF    03.5
-0891:  CLRF   21
-0892:  CLRF   22
+0A86:  BCF    03.5
+0A87:  CLRF   21
+0A88:  CLRF   22
 ....................  
 ....................    beg = (s1)? s1: save; 
 ....................    beg += strspn(beg, s2); 
@@ -4087,43 +4335,43 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 .................... void writeToRegister(byte addr, byte val) { 
 ....................   output_low(CS); 
 *
-02CE:  BSF    03.5
-02CF:  BCF    05.5
-02D0:  BCF    03.5
-02D1:  BCF    05.5
+036F:  BSF    03.5
+0370:  BCF    05.5
+0371:  BCF    03.5
+0372:  BCF    05.5
 ....................   //Address format: 0XXXXXX0 
 ....................   spi_write((addr<<1)&0x7E); 
-02D2:  BCF    03.0
-02D3:  BSF    03.5
-02D4:  RLF    41,W
-02D5:  ANDLW  7E
-02D6:  MOVWF  43
-02D7:  BCF    03.5
-02D8:  MOVF   13,W
-02D9:  BSF    03.5
-02DA:  MOVF   43,W
-02DB:  BCF    03.5
-02DC:  MOVWF  13
-02DD:  BSF    03.5
-02DE:  RRF    14,W
-02DF:  BTFSS  03.0
-02E0:  GOTO   2DE
+0373:  BCF    03.0
+0374:  BSF    03.5
+0375:  RLF    58,W
+0376:  ANDLW  7E
+0377:  MOVWF  5A
+0378:  BCF    03.5
+0379:  MOVF   13,W
+037A:  BSF    03.5
+037B:  MOVF   5A,W
+037C:  BCF    03.5
+037D:  MOVWF  13
+037E:  BSF    03.5
+037F:  RRF    14,W
+0380:  BTFSS  03.0
+0381:  GOTO   37F
 ....................   spi_write(val); 
-02E1:  BCF    03.5
-02E2:  MOVF   13,W
-02E3:  BSF    03.5
-02E4:  MOVF   42,W
-02E5:  BCF    03.5
-02E6:  MOVWF  13
-02E7:  BSF    03.5
-02E8:  RRF    14,W
-02E9:  BTFSS  03.0
-02EA:  GOTO   2E8
+0382:  BCF    03.5
+0383:  MOVF   13,W
+0384:  BSF    03.5
+0385:  MOVF   59,W
+0386:  BCF    03.5
+0387:  MOVWF  13
+0388:  BSF    03.5
+0389:  RRF    14,W
+038A:  BTFSS  03.0
+038B:  GOTO   389
 ....................   output_high(CS); 
-02EB:  BCF    05.5
-02EC:  BCF    03.5
-02ED:  BSF    05.5
-02EE:  RETURN
+038C:  BCF    05.5
+038D:  BCF    03.5
+038E:  BSF    05.5
+038F:  RETURN
 .................... } 
 ....................  
 .................... /**************************************************************************/ 
@@ -4136,49 +4384,49 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 .................... byte readFromRegister(byte addr) { 
 ....................   byte val; 
 ....................   output_low(CS); 
-02EF:  BSF    03.5
-02F0:  BCF    05.5
-02F1:  BCF    03.5
-02F2:  BCF    05.5
+0390:  BSF    03.5
+0391:  BCF    05.5
+0392:  BCF    03.5
+0393:  BCF    05.5
 ....................   spi_write(((addr<<1)&0x7E) | 0x80); 
-02F3:  BCF    03.0
-02F4:  BSF    03.5
-02F5:  RLF    40,W
-02F6:  ANDLW  7E
-02F7:  IORLW  80
-02F8:  MOVWF  42
-02F9:  BCF    03.5
-02FA:  MOVF   13,W
-02FB:  BSF    03.5
-02FC:  MOVF   42,W
-02FD:  BCF    03.5
-02FE:  MOVWF  13
-02FF:  BSF    03.5
-0300:  RRF    14,W
-0301:  BTFSS  03.0
-0302:  GOTO   300
+0394:  BCF    03.0
+0395:  BSF    03.5
+0396:  RLF    57,W
+0397:  ANDLW  7E
+0398:  IORLW  80
+0399:  MOVWF  59
+039A:  BCF    03.5
+039B:  MOVF   13,W
+039C:  BSF    03.5
+039D:  MOVF   59,W
+039E:  BCF    03.5
+039F:  MOVWF  13
+03A0:  BSF    03.5
+03A1:  RRF    14,W
+03A2:  BTFSS  03.0
+03A3:  GOTO   3A1
 ....................   val =spi_read(0x00); 
-0303:  BCF    03.5
-0304:  MOVF   13,W
-0305:  CLRF   13
-0306:  BSF    03.5
-0307:  RRF    14,W
-0308:  BTFSS  03.0
-0309:  GOTO   307
-030A:  BCF    03.5
-030B:  MOVF   13,W
-030C:  BSF    03.5
-030D:  MOVWF  41
+03A4:  BCF    03.5
+03A5:  MOVF   13,W
+03A6:  CLRF   13
+03A7:  BSF    03.5
+03A8:  RRF    14,W
+03A9:  BTFSS  03.0
+03AA:  GOTO   3A8
+03AB:  BCF    03.5
+03AC:  MOVF   13,W
+03AD:  BSF    03.5
+03AE:  MOVWF  58
 ....................   output_high(CS); 
-030E:  BCF    05.5
-030F:  BCF    03.5
-0310:  BSF    05.5
+03AF:  BCF    05.5
+03B0:  BCF    03.5
+03B1:  BSF    05.5
 ....................   return val; 
-0311:  BSF    03.5
-0312:  MOVF   41,W
-0313:  MOVWF  78
-0314:  BCF    03.5
-0315:  RETURN
+03B2:  BSF    03.5
+03B3:  MOVF   58,W
+03B4:  MOVWF  78
+03B5:  BCF    03.5
+03B6:  RETURN
 .................... } 
 ....................  
 ....................  
@@ -4192,25 +4440,25 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 .................... void setBitMask(byte addr, byte mask) { 
 ....................   byte current; 
 ....................   current = readFromRegister(addr); 
-0316:  BSF    03.5
-0317:  MOVF   3D,W
-0318:  MOVWF  40
-0319:  BCF    03.5
-031A:  CALL   2EF
-031B:  MOVF   78,W
-031C:  BSF    03.5
-031D:  MOVWF  3F
+03B7:  BSF    03.5
+03B8:  MOVF   54,W
+03B9:  MOVWF  57
+03BA:  BCF    03.5
+03BB:  CALL   390
+03BC:  MOVF   78,W
+03BD:  BSF    03.5
+03BE:  MOVWF  56
 ....................   writeToRegister(addr, current | mask); 
-031E:  MOVF   3F,W
-031F:  IORWF  3E,W
-0320:  MOVWF  40
-0321:  MOVF   3D,W
-0322:  MOVWF  41
-0323:  MOVF   40,W
-0324:  MOVWF  42
-0325:  BCF    03.5
-0326:  CALL   2CE
-0327:  RETURN
+03BF:  MOVF   56,W
+03C0:  IORWF  55,W
+03C1:  MOVWF  57
+03C2:  MOVF   54,W
+03C3:  MOVWF  58
+03C4:  MOVF   57,W
+03C5:  MOVWF  59
+03C6:  BCF    03.5
+03C7:  CALL   36F
+03C8:  RETURN
 .................... } 
 ....................  
 .................... /**************************************************************************/ 
@@ -4224,26 +4472,26 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 ....................   byte current; 
 ....................   current = readFromRegister(addr); 
 *
-04E8:  BSF    03.5
-04E9:  MOVF   3D,W
-04EA:  MOVWF  40
-04EB:  BCF    03.5
-04EC:  CALL   2EF
-04ED:  MOVF   78,W
-04EE:  BSF    03.5
-04EF:  MOVWF  3F
+05DF:  BSF    03.5
+05E0:  MOVF   54,W
+05E1:  MOVWF  57
+05E2:  BCF    03.5
+05E3:  CALL   390
+05E4:  MOVF   78,W
+05E5:  BSF    03.5
+05E6:  MOVWF  56
 ....................   writeToRegister(addr, current & (~mask)); 
-04F0:  MOVF   3E,W
-04F1:  XORLW  FF
-04F2:  ANDWF  3F,W
-04F3:  MOVWF  40
-04F4:  MOVF   3D,W
-04F5:  MOVWF  41
-04F6:  MOVF   40,W
-04F7:  MOVWF  42
-04F8:  BCF    03.5
-04F9:  CALL   2CE
-04FA:  RETURN
+05E7:  MOVF   55,W
+05E8:  XORLW  FF
+05E9:  ANDWF  56,W
+05EA:  MOVWF  57
+05EB:  MOVF   54,W
+05EC:  MOVWF  58
+05ED:  MOVF   57,W
+05EE:  MOVWF  59
+05EF:  BCF    03.5
+05F0:  CALL   36F
+05F1:  RETURN
 .................... } 
 ....................  
 ....................  
@@ -4255,13 +4503,13 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 .................... void reset() { 
 ....................   writeToRegister(CommandReg, MFRC522_SOFTRESET); 
 *
-032C:  MOVLW  01
-032D:  BSF    03.5
-032E:  MOVWF  41
-032F:  MOVLW  0F
-0330:  MOVWF  42
-0331:  BCF    03.5
-0332:  CALL   2CE
+03CD:  MOVLW  01
+03CE:  BSF    03.5
+03CF:  MOVWF  58
+03D0:  MOVLW  0F
+03D1:  MOVWF  59
+03D2:  BCF    03.5
+03D3:  CALL   36F
 .................... } 
 ....................  
 ....................  
@@ -4274,114 +4522,114 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 .................... void MFRC_begin() { 
 ....................   output_high(CS); 
 *
-0328:  BSF    03.5
-0329:  BCF    05.5
-032A:  BCF    03.5
-032B:  BSF    05.5
+03C9:  BSF    03.5
+03CA:  BCF    05.5
+03CB:  BCF    03.5
+03CC:  BSF    05.5
 ....................   reset(); 
 ....................   //Timer: TPrescaler*TreloadVal/6.78MHz = 24ms 
 ....................   writeToRegister(TModeReg, 0x8D);    
 *
-0333:  MOVLW  2A
-0334:  BSF    03.5
-0335:  MOVWF  41
-0336:  MOVLW  8D
-0337:  MOVWF  42
-0338:  BCF    03.5
-0339:  CALL   2CE
+03D4:  MOVLW  2A
+03D5:  BSF    03.5
+03D6:  MOVWF  58
+03D7:  MOVLW  8D
+03D8:  MOVWF  59
+03D9:  BCF    03.5
+03DA:  CALL   36F
 ....................   delay_ms(20); // Tauto=1; f(Timer) = 6.78MHz/TPreScaler 
-033A:  MOVLW  14
-033B:  BSF    03.5
-033C:  MOVWF  3D
-033D:  BCF    03.5
-033E:  CALL   0B1
+03DB:  MOVLW  14
+03DC:  BSF    03.5
+03DD:  MOVWF  54
+03DE:  BCF    03.5
+03DF:  CALL   104
 ....................   writeToRegister(TPrescalerReg, 0x3E);  // TModeReg[3..0] + TPrescalerReg 
-033F:  MOVLW  2B
-0340:  BSF    03.5
-0341:  MOVWF  41
-0342:  MOVLW  3E
-0343:  MOVWF  42
-0344:  BCF    03.5
-0345:  CALL   2CE
+03E0:  MOVLW  2B
+03E1:  BSF    03.5
+03E2:  MOVWF  58
+03E3:  MOVLW  3E
+03E4:  MOVWF  59
+03E5:  BCF    03.5
+03E6:  CALL   36F
 ....................   delay_ms(20); 
-0346:  MOVLW  14
-0347:  BSF    03.5
-0348:  MOVWF  3D
-0349:  BCF    03.5
-034A:  CALL   0B1
+03E7:  MOVLW  14
+03E8:  BSF    03.5
+03E9:  MOVWF  54
+03EA:  BCF    03.5
+03EB:  CALL   104
 ....................   writeToRegister(TReloadRegL, 30); 
-034B:  MOVLW  2D
-034C:  BSF    03.5
-034D:  MOVWF  41
-034E:  MOVLW  1E
-034F:  MOVWF  42
-0350:  BCF    03.5
-0351:  CALL   2CE
+03EC:  MOVLW  2D
+03ED:  BSF    03.5
+03EE:  MOVWF  58
+03EF:  MOVLW  1E
+03F0:  MOVWF  59
+03F1:  BCF    03.5
+03F2:  CALL   36F
 ....................   delay_ms(20); 
-0352:  MOVLW  14
-0353:  BSF    03.5
-0354:  MOVWF  3D
-0355:  BCF    03.5
-0356:  CALL   0B1
+03F3:  MOVLW  14
+03F4:  BSF    03.5
+03F5:  MOVWF  54
+03F6:  BCF    03.5
+03F7:  CALL   104
 ....................   writeToRegister(TReloadRegH, 0); 
-0357:  MOVLW  2C
-0358:  BSF    03.5
-0359:  MOVWF  41
-035A:  CLRF   42
-035B:  BCF    03.5
-035C:  CALL   2CE
+03F8:  MOVLW  2C
+03F9:  BSF    03.5
+03FA:  MOVWF  58
+03FB:  CLRF   59
+03FC:  BCF    03.5
+03FD:  CALL   36F
 ....................   delay_ms(20); 
-035D:  MOVLW  14
-035E:  BSF    03.5
-035F:  MOVWF  3D
-0360:  BCF    03.5
-0361:  CALL   0B1
+03FE:  MOVLW  14
+03FF:  BSF    03.5
+0400:  MOVWF  54
+0401:  BCF    03.5
+0402:  CALL   104
 ....................   writeToRegister(TxAutoReg, 0x40);      // 100%ASK 
-0362:  MOVLW  15
-0363:  BSF    03.5
-0364:  MOVWF  41
-0365:  MOVLW  40
-0366:  MOVWF  42
-0367:  BCF    03.5
-0368:  CALL   2CE
+0403:  MOVLW  15
+0404:  BSF    03.5
+0405:  MOVWF  58
+0406:  MOVLW  40
+0407:  MOVWF  59
+0408:  BCF    03.5
+0409:  CALL   36F
 ....................   delay_ms(20); 
-0369:  MOVLW  14
-036A:  BSF    03.5
-036B:  MOVWF  3D
-036C:  BCF    03.5
-036D:  CALL   0B1
+040A:  MOVLW  14
+040B:  BSF    03.5
+040C:  MOVWF  54
+040D:  BCF    03.5
+040E:  CALL   104
 ....................   writeToRegister(ModeReg, 0x3D);        // CRC initial value 0x6363 
-036E:  MOVLW  11
-036F:  BSF    03.5
-0370:  MOVWF  41
-0371:  MOVLW  3D
-0372:  MOVWF  42
-0373:  BCF    03.5
-0374:  CALL   2CE
+040F:  MOVLW  11
+0410:  BSF    03.5
+0411:  MOVWF  58
+0412:  MOVLW  3D
+0413:  MOVWF  59
+0414:  BCF    03.5
+0415:  CALL   36F
 ....................   delay_ms(20); 
-0375:  MOVLW  14
-0376:  BSF    03.5
-0377:  MOVWF  3D
-0378:  BCF    03.5
-0379:  CALL   0B1
+0416:  MOVLW  14
+0417:  BSF    03.5
+0418:  MOVWF  54
+0419:  BCF    03.5
+041A:  CALL   104
 ....................  //writeToRegister(TxControlReg, 0x82);      
 ....................   delay_ms(20); 
-037A:  MOVLW  14
-037B:  BSF    03.5
-037C:  MOVWF  3D
-037D:  BCF    03.5
-037E:  CALL   0B1
+041B:  MOVLW  14
+041C:  BSF    03.5
+041D:  MOVWF  54
+041E:  BCF    03.5
+041F:  CALL   104
 ....................  setBitMask(TxControlReg, 0x03);        // Turn antenna on. 
-037F:  MOVLW  14
-0380:  BSF    03.5
-0381:  MOVWF  3D
-0382:  MOVLW  03
-0383:  MOVWF  3E
-0384:  BCF    03.5
-0385:  CALL   316
-0386:  BSF    0A.3
-0387:  BCF    0A.4
-0388:  GOTO   0D5 (RETURN)
+0420:  MOVLW  14
+0421:  BSF    03.5
+0422:  MOVWF  54
+0423:  MOVLW  03
+0424:  MOVWF  55
+0425:  BCF    03.5
+0426:  CALL   3B7
+0427:  BSF    0A.3
+0428:  BCF    0A.4
+0429:  GOTO   2ED (RETURN)
 .................... } 
 ....................  
 .................... /**************************************************************************/ 
@@ -4418,11 +4666,11 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 ....................  
 .................... int commandTag(byte cmd, byte *data, int dlen, byte *result, int *rlen) { 
 *
-04FB:  MOVLW  02
-04FC:  BSF    03.5
-04FD:  MOVWF  37
-04FE:  CLRF   38
-04FF:  CLRF   39
+05F2:  MOVLW  02
+05F3:  BSF    03.5
+05F4:  MOVWF  4E
+05F5:  CLRF   4F
+05F6:  CLRF   50
 ....................   int status = MI_ERR; 
 ....................   byte irqEn = 0x00; 
 ....................   byte waitIRq = 0x00; 
@@ -4430,327 +4678,327 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 ....................   int i; 
 ....................  
 ....................   switch (cmd) { 
-0500:  MOVF   2F,W
-0501:  XORLW  0E
-0502:  BCF    03.5
-0503:  BTFSC  03.2
-0504:  GOTO   509
-0505:  XORLW  02
-0506:  BTFSC  03.2
-0507:  GOTO   50F
-0508:  GOTO   516
+05F7:  MOVF   46,W
+05F8:  XORLW  0E
+05F9:  BCF    03.5
+05FA:  BTFSC  03.2
+05FB:  GOTO   600
+05FC:  XORLW  02
+05FD:  BTFSC  03.2
+05FE:  GOTO   606
+05FF:  GOTO   60D
 ....................   case MFRC522_AUTHENT: 
 ....................     irqEn = 0x12; 
-0509:  MOVLW  12
-050A:  BSF    03.5
-050B:  MOVWF  38
+0600:  MOVLW  12
+0601:  BSF    03.5
+0602:  MOVWF  4F
 ....................     waitIRq = 0x10; 
-050C:  MOVLW  10
-050D:  MOVWF  39
+0603:  MOVLW  10
+0604:  MOVWF  50
 ....................     break; 
-050E:  GOTO   517
+0605:  GOTO   60E
 ....................   case MFRC522_TRANSCEIVE: 
 ....................     irqEn = 0x77; 
-050F:  MOVLW  77
-0510:  BSF    03.5
-0511:  MOVWF  38
+0606:  MOVLW  77
+0607:  BSF    03.5
+0608:  MOVWF  4F
 ....................     waitIRq = 0x30; 
-0512:  MOVLW  30
-0513:  MOVWF  39
+0609:  MOVLW  30
+060A:  MOVWF  50
 ....................     break; 
-0514:  GOTO   517
-0515:  BCF    03.5
+060B:  GOTO   60E
+060C:  BCF    03.5
 ....................   default: 
 ....................     break; 
-0516:  BSF    03.5
+060D:  BSF    03.5
 ....................   } 
 ....................  
 ....................   writeToRegister(CommIEnReg, irqEn|0x80);    // interrupt request 
-0517:  MOVF   38,W
-0518:  IORLW  80
-0519:  MOVWF  3D
-051A:  MOVLW  02
-051B:  MOVWF  41
-051C:  MOVF   3D,W
-051D:  MOVWF  42
-051E:  BCF    03.5
-051F:  CALL   2CE
+060E:  MOVF   4F,W
+060F:  IORLW  80
+0610:  MOVWF  54
+0611:  MOVLW  02
+0612:  MOVWF  58
+0613:  MOVF   54,W
+0614:  MOVWF  59
+0615:  BCF    03.5
+0616:  CALL   36F
 ....................   clearBitMask(CommIrqReg, 0x80);             // Clear all interrupt requests bits. 
-0520:  MOVLW  04
-0521:  BSF    03.5
-0522:  MOVWF  3D
-0523:  MOVLW  80
-0524:  MOVWF  3E
-0525:  BCF    03.5
-0526:  CALL   4E8
+0617:  MOVLW  04
+0618:  BSF    03.5
+0619:  MOVWF  54
+061A:  MOVLW  80
+061B:  MOVWF  55
+061C:  BCF    03.5
+061D:  CALL   5DF
 ....................   setBitMask(FIFOLevelReg, 0x80);             // FlushBuffer=1, FIFO initialization. 
-0527:  MOVLW  0A
-0528:  BSF    03.5
-0529:  MOVWF  3D
-052A:  MOVLW  80
-052B:  MOVWF  3E
-052C:  BCF    03.5
-052D:  CALL   316
+061E:  MOVLW  0A
+061F:  BSF    03.5
+0620:  MOVWF  54
+0621:  MOVLW  80
+0622:  MOVWF  55
+0623:  BCF    03.5
+0624:  CALL   3B7
 ....................  
 ....................   writeToRegister(CommandReg, MFRC522_IDLE);  // No action, cancel the current command. 
-052E:  MOVLW  01
-052F:  BSF    03.5
-0530:  MOVWF  41
-0531:  CLRF   42
-0532:  BCF    03.5
-0533:  CALL   2CE
+0625:  MOVLW  01
+0626:  BSF    03.5
+0627:  MOVWF  58
+0628:  CLRF   59
+0629:  BCF    03.5
+062A:  CALL   36F
 ....................  
 ....................   // Write to FIFO 
 ....................   for (i=0; i < dlen; i++) { 
-0534:  BSF    03.5
-0535:  CLRF   3C
-0536:  MOVF   32,W
-0537:  SUBWF  3C,W
-0538:  BTFSC  03.0
-0539:  GOTO   54B
+062B:  BSF    03.5
+062C:  CLRF   53
+062D:  MOVF   49,W
+062E:  SUBWF  53,W
+062F:  BTFSC  03.0
+0630:  GOTO   642
 ....................     writeToRegister(FIFODataReg, data[i]); 
-053A:  MOVF   3C,W
-053B:  ADDWF  30,W
-053C:  MOVWF  04
-053D:  BCF    03.7
-053E:  BTFSC  31.0
-053F:  BSF    03.7
-0540:  MOVF   00,W
-0541:  MOVWF  3D
-0542:  MOVLW  09
-0543:  MOVWF  41
-0544:  MOVF   3D,W
-0545:  MOVWF  42
-0546:  BCF    03.5
-0547:  CALL   2CE
-0548:  BSF    03.5
-0549:  INCF   3C,F
-054A:  GOTO   536
+0631:  MOVF   53,W
+0632:  ADDWF  47,W
+0633:  MOVWF  04
+0634:  BCF    03.7
+0635:  BTFSC  48.0
+0636:  BSF    03.7
+0637:  MOVF   00,W
+0638:  MOVWF  54
+0639:  MOVLW  09
+063A:  MOVWF  58
+063B:  MOVF   54,W
+063C:  MOVWF  59
+063D:  BCF    03.5
+063E:  CALL   36F
+063F:  BSF    03.5
+0640:  INCF   53,F
+0641:  GOTO   62D
 ....................   } 
 ....................  
 ....................   // Execute the command. 
 ....................   writeToRegister(CommandReg, cmd); 
-054B:  MOVLW  01
-054C:  MOVWF  41
-054D:  MOVF   2F,W
-054E:  MOVWF  42
-054F:  BCF    03.5
-0550:  CALL   2CE
+0642:  MOVLW  01
+0643:  MOVWF  58
+0644:  MOVF   46,W
+0645:  MOVWF  59
+0646:  BCF    03.5
+0647:  CALL   36F
 ....................   if (cmd == MFRC522_TRANSCEIVE) { 
-0551:  BSF    03.5
-0552:  MOVF   2F,W
-0553:  SUBLW  0C
-0554:  BTFSS  03.2
-0555:  GOTO   55D
+0648:  BSF    03.5
+0649:  MOVF   46,W
+064A:  SUBLW  0C
+064B:  BTFSS  03.2
+064C:  GOTO   654
 ....................     setBitMask(BitFramingReg, 0x80);  // StartSend=1, transmission of data starts 
-0556:  MOVLW  0D
-0557:  MOVWF  3D
-0558:  MOVLW  80
-0559:  MOVWF  3E
-055A:  BCF    03.5
-055B:  CALL   316
-055C:  BSF    03.5
+064D:  MOVLW  0D
+064E:  MOVWF  54
+064F:  MOVLW  80
+0650:  MOVWF  55
+0651:  BCF    03.5
+0652:  CALL   3B7
+0653:  BSF    03.5
 ....................   } 
 ....................  
 ....................   // Waiting for the command to complete so we can receive data. 
 ....................   i = 25; // Max wait time is 25ms. 
-055D:  MOVLW  19
-055E:  MOVWF  3C
+0654:  MOVLW  19
+0655:  MOVWF  53
 ....................   do { 
 ....................     delay_ms(1); 
-055F:  MOVLW  01
-0560:  MOVWF  3D
-0561:  BCF    03.5
-0562:  CALL   0B1
+0656:  MOVLW  01
+0657:  MOVWF  54
+0658:  BCF    03.5
+0659:  CALL   104
 ....................     // CommIRqReg[7..0] 
 ....................     // Set1 TxIRq RxIRq IdleIRq HiAlerIRq LoAlertIRq ErrIRq TimerIRq 
 ....................     n = readFromRegister(CommIrqReg); 
-0563:  MOVLW  04
-0564:  BSF    03.5
-0565:  MOVWF  40
-0566:  BCF    03.5
-0567:  CALL   2EF
-0568:  MOVF   78,W
-0569:  BSF    03.5
-056A:  MOVWF  3B
+065A:  MOVLW  04
+065B:  BSF    03.5
+065C:  MOVWF  57
+065D:  BCF    03.5
+065E:  CALL   390
+065F:  MOVF   78,W
+0660:  BSF    03.5
+0661:  MOVWF  52
 ....................     i--; 
-056B:  DECF   3C,F
+0662:  DECF   53,F
 ....................   } while ((i!=0) && !(n&0x01) && !(n&waitIRq)); 
-056C:  MOVF   3C,F
-056D:  BTFSC  03.2
-056E:  GOTO   575
-056F:  BTFSC  3B.0
-0570:  GOTO   575
-0571:  MOVF   3B,W
-0572:  ANDWF  39,W
-0573:  BTFSC  03.2
-0574:  GOTO   55F
+0663:  MOVF   53,F
+0664:  BTFSC  03.2
+0665:  GOTO   66C
+0666:  BTFSC  52.0
+0667:  GOTO   66C
+0668:  MOVF   52,W
+0669:  ANDWF  50,W
+066A:  BTFSC  03.2
+066B:  GOTO   656
 ....................  
 ....................   clearBitMask(BitFramingReg, 0x80);  // StartSend=0 
-0575:  MOVLW  0D
-0576:  MOVWF  3D
-0577:  MOVLW  80
-0578:  MOVWF  3E
-0579:  BCF    03.5
-057A:  CALL   4E8
+066C:  MOVLW  0D
+066D:  MOVWF  54
+066E:  MOVLW  80
+066F:  MOVWF  55
+0670:  BCF    03.5
+0671:  CALL   5DF
 ....................  
 ....................   if (i != 0) { // Request did not time out. 
-057B:  BSF    03.5
-057C:  MOVF   3C,F
-057D:  BTFSC  03.2
-057E:  GOTO   5F2
+0672:  BSF    03.5
+0673:  MOVF   53,F
+0674:  BTFSC  03.2
+0675:  GOTO   6E9
 ....................     if(!(readFromRegister(ErrorReg) & 0x1D)) {  // BufferOvfl Collerr CRCErr ProtocolErr 
-057F:  MOVLW  06
-0580:  MOVWF  40
-0581:  BCF    03.5
-0582:  CALL   2EF
-0583:  MOVF   78,W
-0584:  ANDLW  1D
-0585:  BTFSS  03.2
-0586:  GOTO   5EF
+0676:  MOVLW  06
+0677:  MOVWF  57
+0678:  BCF    03.5
+0679:  CALL   390
+067A:  MOVF   78,W
+067B:  ANDLW  1D
+067C:  BTFSS  03.2
+067D:  GOTO   6E6
 ....................       status = MI_OK; 
-0587:  BSF    03.5
-0588:  CLRF   37
+067E:  BSF    03.5
+067F:  CLRF   4E
 ....................       if (n & irqEn & 0x01) { 
-0589:  MOVF   3B,W
-058A:  ANDWF  38,W
-058B:  ANDLW  01
-058C:  BTFSC  03.2
-058D:  GOTO   590
+0680:  MOVF   52,W
+0681:  ANDWF  4F,W
+0682:  ANDLW  01
+0683:  BTFSC  03.2
+0684:  GOTO   687
 ....................         status = MI_NOTAGERR; 
-058E:  MOVLW  01
-058F:  MOVWF  37
+0685:  MOVLW  01
+0686:  MOVWF  4E
 ....................       } 
 ....................  
 ....................       if (cmd == MFRC522_TRANSCEIVE) { 
-0590:  MOVF   2F,W
-0591:  SUBLW  0C
-0592:  BTFSS  03.2
-0593:  GOTO   5ED
+0687:  MOVF   46,W
+0688:  SUBLW  0C
+0689:  BTFSS  03.2
+068A:  GOTO   6E4
 ....................         n = readFromRegister(FIFOLevelReg); 
-0594:  MOVLW  0A
-0595:  MOVWF  40
-0596:  BCF    03.5
-0597:  CALL   2EF
-0598:  MOVF   78,W
-0599:  BSF    03.5
-059A:  MOVWF  3B
+068B:  MOVLW  0A
+068C:  MOVWF  57
+068D:  BCF    03.5
+068E:  CALL   390
+068F:  MOVF   78,W
+0690:  BSF    03.5
+0691:  MOVWF  52
 ....................         lastBits = readFromRegister(ControlReg) & 0x07; 
-059B:  MOVLW  0C
-059C:  MOVWF  40
-059D:  BCF    03.5
-059E:  CALL   2EF
-059F:  MOVF   78,W
-05A0:  ANDLW  07
-05A1:  BSF    03.5
-05A2:  MOVWF  3A
+0692:  MOVLW  0C
+0693:  MOVWF  57
+0694:  BCF    03.5
+0695:  CALL   390
+0696:  MOVF   78,W
+0697:  ANDLW  07
+0698:  BSF    03.5
+0699:  MOVWF  51
 ....................         if (lastBits) { 
-05A3:  MOVF   3A,F
-05A4:  BTFSC  03.2
-05A5:  GOTO   5B7
+069A:  MOVF   51,F
+069B:  BTFSC  03.2
+069C:  GOTO   6AE
 ....................           *rlen = (n-1)*8 + lastBits; 
-05A6:  MOVF   35,W
-05A7:  MOVWF  04
-05A8:  BCF    03.7
-05A9:  BTFSC  36.0
-05AA:  BSF    03.7
-05AB:  MOVLW  01
-05AC:  SUBWF  3B,W
-05AD:  MOVWF  77
-05AE:  RLF    77,F
-05AF:  RLF    77,F
-05B0:  RLF    77,F
-05B1:  MOVLW  F8
-05B2:  ANDWF  77,F
-05B3:  MOVF   77,W
-05B4:  ADDWF  3A,W
-05B5:  MOVWF  00
+069D:  MOVF   4C,W
+069E:  MOVWF  04
+069F:  BCF    03.7
+06A0:  BTFSC  4D.0
+06A1:  BSF    03.7
+06A2:  MOVLW  01
+06A3:  SUBWF  52,W
+06A4:  MOVWF  77
+06A5:  RLF    77,F
+06A6:  RLF    77,F
+06A7:  RLF    77,F
+06A8:  MOVLW  F8
+06A9:  ANDWF  77,F
+06AA:  MOVF   77,W
+06AB:  ADDWF  51,W
+06AC:  MOVWF  00
 ....................         } else { 
-05B6:  GOTO   5C4
+06AD:  GOTO   6BB
 ....................           *rlen = n*8; 
-05B7:  MOVF   35,W
-05B8:  MOVWF  04
-05B9:  BCF    03.7
-05BA:  BTFSC  36.0
-05BB:  BSF    03.7
-05BC:  RLF    3B,W
-05BD:  MOVWF  77
-05BE:  RLF    77,F
-05BF:  RLF    77,F
-05C0:  MOVLW  F8
-05C1:  ANDWF  77,F
-05C2:  MOVF   77,W
-05C3:  MOVWF  00
+06AE:  MOVF   4C,W
+06AF:  MOVWF  04
+06B0:  BCF    03.7
+06B1:  BTFSC  4D.0
+06B2:  BSF    03.7
+06B3:  RLF    52,W
+06B4:  MOVWF  77
+06B5:  RLF    77,F
+06B6:  RLF    77,F
+06B7:  MOVLW  F8
+06B8:  ANDWF  77,F
+06B9:  MOVF   77,W
+06BA:  MOVWF  00
 ....................         } 
 ....................  
 ....................         if (n == 0) { 
-05C4:  MOVF   3B,F
-05C5:  BTFSS  03.2
-05C6:  GOTO   5C9
+06BB:  MOVF   52,F
+06BC:  BTFSS  03.2
+06BD:  GOTO   6C0
 ....................           n = 1; 
-05C7:  MOVLW  01
-05C8:  MOVWF  3B
+06BE:  MOVLW  01
+06BF:  MOVWF  52
 ....................         } 
 ....................  
 ....................         if (n > MAX_LEN) { 
-05C9:  MOVF   3B,W
-05CA:  SUBLW  10
-05CB:  BTFSC  03.0
-05CC:  GOTO   5CF
+06C0:  MOVF   52,W
+06C1:  SUBLW  10
+06C2:  BTFSC  03.0
+06C3:  GOTO   6C6
 ....................           n = MAX_LEN; 
-05CD:  MOVLW  10
-05CE:  MOVWF  3B
+06C4:  MOVLW  10
+06C5:  MOVWF  52
 ....................         } 
 ....................  
 ....................         // Reading the recieved data from FIFO. 
 ....................         for (i=0; i<n; i++) { 
-05CF:  CLRF   3C
-05D0:  MOVF   3B,W
-05D1:  SUBWF  3C,W
-05D2:  BTFSC  03.0
-05D3:  GOTO   5ED
+06C6:  CLRF   53
+06C7:  MOVF   52,W
+06C8:  SUBWF  53,W
+06C9:  BTFSC  03.0
+06CA:  GOTO   6E4
 ....................           result[i] = readFromRegister(FIFODataReg); 
-05D4:  MOVF   3C,W
-05D5:  ADDWF  33,W
-05D6:  MOVWF  78
-05D7:  MOVF   34,W
-05D8:  MOVWF  7A
-05D9:  BTFSC  03.0
-05DA:  INCF   7A,F
-05DB:  MOVF   78,W
-05DC:  MOVWF  3D
-05DD:  MOVF   7A,W
-05DE:  MOVWF  3E
-05DF:  MOVLW  09
-05E0:  MOVWF  40
-05E1:  BCF    03.5
-05E2:  CALL   2EF
-05E3:  BSF    03.5
-05E4:  MOVF   3D,W
-05E5:  MOVWF  04
-05E6:  BCF    03.7
-05E7:  BTFSC  3E.0
-05E8:  BSF    03.7
-05E9:  MOVF   78,W
-05EA:  MOVWF  00
-05EB:  INCF   3C,F
-05EC:  GOTO   5D0
+06CB:  MOVF   53,W
+06CC:  ADDWF  4A,W
+06CD:  MOVWF  78
+06CE:  MOVF   4B,W
+06CF:  MOVWF  7A
+06D0:  BTFSC  03.0
+06D1:  INCF   7A,F
+06D2:  MOVF   78,W
+06D3:  MOVWF  54
+06D4:  MOVF   7A,W
+06D5:  MOVWF  55
+06D6:  MOVLW  09
+06D7:  MOVWF  57
+06D8:  BCF    03.5
+06D9:  CALL   390
+06DA:  BSF    03.5
+06DB:  MOVF   54,W
+06DC:  MOVWF  04
+06DD:  BCF    03.7
+06DE:  BTFSC  55.0
+06DF:  BSF    03.7
+06E0:  MOVF   78,W
+06E1:  MOVWF  00
+06E2:  INCF   53,F
+06E3:  GOTO   6C7
 ....................         } 
 ....................       } 
 ....................     } else { 
-05ED:  GOTO   5F2
-05EE:  BCF    03.5
+06E4:  GOTO   6E9
+06E5:  BCF    03.5
 ....................       status = MI_ERR; 
-05EF:  MOVLW  02
-05F0:  BSF    03.5
-05F1:  MOVWF  37
+06E6:  MOVLW  02
+06E7:  BSF    03.5
+06E8:  MOVWF  4E
 ....................     } 
 ....................   } 
 ....................   return status; 
-05F2:  MOVF   37,W
-05F3:  MOVWF  78
-05F4:  BCF    03.5
-05F5:  RETURN
+06E9:  MOVF   4E,W
+06EA:  MOVWF  78
+06EB:  BCF    03.5
+06EC:  RETURN
 .................... } 
 ....................  
 ....................  
@@ -4777,63 +5025,65 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 .................... int requestTag(byte mode, byte *data) { 
 ....................   int status, len; 
 ....................   writeToRegister(BitFramingReg, 0x07);  // TxLastBists = BitFramingReg[2..0] 
-05F6:  MOVLW  0D
-05F7:  BSF    03.5
-05F8:  MOVWF  41
-05F9:  MOVLW  07
-05FA:  MOVWF  42
-05FB:  BCF    03.5
-05FC:  CALL   2CE
+06ED:  MOVLW  0D
+06EE:  BSF    03.5
+06EF:  MOVWF  58
+06F0:  MOVLW  07
+06F1:  MOVWF  59
+06F2:  BCF    03.5
+06F3:  CALL   36F
 ....................  
 ....................   data[0] = mode; 
-05FD:  MOVF   7B,W
-05FE:  MOVWF  04
-05FF:  BCF    03.7
-0600:  BTFSC  7C.0
-0601:  BSF    03.7
-0602:  MOVF   75,W
-0603:  MOVWF  00
+06F4:  BSF    03.5
+06F5:  MOVF   32,W
+06F6:  MOVWF  04
+06F7:  BCF    03.7
+06F8:  BTFSC  33.0
+06F9:  BSF    03.7
+06FA:  MOVF   31,W
+06FB:  MOVWF  00
 ....................   status = commandTag(MFRC522_TRANSCEIVE, data, 1, data, &len); 
-0604:  MOVLW  0C
-0605:  BSF    03.5
-0606:  MOVWF  2F
-0607:  MOVF   7C,W
-0608:  MOVWF  31
-0609:  MOVF   7B,W
-060A:  MOVWF  30
-060B:  MOVLW  01
-060C:  MOVWF  32
-060D:  MOVF   7C,W
-060E:  MOVWF  34
-060F:  MOVF   7B,W
-0610:  MOVWF  33
-0611:  CLRF   36
-0612:  MOVLW  7D
-0613:  MOVWF  35
-0614:  BCF    03.5
-0615:  CALL   4FB
-0616:  MOVF   78,W
-0617:  MOVWF  76
+06FC:  MOVLW  0C
+06FD:  MOVWF  46
+06FE:  MOVF   33,W
+06FF:  MOVWF  48
+0700:  MOVF   32,W
+0701:  MOVWF  47
+0702:  MOVLW  01
+0703:  MOVWF  49
+0704:  MOVF   33,W
+0705:  MOVWF  4B
+0706:  MOVF   32,W
+0707:  MOVWF  4A
+0708:  CLRF   4D
+0709:  MOVLW  B5
+070A:  MOVWF  4C
+070B:  BCF    03.5
+070C:  CALL   5F2
+070D:  MOVF   78,W
+070E:  BSF    03.5
+070F:  MOVWF  34
 ....................  
 ....................   if ((status != MI_OK) || (len != 0x10)) { 
-0618:  MOVF   76,F
-0619:  BTFSS  03.2
-061A:  GOTO   61F
-061B:  MOVF   7D,W
-061C:  SUBLW  10
-061D:  BTFSC  03.2
-061E:  GOTO   621
+0710:  MOVF   34,F
+0711:  BTFSS  03.2
+0712:  GOTO   717
+0713:  MOVF   35,W
+0714:  SUBLW  10
+0715:  BTFSC  03.2
+0716:  GOTO   719
 ....................     status = MI_ERR; 
-061F:  MOVLW  02
-0620:  MOVWF  76
+0717:  MOVLW  02
+0718:  MOVWF  34
 ....................   } 
 ....................  
 ....................   return status; 
-0621:  MOVF   76,W
-0622:  MOVWF  78
-0623:  BSF    0A.3
-0624:  BCF    0A.4
-0625:  GOTO   0E0 (RETURN)
+0719:  MOVF   34,W
+071A:  MOVWF  78
+071B:  BCF    03.5
+071C:  BSF    0A.3
+071D:  BCF    0A.4
+071E:  GOTO   2FA (RETURN)
 .................... } 
 ....................  
 .................... /**************************************************************************/ 
@@ -4852,111 +5102,113 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 ....................  */ 
 .................... /**************************************************************************/ 
 .................... int antiCollision(byte *serial) { 
-0626:  CLRF   7E
+071F:  BSF    03.5
+0720:  CLRF   36
 ....................   int status, i, len; 
 ....................   byte check = 0x00; 
 ....................  
 ....................   writeToRegister(BitFramingReg, 0x00);  // TxLastBits = BitFramingReg[2..0] 
-0627:  MOVLW  0D
-0628:  BSF    03.5
-0629:  MOVWF  41
-062A:  CLRF   42
-062B:  BCF    03.5
-062C:  CALL   2CE
+0721:  MOVLW  0D
+0722:  MOVWF  58
+0723:  CLRF   59
+0724:  BCF    03.5
+0725:  CALL   36F
 ....................  
 ....................   serial[0] = MF1_ANTICOLL; 
-062D:  MOVF   75,W
-062E:  MOVWF  04
-062F:  BCF    03.7
-0630:  BTFSC  76.0
-0631:  BSF    03.7
-0632:  MOVLW  93
-0633:  MOVWF  00
+0726:  BSF    03.5
+0727:  MOVF   31,W
+0728:  MOVWF  04
+0729:  BCF    03.7
+072A:  BTFSC  32.0
+072B:  BSF    03.7
+072C:  MOVLW  93
+072D:  MOVWF  00
 ....................   serial[1] = 0x20; 
-0634:  MOVLW  01
-0635:  ADDWF  75,W
-0636:  MOVWF  04
-0637:  BCF    03.7
-0638:  BTFSC  76.0
-0639:  BSF    03.7
-063A:  MOVLW  20
-063B:  MOVWF  00
+072E:  MOVLW  01
+072F:  ADDWF  31,W
+0730:  MOVWF  04
+0731:  BCF    03.7
+0732:  BTFSC  32.0
+0733:  BSF    03.7
+0734:  MOVLW  20
+0735:  MOVWF  00
 ....................   status = commandTag(MFRC522_TRANSCEIVE, serial, 2, serial, &len); 
-063C:  MOVLW  0C
-063D:  BSF    03.5
-063E:  MOVWF  2F
-063F:  MOVF   76,W
-0640:  MOVWF  31
-0641:  MOVF   75,W
-0642:  MOVWF  30
-0643:  MOVLW  02
-0644:  MOVWF  32
-0645:  MOVF   76,W
-0646:  MOVWF  34
-0647:  MOVF   75,W
-0648:  MOVWF  33
-0649:  CLRF   36
-064A:  MOVLW  7D
-064B:  MOVWF  35
-064C:  BCF    03.5
-064D:  CALL   4FB
-064E:  MOVF   78,W
-064F:  MOVWF  7B
+0736:  MOVLW  0C
+0737:  MOVWF  46
+0738:  MOVF   32,W
+0739:  MOVWF  48
+073A:  MOVF   31,W
+073B:  MOVWF  47
+073C:  MOVLW  02
+073D:  MOVWF  49
+073E:  MOVF   32,W
+073F:  MOVWF  4B
+0740:  MOVF   31,W
+0741:  MOVWF  4A
+0742:  CLRF   4D
+0743:  MOVLW  B5
+0744:  MOVWF  4C
+0745:  BCF    03.5
+0746:  CALL   5F2
+0747:  MOVF   78,W
+0748:  BSF    03.5
+0749:  MOVWF  33
 ....................   len = len / 8; // len is in bits, and we want each byte. 
-0650:  RRF    7D,F
-0651:  RRF    7D,F
-0652:  RRF    7D,F
-0653:  MOVLW  1F
-0654:  ANDWF  7D,F
+074A:  RRF    35,F
+074B:  RRF    35,F
+074C:  RRF    35,F
+074D:  MOVLW  1F
+074E:  ANDWF  35,F
 ....................   if (status == MI_OK) { 
-0655:  MOVF   7B,F
-0656:  BTFSS  03.2
-0657:  GOTO   674
+074F:  MOVF   33,F
+0750:  BTFSS  03.2
+0751:  GOTO   76E
 ....................     // The checksum of the tag is the ^ of all the values. 
 ....................     for (i = 0; i < len-1; i++) { 
-0658:  CLRF   7C
-0659:  MOVLW  01
-065A:  SUBWF  7D,W
-065B:  SUBWF  7C,W
-065C:  BTFSC  03.0
-065D:  GOTO   668
+0752:  CLRF   34
+0753:  MOVLW  01
+0754:  SUBWF  35,W
+0755:  SUBWF  34,W
+0756:  BTFSC  03.0
+0757:  GOTO   762
 ....................       check ^= serial[i]; 
-065E:  MOVF   7C,W
-065F:  ADDWF  75,W
-0660:  MOVWF  04
-0661:  BCF    03.7
-0662:  BTFSC  76.0
-0663:  BSF    03.7
-0664:  MOVF   00,W
-0665:  XORWF  7E,F
-0666:  INCF   7C,F
-0667:  GOTO   659
+0758:  MOVF   34,W
+0759:  ADDWF  31,W
+075A:  MOVWF  04
+075B:  BCF    03.7
+075C:  BTFSC  32.0
+075D:  BSF    03.7
+075E:  MOVF   00,W
+075F:  XORWF  36,F
+0760:  INCF   34,F
+0761:  GOTO   753
 ....................     } 
 ....................     // The checksum should be the same as the one provided from the 
 ....................     // tag (serial[4]). 
 ....................     if (check != serial[i]) { 
-0668:  MOVF   7C,W
-0669:  ADDWF  75,W
-066A:  MOVWF  04
-066B:  BCF    03.7
-066C:  BTFSC  76.0
-066D:  BSF    03.7
-066E:  MOVF   00,W
-066F:  SUBWF  7E,W
-0670:  BTFSC  03.2
-0671:  GOTO   674
+0762:  MOVF   34,W
+0763:  ADDWF  31,W
+0764:  MOVWF  04
+0765:  BCF    03.7
+0766:  BTFSC  32.0
+0767:  BSF    03.7
+0768:  MOVF   00,W
+0769:  SUBWF  36,W
+076A:  BTFSC  03.2
+076B:  GOTO   76E
 ....................       status = MI_ERR; 
-0672:  MOVLW  02
-0673:  MOVWF  7B
+076C:  MOVLW  02
+076D:  MOVWF  33
 ....................     } 
 ....................   } 
 ....................  
 ....................   return status; 
-0674:  MOVF   7B,W
-0675:  MOVWF  78
-0676:  BSF    0A.3
-0677:  BCF    0A.4
-0678:  GOTO   0F4 (RETURN)
+076E:  MOVF   33,W
+076F:  MOVWF  78
+0770:  BCF    03.5
+0771:  BSF    0A.3
+0772:  BCF    0A.4
+0773:  GOTO   310 (RETURN)
 .................... } 
 ....................  
 .................... /**************************************************************************/ 
@@ -4977,128 +5229,134 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 ....................  
 ....................   clearBitMask(DivIrqReg, 0x04);   // CRCIrq = 0 
 *
-06BE:  MOVLW  05
-06BF:  BSF    03.5
-06C0:  MOVWF  3D
-06C1:  MOVLW  04
-06C2:  MOVWF  3E
-06C3:  BCF    03.5
-06C4:  CALL   4E8
+0800:  MOVLW  05
+0801:  BSF    03.5
+0802:  MOVWF  54
+0803:  MOVLW  04
+0804:  MOVWF  55
+0805:  BCF    0A.3
+0806:  BCF    03.5
+0807:  CALL   5DF
+0808:  BSF    0A.3
 ....................   setBitMask(FIFOLevelReg, 0x80);  // Clear the FIFO pointer 
-06C5:  MOVLW  0A
-06C6:  BSF    03.5
-06C7:  MOVWF  3D
-06C8:  MOVLW  80
-06C9:  MOVWF  3E
-06CA:  BCF    03.5
-06CB:  CALL   316
+0809:  MOVLW  0A
+080A:  BSF    03.5
+080B:  MOVWF  54
+080C:  MOVLW  80
+080D:  MOVWF  55
+080E:  BCF    0A.3
+080F:  BCF    03.5
+0810:  CALL   3B7
+0811:  BSF    0A.3
 ....................  
 ....................   //Writing data to the FIFO. 
 ....................   for (i = 0; i < len; i++) { 
-06CC:  BSF    03.5
-06CD:  CLRF   2E
-06CE:  MOVF   2B,W
-06CF:  SUBWF  2E,W
-06D0:  BTFSC  03.0
-06D1:  GOTO   6E3
+0812:  BSF    03.5
+0813:  CLRF   45
+0814:  MOVF   42,W
+0815:  SUBWF  45,W
+0816:  BTFSC  03.0
+0817:  GOTO   02B
 ....................     writeToRegister(FIFODataReg, data[i]); 
-06D2:  MOVF   2E,W
-06D3:  ADDWF  29,W
-06D4:  MOVWF  04
-06D5:  BCF    03.7
-06D6:  BTFSC  2A.0
-06D7:  BSF    03.7
-06D8:  MOVF   00,W
-06D9:  MOVWF  30
-06DA:  MOVLW  09
-06DB:  MOVWF  41
-06DC:  MOVF   30,W
-06DD:  MOVWF  42
-06DE:  BCF    03.5
-06DF:  CALL   2CE
-06E0:  BSF    03.5
-06E1:  INCF   2E,F
-06E2:  GOTO   6CE
+0818:  MOVF   45,W
+0819:  ADDWF  40,W
+081A:  MOVWF  04
+081B:  BCF    03.7
+081C:  BTFSC  41.0
+081D:  BSF    03.7
+081E:  MOVF   00,W
+081F:  MOVWF  47
+0820:  MOVLW  09
+0821:  MOVWF  58
+0822:  MOVF   47,W
+0823:  MOVWF  59
+0824:  BCF    0A.3
+0825:  BCF    03.5
+0826:  CALL   36F
+0827:  BSF    0A.3
+0828:  BSF    03.5
+0829:  INCF   45,F
+082A:  GOTO   014
 ....................   } 
 ....................   writeToRegister(CommandReg, MFRC522_CALCCRC); 
-06E3:  MOVLW  01
-06E4:  MOVWF  41
-06E5:  MOVLW  03
-06E6:  MOVWF  42
-06E7:  BCF    03.5
-06E8:  CALL   2CE
+082B:  MOVLW  01
+082C:  MOVWF  58
+082D:  MOVLW  03
+082E:  MOVWF  59
+082F:  BCF    0A.3
+0830:  BCF    03.5
+0831:  CALL   36F
+0832:  BSF    0A.3
 ....................  
 ....................   // Wait for the CRC calculation to complete. 
 ....................   i = 0xFF; 
-06E9:  MOVLW  FF
-06EA:  BSF    03.5
-06EB:  MOVWF  2E
+0833:  MOVLW  FF
+0834:  BSF    03.5
+0835:  MOVWF  45
 ....................   do { 
 ....................     n = readFromRegister(DivIrqReg); 
-06EC:  MOVLW  05
-06ED:  MOVWF  40
-06EE:  BCF    03.5
-06EF:  CALL   2EF
-06F0:  MOVF   78,W
-06F1:  BSF    03.5
-06F2:  MOVWF  2F
+0836:  MOVLW  05
+0837:  MOVWF  57
+0838:  BCF    0A.3
+0839:  BCF    03.5
+083A:  CALL   390
+083B:  BSF    0A.3
+083C:  MOVF   78,W
+083D:  BSF    03.5
+083E:  MOVWF  46
 ....................     i--; 
-06F3:  DECF   2E,F
+083F:  DECF   45,F
 ....................   } while ((i != 0) && !(n & 0x04));  //CRCIrq = 1 
-06F4:  MOVF   2E,F
-06F5:  BTFSC  03.2
-06F6:  GOTO   6F9
-06F7:  BTFSS  2F.2
-06F8:  GOTO   6EC
+0840:  MOVF   45,F
+0841:  BTFSC  03.2
+0842:  GOTO   045
+0843:  BTFSS  46.2
+0844:  GOTO   036
 ....................  
 ....................   // Read the result from the CRC calculation. 
 ....................   result[0] = readFromRegister(CRCResultRegL); 
-06F9:  MOVF   2C,W
-06FA:  MOVWF  78
-06FB:  MOVF   2D,W
-06FC:  MOVWF  7A
-06FD:  MOVF   2C,W
-06FE:  MOVWF  30
-06FF:  MOVF   2D,W
-0700:  MOVWF  31
-0701:  MOVLW  22
-0702:  MOVWF  40
-0703:  BCF    03.5
-0704:  CALL   2EF
-0705:  BSF    03.5
-0706:  MOVF   30,W
-0707:  MOVWF  04
-0708:  BCF    03.7
-0709:  BTFSC  31.0
-070A:  BSF    03.7
-070B:  MOVF   78,W
-070C:  MOVWF  00
+0845:  MOVF   43,W
+0846:  MOVWF  47
+0847:  MOVF   44,W
+0848:  MOVWF  48
+0849:  MOVLW  22
+084A:  MOVWF  57
+084B:  BCF    0A.3
+084C:  BCF    03.5
+084D:  CALL   390
+084E:  BSF    0A.3
+084F:  BSF    03.5
+0850:  MOVF   47,W
+0851:  MOVWF  04
+0852:  BCF    03.7
+0853:  BTFSC  48.0
+0854:  BSF    03.7
+0855:  MOVF   78,W
+0856:  MOVWF  00
 ....................   result[1] = readFromRegister(CRCResultRegM); 
-070D:  MOVLW  01
-070E:  ADDWF  2C,W
-070F:  MOVWF  78
-0710:  MOVF   2D,W
-0711:  MOVWF  7A
-0712:  BTFSC  03.0
-0713:  INCF   7A,F
-0714:  MOVF   78,W
-0715:  MOVWF  30
-0716:  MOVF   7A,W
-0717:  MOVWF  31
-0718:  MOVLW  21
-0719:  MOVWF  40
-071A:  BCF    03.5
-071B:  CALL   2EF
-071C:  BSF    03.5
-071D:  MOVF   30,W
-071E:  MOVWF  04
-071F:  BCF    03.7
-0720:  BTFSC  31.0
-0721:  BSF    03.7
-0722:  MOVF   78,W
-0723:  MOVWF  00
-0724:  BCF    03.5
-0725:  RETURN
+0857:  MOVLW  01
+0858:  ADDWF  43,W
+0859:  MOVWF  47
+085A:  MOVF   44,W
+085B:  MOVWF  48
+085C:  BTFSC  03.0
+085D:  INCF   48,F
+085E:  MOVLW  21
+085F:  MOVWF  57
+0860:  BCF    0A.3
+0861:  BCF    03.5
+0862:  CALL   390
+0863:  BSF    0A.3
+0864:  BSF    03.5
+0865:  MOVF   47,W
+0866:  MOVWF  04
+0867:  BCF    03.7
+0868:  BTFSC  48.0
+0869:  BSF    03.7
+086A:  MOVF   78,W
+086B:  MOVWF  00
+086C:  BCF    03.5
+086D:  RETURN
 .................... } 
 ....................  
 .................... /**************************************************************************/ 
@@ -5114,108 +5372,108 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 ....................   byte buffer[9]; 
 ....................  
 ....................   buffer[0] = MF1_SELECTTAG; 
-0726:  MOVLW  93
-0727:  BSF    03.5
-0728:  MOVWF  20
+086E:  MOVLW  93
+086F:  BSF    03.5
+0870:  MOVWF  37
 ....................   buffer[1] = 0x70; 
-0729:  MOVLW  70
-072A:  MOVWF  21
+0871:  MOVLW  70
+0872:  MOVWF  38
 ....................   for (i = 0; i < 5; i++) { 
-072B:  CLRF   7B
-072C:  MOVF   7B,W
-072D:  SUBLW  04
-072E:  BTFSS  03.0
-072F:  GOTO   74C
+0873:  CLRF   33
+0874:  MOVF   33,W
+0875:  SUBLW  04
+0876:  BTFSS  03.0
+0877:  GOTO   094
 ....................     buffer[i+2] = serial[i]; 
-0730:  MOVLW  02
-0731:  ADDWF  7B,W
-0732:  ADDLW  A0
-0733:  MOVWF  78
-0734:  CLRF   7A
-0735:  BTFSC  03.0
-0736:  INCF   7A,F
-0737:  MOVF   78,W
-0738:  MOVWF  29
-0739:  MOVF   7A,W
-073A:  MOVWF  2A
-073B:  MOVF   7B,W
-073C:  ADDWF  75,W
-073D:  MOVWF  04
-073E:  BCF    03.7
-073F:  BTFSC  76.0
-0740:  BSF    03.7
-0741:  MOVF   00,W
-0742:  MOVWF  2B
-0743:  MOVF   29,W
-0744:  MOVWF  04
-0745:  BCF    03.7
-0746:  BTFSC  2A.0
-0747:  BSF    03.7
-0748:  MOVF   2B,W
-0749:  MOVWF  00
-074A:  INCF   7B,F
-074B:  GOTO   72C
+0878:  MOVLW  02
+0879:  ADDWF  33,W
+087A:  ADDLW  B7
+087B:  MOVWF  78
+087C:  CLRF   7A
+087D:  BTFSC  03.0
+087E:  INCF   7A,F
+087F:  MOVF   78,W
+0880:  MOVWF  40
+0881:  MOVF   7A,W
+0882:  MOVWF  41
+0883:  MOVF   33,W
+0884:  ADDWF  31,W
+0885:  MOVWF  04
+0886:  BCF    03.7
+0887:  BTFSC  32.0
+0888:  BSF    03.7
+0889:  MOVF   00,W
+088A:  MOVWF  42
+088B:  MOVF   40,W
+088C:  MOVWF  04
+088D:  BCF    03.7
+088E:  BTFSC  41.0
+088F:  BSF    03.7
+0890:  MOVF   42,W
+0891:  MOVWF  00
+0892:  INCF   33,F
+0893:  GOTO   074
 ....................   } 
 ....................   calculateCRC(buffer, 7, &buffer[7]); 
-074C:  CLRF   2A
-074D:  MOVLW  A0
-074E:  MOVWF  29
-074F:  MOVLW  07
-0750:  MOVWF  2B
-0751:  CLRF   2D
-0752:  MOVLW  A7
-0753:  MOVWF  2C
-0754:  BCF    03.5
-0755:  CALL   6BE
+0894:  CLRF   41
+0895:  MOVLW  B7
+0896:  MOVWF  40
+0897:  MOVLW  07
+0898:  MOVWF  42
+0899:  CLRF   44
+089A:  MOVLW  BE
+089B:  MOVWF  43
+089C:  BCF    03.5
+089D:  CALL   000
 ....................  
 ....................   status = commandTag(MFRC522_TRANSCEIVE, buffer, 9, buffer, &len); 
-0756:  MOVLW  0C
-0757:  BSF    03.5
-0758:  MOVWF  2F
-0759:  CLRF   31
-075A:  MOVLW  A0
-075B:  MOVWF  30
-075C:  MOVLW  09
-075D:  MOVWF  32
-075E:  CLRF   34
-075F:  MOVLW  A0
-0760:  MOVWF  33
-0761:  CLRF   36
-0762:  MOVLW  7D
-0763:  MOVWF  35
-0764:  BCF    03.5
-0765:  CALL   4FB
-0766:  MOVF   78,W
-0767:  MOVWF  7C
+089E:  MOVLW  0C
+089F:  BSF    03.5
+08A0:  MOVWF  46
+08A1:  CLRF   48
+08A2:  MOVLW  B7
+08A3:  MOVWF  47
+08A4:  MOVLW  09
+08A5:  MOVWF  49
+08A6:  CLRF   4B
+08A7:  MOVLW  B7
+08A8:  MOVWF  4A
+08A9:  CLRF   4D
+08AA:  MOVLW  B5
+08AB:  MOVWF  4C
+08AC:  BCF    0A.3
+08AD:  BCF    03.5
+08AE:  CALL   5F2
+08AF:  BSF    0A.3
+08B0:  MOVF   78,W
+08B1:  BSF    03.5
+08B2:  MOVWF  34
 ....................  
 ....................   if ((status == MI_OK) && (len == 0x18)) { 
-0768:  MOVF   7C,F
-0769:  BTFSS  03.2
-076A:  GOTO   774
-076B:  MOVF   7D,W
-076C:  SUBLW  18
-076D:  BTFSS  03.2
-076E:  GOTO   774
+08B3:  MOVF   34,F
+08B4:  BTFSS  03.2
+08B5:  GOTO   0BD
+08B6:  MOVF   35,W
+08B7:  SUBLW  18
+08B8:  BTFSS  03.2
+08B9:  GOTO   0BD
 ....................     sak = buffer[0]; 
-076F:  BSF    03.5
-0770:  MOVF   20,W
-0771:  MOVWF  7E
+08BA:  MOVF   37,W
+08BB:  MOVWF  36
 ....................   } 
-0772:  GOTO   776
-0773:  BCF    03.5
+08BC:  GOTO   0BE
 ....................   else { 
 ....................     sak = 0; 
-0774:  CLRF   7E
-0775:  BSF    03.5
+08BD:  CLRF   36
 ....................   } 
 ....................  
 ....................   return sak; 
-0776:  MOVF   7E,W
-0777:  MOVWF  78
-0778:  BCF    03.5
-0779:  BSF    0A.3
-077A:  BCF    0A.4
-077B:  GOTO   14B (RETURN)
+08BE:  MOVF   36,W
+08BF:  MOVWF  78
+08C0:  BCF    03.5
+08C1:  BSF    0A.3
+08C2:  BCF    0A.4
+08C3:  GOTO   36C (RETURN)
 .................... } 
 ....................  
 .................... /**************************************************************************/ 
@@ -5236,128 +5494,132 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 ....................  
 ....................   //Verify the command block address + sector + password + tag serial number 
 ....................   buffer[0] = mode;          // 0th byte is the mode 
-077C:  MOVF   75,W
-077D:  BSF    03.5
-077E:  MOVWF  23
+08C4:  BSF    03.5
+08C5:  MOVF   31,W
+08C6:  MOVWF  3A
 ....................   buffer[1] = block;         // 1st byte is the block to address. 
-077F:  MOVF   76,W
-0780:  MOVWF  24
+08C7:  MOVF   32,W
+08C8:  MOVWF  3B
 ....................   for (i = 0; i < 6; i++) {  // 2nd to 7th byte is the authentication key. 
-0781:  CLRF   20
-0782:  MOVF   20,W
-0783:  SUBLW  05
-0784:  BTFSS  03.0
-0785:  GOTO   7A2
+08C9:  CLRF   37
+08CA:  MOVF   37,W
+08CB:  SUBLW  05
+08CC:  BTFSS  03.0
+08CD:  GOTO   0EA
 ....................     buffer[i+2] = key[i]; 
-0786:  MOVLW  02
-0787:  ADDWF  20,W
-0788:  ADDLW  A3
-0789:  MOVWF  78
-078A:  CLRF   7A
-078B:  BTFSC  03.0
-078C:  INCF   7A,F
-078D:  MOVF   78,W
-078E:  MOVWF  2F
-078F:  MOVF   7A,W
-0790:  MOVWF  30
-0791:  MOVF   20,W
-0792:  ADDWF  7B,W
-0793:  MOVWF  04
-0794:  BCF    03.7
-0795:  BTFSC  7C.0
-0796:  BSF    03.7
-0797:  MOVF   00,W
-0798:  MOVWF  31
-0799:  MOVF   2F,W
-079A:  MOVWF  04
-079B:  BCF    03.7
-079C:  BTFSC  30.0
-079D:  BSF    03.7
-079E:  MOVF   31,W
-079F:  MOVWF  00
-07A0:  INCF   20,F
-07A1:  GOTO   782
+08CE:  MOVLW  02
+08CF:  ADDWF  37,W
+08D0:  ADDLW  BA
+08D1:  MOVWF  78
+08D2:  CLRF   7A
+08D3:  BTFSC  03.0
+08D4:  INCF   7A,F
+08D5:  MOVF   78,W
+08D6:  MOVWF  46
+08D7:  MOVF   7A,W
+08D8:  MOVWF  47
+08D9:  MOVF   37,W
+08DA:  ADDWF  33,W
+08DB:  MOVWF  04
+08DC:  BCF    03.7
+08DD:  BTFSC  34.0
+08DE:  BSF    03.7
+08DF:  MOVF   00,W
+08E0:  MOVWF  48
+08E1:  MOVF   46,W
+08E2:  MOVWF  04
+08E3:  BCF    03.7
+08E4:  BTFSC  47.0
+08E5:  BSF    03.7
+08E6:  MOVF   48,W
+08E7:  MOVWF  00
+08E8:  INCF   37,F
+08E9:  GOTO   0CA
 ....................   } 
 ....................   for (i = 0; i < 4; i++) {  // 8th to 11th byte is the serial of the tag. 
-07A2:  CLRF   20
-07A3:  MOVF   20,W
-07A4:  SUBLW  03
-07A5:  BTFSS  03.0
-07A6:  GOTO   7C3
+08EA:  CLRF   37
+08EB:  MOVF   37,W
+08EC:  SUBLW  03
+08ED:  BTFSS  03.0
+08EE:  GOTO   10B
 ....................     buffer[i+8] = serial[i]; 
-07A7:  MOVLW  08
-07A8:  ADDWF  20,W
-07A9:  ADDLW  A3
-07AA:  MOVWF  78
-07AB:  CLRF   7A
-07AC:  BTFSC  03.0
-07AD:  INCF   7A,F
-07AE:  MOVF   78,W
-07AF:  MOVWF  2F
-07B0:  MOVF   7A,W
-07B1:  MOVWF  30
-07B2:  MOVF   20,W
-07B3:  ADDWF  7D,W
-07B4:  MOVWF  04
-07B5:  BCF    03.7
-07B6:  BTFSC  7E.0
-07B7:  BSF    03.7
-07B8:  MOVF   00,W
-07B9:  MOVWF  31
-07BA:  MOVF   2F,W
-07BB:  MOVWF  04
-07BC:  BCF    03.7
-07BD:  BTFSC  30.0
-07BE:  BSF    03.7
-07BF:  MOVF   31,W
-07C0:  MOVWF  00
-07C1:  INCF   20,F
-07C2:  GOTO   7A3
+08EF:  MOVLW  08
+08F0:  ADDWF  37,W
+08F1:  ADDLW  BA
+08F2:  MOVWF  78
+08F3:  CLRF   7A
+08F4:  BTFSC  03.0
+08F5:  INCF   7A,F
+08F6:  MOVF   78,W
+08F7:  MOVWF  46
+08F8:  MOVF   7A,W
+08F9:  MOVWF  47
+08FA:  MOVF   37,W
+08FB:  ADDWF  35,W
+08FC:  MOVWF  04
+08FD:  BCF    03.7
+08FE:  BTFSC  36.0
+08FF:  BSF    03.7
+0900:  MOVF   00,W
+0901:  MOVWF  48
+0902:  MOVF   46,W
+0903:  MOVWF  04
+0904:  BCF    03.7
+0905:  BTFSC  47.0
+0906:  BSF    03.7
+0907:  MOVF   48,W
+0908:  MOVWF  00
+0909:  INCF   37,F
+090A:  GOTO   0EB
 ....................   } 
 ....................  
 ....................   status = commandTag(MFRC522_AUTHENT, buffer, 12, buffer, &len); 
-07C3:  MOVLW  0E
-07C4:  MOVWF  2F
-07C5:  CLRF   31
-07C6:  MOVLW  A3
-07C7:  MOVWF  30
-07C8:  MOVLW  0C
-07C9:  MOVWF  32
-07CA:  CLRF   34
-07CB:  MOVLW  A3
-07CC:  MOVWF  33
-07CD:  CLRF   36
-07CE:  MOVLW  A2
-07CF:  MOVWF  35
-07D0:  BCF    03.5
-07D1:  CALL   4FB
-07D2:  MOVF   78,W
-07D3:  BSF    03.5
-07D4:  MOVWF  21
+090B:  MOVLW  0E
+090C:  MOVWF  46
+090D:  CLRF   48
+090E:  MOVLW  BA
+090F:  MOVWF  47
+0910:  MOVLW  0C
+0911:  MOVWF  49
+0912:  CLRF   4B
+0913:  MOVLW  BA
+0914:  MOVWF  4A
+0915:  CLRF   4D
+0916:  MOVLW  B9
+0917:  MOVWF  4C
+0918:  BCF    0A.3
+0919:  BCF    03.5
+091A:  CALL   5F2
+091B:  BSF    0A.3
+091C:  MOVF   78,W
+091D:  BSF    03.5
+091E:  MOVWF  38
 ....................  
 ....................   if ((status != MI_OK) || (!(readFromRegister(Status2Reg) & 0x08))) { 
-07D5:  MOVF   21,F
-07D6:  BTFSS  03.2
-07D7:  GOTO   7DF
-07D8:  MOVLW  08
-07D9:  MOVWF  40
-07DA:  BCF    03.5
-07DB:  CALL   2EF
-07DC:  BTFSC  78.3
-07DD:  GOTO   7E2
-07DE:  BSF    03.5
+091F:  MOVF   38,F
+0920:  BTFSS  03.2
+0921:  GOTO   12B
+0922:  MOVLW  08
+0923:  MOVWF  57
+0924:  BCF    0A.3
+0925:  BCF    03.5
+0926:  CALL   390
+0927:  BSF    0A.3
+0928:  BTFSC  78.3
+0929:  GOTO   12E
+092A:  BSF    03.5
 ....................     status = MI_ERR; 
-07DF:  MOVLW  02
-07E0:  MOVWF  21
-07E1:  BCF    03.5
+092B:  MOVLW  02
+092C:  MOVWF  38
+092D:  BCF    03.5
 ....................   } 
 ....................  
 ....................   return status; 
-07E2:  BSF    03.5
-07E3:  MOVF   21,W
-07E4:  MOVWF  78
-07E5:  BCF    03.5
-07E6:  RETURN
+092E:  BSF    03.5
+092F:  MOVF   38,W
+0930:  MOVWF  78
+0931:  BCF    03.5
+0932:  RETURN
 .................... } 
 ....................  
 ....................  
@@ -5375,94 +5637,97 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 ....................   int status, len; 
 ....................  
 ....................   result[0] = MF1_READ; 
-*
-0800:  MOVF   7B,W
-0801:  MOVWF  04
-0802:  BCF    03.7
-0803:  BTFSC  7C.0
-0804:  BSF    03.7
-0805:  MOVLW  30
-0806:  MOVWF  00
+0933:  BSF    03.5
+0934:  MOVF   32,W
+0935:  MOVWF  04
+0936:  BCF    03.7
+0937:  BTFSC  33.0
+0938:  BSF    03.7
+0939:  MOVLW  30
+093A:  MOVWF  00
 ....................   result[1] = block; 
-0807:  MOVLW  01
-0808:  ADDWF  7B,W
-0809:  MOVWF  04
-080A:  BCF    03.7
-080B:  BTFSC  7C.0
-080C:  BSF    03.7
-080D:  MOVF   75,W
-080E:  MOVWF  00
+093B:  MOVLW  01
+093C:  ADDWF  32,W
+093D:  MOVWF  04
+093E:  BCF    03.7
+093F:  BTFSC  33.0
+0940:  BSF    03.7
+0941:  MOVF   31,W
+0942:  MOVWF  00
 ....................   calculateCRC(result, 2, &result[2]); 
-080F:  MOVLW  02
-0810:  ADDWF  7B,W
-0811:  BSF    03.5
-0812:  MOVWF  20
-0813:  MOVF   7C,W
-0814:  MOVWF  21
-0815:  BTFSC  03.0
-0816:  INCF   21,F
-0817:  MOVF   7C,W
-0818:  MOVWF  2A
-0819:  MOVF   7B,W
-081A:  MOVWF  29
-081B:  MOVLW  02
-081C:  MOVWF  2B
-081D:  MOVF   21,W
-081E:  MOVWF  2D
-081F:  MOVF   20,W
-0820:  MOVWF  2C
-0821:  BCF    0A.3
-0822:  BCF    03.5
-0823:  CALL   6BE
-0824:  BSF    0A.3
+0943:  MOVLW  02
+0944:  ADDWF  32,W
+0945:  MOVWF  78
+0946:  MOVF   33,W
+0947:  MOVWF  7A
+0948:  BTFSC  03.0
+0949:  INCF   7A,F
+094A:  MOVF   78,W
+094B:  MOVWF  36
+094C:  MOVF   7A,W
+094D:  MOVWF  37
+094E:  MOVF   33,W
+094F:  MOVWF  41
+0950:  MOVF   32,W
+0951:  MOVWF  40
+0952:  MOVLW  02
+0953:  MOVWF  42
+0954:  MOVF   37,W
+0955:  MOVWF  44
+0956:  MOVF   36,W
+0957:  MOVWF  43
+0958:  BCF    03.5
+0959:  CALL   000
 ....................   status = commandTag(MFRC522_TRANSCEIVE, result, 4, result, &len); 
-0825:  MOVLW  0C
-0826:  BSF    03.5
-0827:  MOVWF  2F
-0828:  MOVF   7C,W
-0829:  MOVWF  31
-082A:  MOVF   7B,W
-082B:  MOVWF  30
-082C:  MOVLW  04
-082D:  MOVWF  32
-082E:  MOVF   7C,W
-082F:  MOVWF  34
-0830:  MOVF   7B,W
-0831:  MOVWF  33
-0832:  CLRF   36
-0833:  MOVLW  7D
-0834:  MOVWF  35
-0835:  BCF    0A.3
-0836:  BCF    03.5
-0837:  CALL   4FB
-0838:  BSF    0A.3
-0839:  MOVF   78,W
-083A:  MOVWF  76
+095A:  MOVLW  0C
+095B:  BSF    03.5
+095C:  MOVWF  46
+095D:  MOVF   33,W
+095E:  MOVWF  48
+095F:  MOVF   32,W
+0960:  MOVWF  47
+0961:  MOVLW  04
+0962:  MOVWF  49
+0963:  MOVF   33,W
+0964:  MOVWF  4B
+0965:  MOVF   32,W
+0966:  MOVWF  4A
+0967:  CLRF   4D
+0968:  MOVLW  B5
+0969:  MOVWF  4C
+096A:  BCF    0A.3
+096B:  BCF    03.5
+096C:  CALL   5F2
+096D:  BSF    0A.3
+096E:  MOVF   78,W
+096F:  BSF    03.5
+0970:  MOVWF  34
 ....................  
 ....................   if ((status != MI_OK) || (len != 0x90)) { 
-083B:  MOVF   76,F
-083C:  BTFSS  03.2
-083D:  GOTO   042
-083E:  MOVF   7D,W
-083F:  SUBLW  90
-0840:  BTFSC  03.2
-0841:  GOTO   044
+0971:  MOVF   34,F
+0972:  BTFSS  03.2
+0973:  GOTO   178
+0974:  MOVF   35,W
+0975:  SUBLW  90
+0976:  BTFSC  03.2
+0977:  GOTO   17A
 ....................     status = MI_ERR; 
-0842:  MOVLW  02
-0843:  MOVWF  76
+0978:  MOVLW  02
+0979:  MOVWF  34
 ....................   } 
 ....................  
 ....................   return status; 
-0844:  MOVF   76,W
-0845:  MOVWF  78
-0846:  RETURN
+097A:  MOVF   34,W
+097B:  MOVWF  78
+097C:  BCF    03.5
+097D:  RETURN
 .................... } 
 ....................  
 .................... /**************************************************************************/ 
 .................... /*! 
 ....................   @brief   Tries to write to a block on the current tag. 
 ....................   @param   block  The block that we want to write to. 
-....................   @param   data   The data that we shoudl write to the block. 
+....................   @param   data   The data that we should write to the block. 
 ....................   @returns Returns the status of the collision detection. 
 ....................            MI_ERR        if something went wrong, 
 ....................            MI_OK         if everything went OK. 
@@ -5481,7 +5746,9 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 ....................     status = MI_ERR; 
 ....................   } 
 ....................  
+....................  
 ....................   if (status == MI_OK) { 
+....................        
 ....................     for (i = 0; i < 16; i++) { 
 ....................       buffer[i] = data[i]; 
 ....................     } 
@@ -5510,67 +5777,67 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 ....................   byte buffer[4]; 
 ....................  
 ....................   buffer[0] = MF1_HALT; 
-0847:  MOVLW  50
-0848:  MOVWF  7B
+*
+07C6:  MOVLW  50
+07C7:  BSF    03.5
+07C8:  MOVWF  33
 ....................   buffer[1] = 0; 
-0849:  CLRF   7C
+07C9:  CLRF   34
 ....................   calculateCRC(buffer, 2, &buffer[2]); 
-084A:  BSF    03.5
-084B:  CLRF   2A
-084C:  MOVLW  7B
-084D:  MOVWF  29
-084E:  MOVLW  02
-084F:  MOVWF  2B
-0850:  CLRF   2D
-0851:  MOVLW  7D
-0852:  MOVWF  2C
-0853:  BCF    0A.3
-0854:  BCF    03.5
-0855:  CALL   6BE
-0856:  BSF    0A.3
+07CA:  CLRF   41
+07CB:  MOVLW  B3
+07CC:  MOVWF  40
+07CD:  MOVLW  02
+07CE:  MOVWF  42
+07CF:  CLRF   44
+07D0:  MOVLW  B5
+07D1:  MOVWF  43
+07D2:  BSF    0A.3
+07D3:  BCF    03.5
+07D4:  CALL   000
+07D5:  BCF    0A.3
 ....................   status = commandTag(MFRC522_TRANSCEIVE, buffer, 4, buffer, &len); 
-0857:  MOVLW  0C
-0858:  BSF    03.5
-0859:  MOVWF  2F
-085A:  CLRF   31
-085B:  MOVLW  7B
-085C:  MOVWF  30
-085D:  MOVLW  04
-085E:  MOVWF  32
-085F:  CLRF   34
-0860:  MOVLW  7B
-0861:  MOVWF  33
-0862:  CLRF   36
-0863:  MOVLW  76
-0864:  MOVWF  35
-0865:  BCF    0A.3
-0866:  BCF    03.5
-0867:  CALL   4FB
-0868:  BSF    0A.3
-0869:  MOVF   78,W
-086A:  MOVWF  75
+07D6:  MOVLW  0C
+07D7:  BSF    03.5
+07D8:  MOVWF  46
+07D9:  CLRF   48
+07DA:  MOVLW  B3
+07DB:  MOVWF  47
+07DC:  MOVLW  04
+07DD:  MOVWF  49
+07DE:  CLRF   4B
+07DF:  MOVLW  B3
+07E0:  MOVWF  4A
+07E1:  CLRF   4D
+07E2:  MOVLW  B2
+07E3:  MOVWF  4C
+07E4:  BCF    03.5
+07E5:  CALL   5F2
+07E6:  MOVF   78,W
+07E7:  BSF    03.5
+07E8:  MOVWF  31
 ....................   clearBitMask(Status2Reg, 0x08);  // turn off encryption 
-086B:  MOVLW  08
-086C:  BSF    03.5
-086D:  MOVWF  3D
-086E:  MOVWF  3E
-086F:  BCF    0A.3
-0870:  BCF    03.5
-0871:  CALL   4E8
-0872:  BSF    0A.3
+07E9:  MOVLW  08
+07EA:  MOVWF  54
+07EB:  MOVWF  55
+07EC:  BCF    03.5
+07ED:  CALL   5DF
 ....................   return status; 
-0873:  MOVF   75,W
-0874:  MOVWF  78
-0875:  BSF    0A.3
-0876:  BCF    0A.4
-0877:  GOTO   25D (RETURN)
+07EE:  BSF    03.5
+07EF:  MOVF   31,W
+07F0:  MOVWF  78
+07F1:  BCF    03.5
+07F2:  BSF    0A.3
+07F3:  BCF    0A.4
+07F4:  GOTO   3B4 (RETURN)
 .................... } 
 ....................  
 ....................  
 .................... //// 
 .................... //  Mifare Card Types Depending upon the codes of SAK from AN1083.PDF 
 .................... //// 
-.................... enum MIFARE_CARD_TYPE{ 
+....................  
+.................... enum MIFARE_CARD_TYPE { 
 ....................     UID_FAILED = 0x00, 
 ....................     UID_NOT_COMPLETE = 0x04, 
 ....................     MIFARE_MINI = 0x09, 
@@ -5589,27 +5856,64 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 .................... byte i; //for looping 
 .................... byte j; //for looping again 
 .................... byte status; // to store the return status of command operations 
-.................... byte data[MAX_LEN];//to store any data 
+.................... byte data[MAX_LEN]; //to store any data 
 ....................  
 .................... char buffer2[20]; 
 ....................  
 .................... //keys for the card 
-.................... byte keyA[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF }; 
+.................... byte keyA[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}; 
 *
-0893:  MOVLW  FF
-0894:  MOVWF  65
-0895:  MOVWF  66
-0896:  MOVWF  67
-0897:  MOVWF  68
-0898:  MOVWF  69
-0899:  MOVWF  6A
-.................... byte keyB[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF }; 
-089A:  MOVWF  6B
-089B:  MOVWF  6C
-089C:  MOVWF  6D
-089D:  MOVWF  6E
-089E:  MOVWF  6F
-089F:  MOVWF  70
+0A89:  MOVLW  FF
+0A8A:  MOVWF  65
+0A8B:  MOVWF  66
+0A8C:  MOVWF  67
+0A8D:  MOVWF  68
+0A8E:  MOVWF  69
+0A8F:  MOVWF  6A
+.................... byte keyB[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}; 
+0A90:  MOVWF  6B
+0A91:  MOVWF  6C
+0A92:  MOVWF  6D
+0A93:  MOVWF  6E
+0A94:  MOVWF  6F
+0A95:  MOVWF  70
+....................  
+....................  
+.................... //writeable data  
+.................... byte writeData[] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, 0x10}; 
+0A96:  MOVLW  01
+0A97:  BSF    03.5
+0A98:  MOVWF  20
+0A99:  MOVLW  02
+0A9A:  MOVWF  21
+0A9B:  MOVLW  03
+0A9C:  MOVWF  22
+0A9D:  MOVLW  04
+0A9E:  MOVWF  23
+0A9F:  MOVLW  05
+0AA0:  MOVWF  24
+0AA1:  MOVLW  06
+0AA2:  MOVWF  25
+0AA3:  MOVLW  07
+0AA4:  MOVWF  26
+0AA5:  MOVLW  08
+0AA6:  MOVWF  27
+0AA7:  MOVLW  09
+0AA8:  MOVWF  28
+0AA9:  MOVLW  0A
+0AAA:  MOVWF  29
+0AAB:  MOVLW  0B
+0AAC:  MOVWF  2A
+0AAD:  MOVLW  0C
+0AAE:  MOVWF  2B
+0AAF:  MOVLW  0D
+0AB0:  MOVWF  2C
+0AB1:  MOVLW  0E
+0AB2:  MOVWF  2D
+0AB3:  MOVLW  0F
+0AB4:  MOVWF  2E
+0AB5:  MOVLW  10
+0AB6:  MOVWF  2F
 ....................  
 ....................  
 ....................  
@@ -5617,766 +5921,879 @@ CCS PCM C Compiler, Version 5.078, 43599               05-Jul-18 13:49
 .................... ///     Check RFID Hardware 
 .................... ///////// 
 ....................  
-.................... void CheckRFIDHardware(){ 
-....................      
-....................     char version;   ///Version of RFID read/writer is stored 0x92 is version 2.0 
-....................                     ///Version 1.0 is 0x91 
+.................... void CheckRFIDHardware() { 
+....................  
+....................     char version; ///Version of RFID read/writer is stored 0x92 is version 2.0 
+....................     ///Version 1.0 is 0x91 
 ....................  
 ....................     lcd_putc("\f Checking RFID..."); 
 *
-0404:  MOVLW  04
-0405:  BSF    03.6
-0406:  MOVWF  0D
-0407:  MOVLW  00
-0408:  MOVWF  0F
-0409:  BCF    03.6
-040A:  CALL   22C
+04CD:  MOVLW  04
+04CE:  BSF    03.6
+04CF:  MOVWF  0D
+04D0:  MOVLW  00
+04D1:  MOVWF  0F
+04D2:  BCF    03.6
+04D3:  CALL   285
 ....................     printf("\r\nChecking If Rfid Is Connected"); 
-040B:  MOVLW  0E
-040C:  BSF    03.6
-040D:  MOVWF  0D
-040E:  MOVLW  00
-040F:  MOVWF  0F
-0410:  BCF    03.6
-0411:  CALL   27C
-....................      
+04D4:  MOVLW  0E
+04D5:  BSF    03.6
+04D6:  MOVWF  0D
+04D7:  MOVLW  00
+04D8:  MOVWF  0F
+04D9:  BCF    03.6
+04DA:  CALL   2F9
+....................  
 ....................     //Request from the register 
 ....................     version = readFromRegister(VersionReg); 
-0412:  MOVLW  37
-0413:  BSF    03.5
-0414:  MOVWF  40
-0415:  BCF    03.5
-0416:  CALL   2EF
-0417:  MOVF   78,W
-0418:  MOVWF  75
+04DB:  MOVLW  37
+04DC:  BSF    03.5
+04DD:  MOVWF  57
+04DE:  BCF    03.5
+04DF:  CALL   390
+04E0:  MOVF   78,W
+04E1:  BSF    03.5
+04E2:  MOVWF  31
 ....................     delay_ms(100); 
-0419:  MOVLW  64
-041A:  BSF    03.5
-041B:  MOVWF  3D
-041C:  BCF    03.5
-041D:  CALL   0B1
+04E3:  MOVLW  64
+04E4:  MOVWF  54
+04E5:  BCF    03.5
+04E6:  CALL   104
 ....................  
-....................      
+....................  
 ....................     //response is 00 then hardware is not connected 
-....................     if(!version){ 
-041E:  MOVF   75,F
-041F:  BTFSS  03.2
-0420:  GOTO   438
+....................     if (!version) { 
+04E7:  BSF    03.5
+04E8:  MOVF   31,F
+04E9:  BTFSS  03.2
+04EA:  GOTO   504
 ....................         lcd_putc("\f RFID Not Found \n Check Again.."); 
-0421:  MOVLW  1E
-0422:  BSF    03.6
-0423:  MOVWF  0D
-0424:  MOVLW  00
-0425:  MOVWF  0F
-0426:  BCF    03.6
-0427:  CALL   22C
+04EB:  MOVLW  1E
+04EC:  BCF    03.5
+04ED:  BSF    03.6
+04EE:  MOVWF  0D
+04EF:  MOVLW  00
+04F0:  MOVWF  0F
+04F1:  BCF    03.6
+04F2:  CALL   285
 ....................         printf("\r\nRFID Hw not Found"); 
-0428:  MOVLW  2F
-0429:  BSF    03.6
-042A:  MOVWF  0D
-042B:  MOVLW  00
-042C:  MOVWF  0F
-042D:  BCF    03.6
-042E:  CALL   27C
+04F3:  MOVLW  2F
+04F4:  BSF    03.6
+04F5:  MOVWF  0D
+04F6:  MOVLW  00
+04F7:  MOVWF  0F
+04F8:  BCF    03.6
+04F9:  CALL   2F9
 ....................         delay_ms(5000); 
-042F:  MOVLW  14
-0430:  MOVWF  76
-0431:  MOVLW  FA
-0432:  BSF    03.5
-0433:  MOVWF  3D
-0434:  BCF    03.5
-0435:  CALL   0B1
-0436:  DECFSZ 76,F
-0437:  GOTO   431
+04FA:  MOVLW  14
+04FB:  BSF    03.5
+04FC:  MOVWF  32
+04FD:  MOVLW  FA
+04FE:  MOVWF  54
+04FF:  BCF    03.5
+0500:  CALL   104
+0501:  BSF    03.5
+0502:  DECFSZ 32,F
+0503:  GOTO   4FD
 ....................     } 
-....................     if(version){ 
-0438:  MOVF   75,F
-0439:  BTFSC  03.2
-043A:  GOTO   4E5
+....................     if (version) { 
+0504:  MOVF   31,F
+0505:  BTFSC  03.2
+0506:  GOTO   5DB
 ....................         lcd_putc("\f RFID Found"); 
-043B:  MOVLW  39
-043C:  BSF    03.6
-043D:  MOVWF  0D
-043E:  MOVLW  00
-043F:  MOVWF  0F
-0440:  BCF    03.6
-0441:  CALL   22C
-....................         printf(lcd_putc,"\nV: %x",version); 
-0442:  MOVLW  40
-0443:  BSF    03.6
-0444:  MOVWF  0D
-0445:  MOVLW  00
-0446:  MOVWF  0F
-0447:  BCF    03.0
-0448:  MOVLW  04
-0449:  MOVWF  76
+0507:  MOVLW  39
+0508:  BCF    03.5
+0509:  BSF    03.6
+050A:  MOVWF  0D
+050B:  MOVLW  00
+050C:  MOVWF  0F
+050D:  BCF    03.6
+050E:  CALL   285
+....................         printf(lcd_putc, "\nV: %x", version); 
+050F:  MOVLW  40
+0510:  BSF    03.6
+0511:  MOVWF  0D
+0512:  MOVLW  00
+0513:  MOVWF  0F
+0514:  BCF    03.0
+0515:  MOVLW  04
+0516:  BSF    03.5
+0517:  BCF    03.6
+0518:  MOVWF  32
 *
-049B:  MOVF   75,W
-049C:  MOVWF  76
-049D:  MOVLW  57
-049E:  MOVWF  7B
-....................         printf("\r\nRFID Found and HW version is: 0x%2X\r\n",version); 
+058F:  MOVF   31,W
+0590:  MOVWF  32
+0591:  MOVLW  57
+0592:  MOVWF  33
+....................         printf("\r\nRFID Found and HW version is: 0x%2X\r\n", version); 
 *
-04C5:  MOVLW  44
-04C6:  BSF    03.6
-04C7:  MOVWF  0D
-04C8:  MOVLW  00
-04C9:  MOVWF  0F
-04CA:  BCF    03.0
-04CB:  MOVLW  22
-04CC:  MOVWF  76
-04CD:  BCF    03.6
-04CE:  CALL   389
-04CF:  MOVF   75,W
-04D0:  MOVWF  76
-04D1:  MOVLW  37
-04D2:  MOVWF  7B
-04D3:  CALL   3E1
-04D4:  MOVLW  0D
-04D5:  BTFSS  0C.4
-04D6:  GOTO   4D5
-04D7:  MOVWF  19
-04D8:  MOVLW  0A
-04D9:  BTFSS  0C.4
-04DA:  GOTO   4D9
-04DB:  MOVWF  19
+05B6:  MOVLW  44
+05B7:  BSF    03.6
+05B8:  MOVWF  0D
+05B9:  MOVLW  00
+05BA:  MOVWF  0F
+05BB:  BCF    03.0
+05BC:  MOVLW  22
+05BD:  BSF    03.5
+05BE:  BCF    03.6
+05BF:  MOVWF  32
+05C0:  BCF    03.5
+05C1:  CALL   42A
+05C2:  BSF    03.5
+05C3:  MOVF   31,W
+05C4:  MOVWF  32
+05C5:  MOVLW  37
+05C6:  MOVWF  33
+05C7:  BCF    03.5
+05C8:  CALL   4A6
+05C9:  MOVLW  0D
+05CA:  BTFSS  0C.4
+05CB:  GOTO   5CA
+05CC:  MOVWF  19
+05CD:  MOVLW  0A
+05CE:  BTFSS  0C.4
+05CF:  GOTO   5CE
+05D0:  MOVWF  19
 ....................         delay_ms(1000); 
-04DC:  MOVLW  04
-04DD:  MOVWF  76
-04DE:  MOVLW  FA
-04DF:  BSF    03.5
-04E0:  MOVWF  3D
-04E1:  BCF    03.5
-04E2:  CALL   0B1
-04E3:  DECFSZ 76,F
-04E4:  GOTO   4DE
+05D1:  MOVLW  04
+05D2:  BSF    03.5
+05D3:  MOVWF  32
+05D4:  MOVLW  FA
+05D5:  MOVWF  54
+05D6:  BCF    03.5
+05D7:  CALL   104
+05D8:  BSF    03.5
+05D9:  DECFSZ 32,F
+05DA:  GOTO   5D4
 ....................     } 
-04E5:  BSF    0A.3
-04E6:  BCF    0A.4
-04E7:  GOTO   0D8 (RETURN)
+05DB:  BCF    03.5
+05DC:  BSF    0A.3
+05DD:  BCF    0A.4
+05DE:  GOTO   2F0 (RETURN)
 ....................  
-.................... }  
+.................... } 
 ....................  
-.................... void main() {    
+....................  
+.................... ////// 
+.................... ///     Function to read all the data from the card 
+.................... ///     Read all the data from the mifare card and out puts to serial terminal     
+.................... ///// 
+....................  
+.................... void readMifareCard(void) { 
+....................  
+....................     //s50 has 64 blocks of memory 
+....................     for (i = 0; i < 64; i++) { 
 *
-0878:  MOVF   03,W
-0879:  ANDLW  1F
-087A:  MOVWF  03
-087B:  CLRF   20
-087C:  MOVLW  0C
-087D:  BSF    03.5
-087E:  MOVWF  19
-087F:  MOVLW  A6
-0880:  MOVWF  18
-0881:  MOVLW  90
-0882:  BCF    03.5
-0883:  MOVWF  18
-0884:  CLRF   72
-0885:  CLRF   71
-0886:  MOVLW  FF
-0887:  MOVWF  73
-0888:  BSF    03.5
-0889:  BSF    1F.0
-088A:  BSF    1F.1
-088B:  BSF    1F.2
-088C:  BCF    1F.3
-088D:  MOVLW  07
-088E:  MOVWF  1C
-088F:  BCF    03.7
-....................      
+097E:  CLRF   3E
+097F:  MOVF   3E,W
+0980:  SUBLW  3F
+0981:  BTFSS  03.0
+0982:  GOTO   26B
+....................         // Try to authenticate each block first with the A key. 
+....................         status = authenticate(MF1_AUTHENT1A, i, keyA, serial); 
+0983:  MOVLW  60
+0984:  BSF    03.5
+0985:  MOVWF  31
+0986:  BCF    03.5
+0987:  MOVF   3E,W
+0988:  BSF    03.5
+0989:  MOVWF  32
+098A:  CLRF   34
+098B:  MOVLW  65
+098C:  MOVWF  33
+098D:  CLRF   36
+098E:  MOVLW  39
+098F:  MOVWF  35
+0990:  BCF    03.5
+0991:  CALL   0C4
+0992:  MOVF   78,W
+0993:  MOVWF  40
+....................         if (MI_OK == status) { 
+0994:  MOVF   40,F
+0995:  BTFSS  03.2
+0996:  GOTO   1F0
+....................             // printf("Authenticated block 0x%2X with A\r\n",i); 
+....................             printf("\r\n"); //a new line each block 
+0997:  MOVLW  0D
+0998:  BTFSS  0C.4
+0999:  GOTO   198
+099A:  MOVWF  19
+099B:  MOVLW  0A
+099C:  BTFSS  0C.4
+099D:  GOTO   19C
+099E:  MOVWF  19
+....................             //now read the block i  
+....................             status = readFromTag(i, data); 
+099F:  MOVF   3E,W
+09A0:  BSF    03.5
+09A1:  MOVWF  31
+09A2:  CLRF   33
+09A3:  MOVLW  41
+09A4:  MOVWF  32
+09A5:  BCF    03.5
+09A6:  CALL   133
+09A7:  MOVF   78,W
+09A8:  MOVWF  40
+....................             if (MI_OK == status) { 
+09A9:  MOVF   40,F
+09AA:  BTFSS  03.2
+09AB:  GOTO   1E6
+....................                 for (j = 0; j < 15; j++) { 
+09AC:  CLRF   3F
+09AD:  MOVF   3F,W
+09AE:  SUBLW  0E
+09AF:  BTFSS  03.0
+09B0:  GOTO   1D4
+....................                     printf("0x%2X, ", data[j]); 
+09B1:  MOVLW  41
+09B2:  ADDWF  3F,W
+09B3:  MOVWF  04
+09B4:  BCF    03.7
+09B5:  MOVF   00,W
+09B6:  BSF    03.5
+09B7:  MOVWF  31
+09B8:  MOVLW  30
+09B9:  BCF    03.5
+09BA:  BTFSS  0C.4
+09BB:  GOTO   1BA
+09BC:  MOVWF  19
+09BD:  MOVLW  78
+09BE:  BTFSS  0C.4
+09BF:  GOTO   1BE
+09C0:  MOVWF  19
+09C1:  BSF    03.5
+09C2:  MOVF   31,W
+09C3:  MOVWF  32
+09C4:  MOVLW  37
+09C5:  MOVWF  33
+09C6:  BCF    0A.3
+09C7:  BCF    03.5
+09C8:  CALL   4A6
+09C9:  BSF    0A.3
+09CA:  MOVLW  2C
+09CB:  BTFSS  0C.4
+09CC:  GOTO   1CB
+09CD:  MOVWF  19
+09CE:  MOVLW  20
+09CF:  BTFSS  0C.4
+09D0:  GOTO   1CF
+09D1:  MOVWF  19
+09D2:  INCF   3F,F
+09D3:  GOTO   1AD
+....................                 } 
+....................                 printf("0x%2X", data[15]); 
+09D4:  MOVLW  30
+09D5:  BTFSS  0C.4
+09D6:  GOTO   1D5
+09D7:  MOVWF  19
+09D8:  MOVLW  78
+09D9:  BTFSS  0C.4
+09DA:  GOTO   1D9
+09DB:  MOVWF  19
+09DC:  MOVF   50,W
+09DD:  BSF    03.5
+09DE:  MOVWF  32
+09DF:  MOVLW  37
+09E0:  MOVWF  33
+09E1:  BCF    0A.3
+09E2:  BCF    03.5
+09E3:  CALL   4A6
+09E4:  BSF    0A.3
+....................             } else { 
+09E5:  GOTO   1EF
+....................                 printf("Read failed\r\n"); 
+09E6:  MOVLW  58
+09E7:  BSF    03.6
+09E8:  MOVWF  0D
+09E9:  MOVLW  00
+09EA:  MOVWF  0F
+09EB:  BCF    0A.3
+09EC:  BCF    03.6
+09ED:  CALL   2F9
+09EE:  BSF    0A.3
+....................             } 
+....................  
+....................         } else { 
+09EF:  GOTO   269
+....................             //try to authenticate with key B 
+....................             status = authenticate(MF1_AUTHENT1B, i, keyB, serial); 
+09F0:  MOVLW  61
+09F1:  BSF    03.5
+09F2:  MOVWF  31
+09F3:  BCF    03.5
+09F4:  MOVF   3E,W
+09F5:  BSF    03.5
+09F6:  MOVWF  32
+09F7:  CLRF   34
+09F8:  MOVLW  6B
+09F9:  MOVWF  33
+09FA:  CLRF   36
+09FB:  MOVLW  39
+09FC:  MOVWF  35
+09FD:  BCF    03.5
+09FE:  CALL   0C4
+09FF:  MOVF   78,W
+0A00:  MOVWF  40
+....................             if (MI_OK == status) { 
+0A01:  MOVF   40,F
+0A02:  BTFSS  03.2
+0A03:  GOTO   252
+....................                 //printf("Authenticated block 0x%2X with key B",i); 
+....................                 printf("\r\n"); //a new line each block 
+0A04:  MOVLW  0D
+0A05:  BTFSS  0C.4
+0A06:  GOTO   205
+0A07:  MOVWF  19
+0A08:  MOVLW  0A
+0A09:  BTFSS  0C.4
+0A0A:  GOTO   209
+0A0B:  MOVWF  19
+....................  
+....................                 //read from block 
+....................                 status = readFromTag(i, data); 
+0A0C:  MOVF   3E,W
+0A0D:  BSF    03.5
+0A0E:  MOVWF  31
+0A0F:  CLRF   33
+0A10:  MOVLW  41
+0A11:  MOVWF  32
+0A12:  BCF    03.5
+0A13:  CALL   133
+0A14:  MOVF   78,W
+0A15:  MOVWF  40
+....................  
+....................                 if (MI_OK == status) { 
+0A16:  MOVF   40,F
+0A17:  BTFSS  03.2
+0A18:  GOTO   248
+....................                     for (j = 0; j < 15; j++) { 
+0A19:  CLRF   3F
+0A1A:  MOVF   3F,W
+0A1B:  SUBLW  0E
+0A1C:  BTFSS  03.0
+0A1D:  GOTO   236
+....................                         printf("%2X, ", data[j]); 
+0A1E:  MOVLW  41
+0A1F:  ADDWF  3F,W
+0A20:  MOVWF  04
+0A21:  BCF    03.7
+0A22:  MOVF   00,W
+0A23:  BSF    03.5
+0A24:  MOVWF  31
+0A25:  MOVWF  32
+0A26:  MOVLW  37
+0A27:  MOVWF  33
+0A28:  BCF    0A.3
+0A29:  BCF    03.5
+0A2A:  CALL   4A6
+0A2B:  BSF    0A.3
+0A2C:  MOVLW  2C
+0A2D:  BTFSS  0C.4
+0A2E:  GOTO   22D
+0A2F:  MOVWF  19
+0A30:  MOVLW  20
+0A31:  BTFSS  0C.4
+0A32:  GOTO   231
+0A33:  MOVWF  19
+0A34:  INCF   3F,F
+0A35:  GOTO   21A
+....................                     } 
+....................                     printf("%2X, ", data[15]); 
+0A36:  MOVF   50,W
+0A37:  BSF    03.5
+0A38:  MOVWF  32
+0A39:  MOVLW  37
+0A3A:  MOVWF  33
+0A3B:  BCF    0A.3
+0A3C:  BCF    03.5
+0A3D:  CALL   4A6
+0A3E:  BSF    0A.3
+0A3F:  MOVLW  2C
+0A40:  BTFSS  0C.4
+0A41:  GOTO   240
+0A42:  MOVWF  19
+0A43:  MOVLW  20
+0A44:  BTFSS  0C.4
+0A45:  GOTO   244
+0A46:  MOVWF  19
+....................                 } else { 
+0A47:  GOTO   251
+....................                     printf("Read failed \r\n"); 
+0A48:  MOVLW  5F
+0A49:  BSF    03.6
+0A4A:  MOVWF  0D
+0A4B:  MOVLW  00
+0A4C:  MOVWF  0F
+0A4D:  BCF    0A.3
+0A4E:  BCF    03.6
+0A4F:  CALL   2F9
+0A50:  BSF    0A.3
+....................                 } 
+....................  
+....................             } else { 
+0A51:  GOTO   269
+....................                 printf("Access denied at block 0x%2X", i); 
+0A52:  MOVLW  67
+0A53:  BSF    03.6
+0A54:  MOVWF  0D
+0A55:  MOVLW  00
+0A56:  MOVWF  0F
+0A57:  BCF    03.0
+0A58:  MOVLW  19
+0A59:  BSF    03.5
+0A5A:  BCF    03.6
+0A5B:  MOVWF  32
+0A5C:  BCF    0A.3
+0A5D:  BCF    03.5
+0A5E:  CALL   42A
+0A5F:  BSF    0A.3
+0A60:  MOVF   3E,W
+0A61:  BSF    03.5
+0A62:  MOVWF  32
+0A63:  MOVLW  37
+0A64:  MOVWF  33
+0A65:  BCF    0A.3
+0A66:  BCF    03.5
+0A67:  CALL   4A6
+0A68:  BSF    0A.3
+....................             } 
+....................         } 
+0A69:  INCF   3E,F
+0A6A:  GOTO   17F
+....................     } 
+0A6B:  BSF    0A.3
+0A6C:  BCF    0A.4
+0A6D:  GOTO   3B2 (RETURN)
+....................  
+....................  
+.................... } 
+....................  
+.................... void writeMifare(void){ 
+....................     int block = 4; 
+....................  
+....................                     status = authenticate(MF1_AUTHENT1A, 2, keyA, serial); 
+....................  
+....................                     //authenticated with key A 
+....................                     if (MI_OK == status) { 
+....................                         printf("Authenticated with key A \r\n"); 
+....................                         status = writeToTag(2, writeData); 
+....................                         if (MI_OK == status) { 
+....................                             printf("Write Successful\r\n"); 
+....................                         }else{ 
+....................                             printf("Write failed\r\n"); 
+....................                         } 
+....................  
+....................  
+....................                     } else { 
+....................                         //try to authenticate with key b 
+....................                         status = authenticate(MF1_AUTHENT1B, 2, keyB, serial); 
+....................                         if (MI_OK == status) { 
+....................                             printf("Authenticated with key B \r\n"); 
+....................                             status = writeToTag(2, writeData); 
+....................                             if (MI_OK == status) { 
+....................                                 printf("Write Successful\r\n"); 
+....................                             }else{ 
+....................                                 printf("Write Failed"); 
+....................                             } 
+....................  
+....................                         } else { 
+....................                             printf("Couldn't access block 0x%X write failed", 2); 
+....................                         } 
+....................  
+....................                     } 
+....................  
+....................  
+.................... } 
+....................  
+.................... void main() { 
+0A6E:  MOVF   03,W
+0A6F:  ANDLW  1F
+0A70:  MOVWF  03
+0A71:  CLRF   20
+0A72:  MOVLW  0C
+0A73:  BSF    03.5
+0A74:  MOVWF  19
+0A75:  MOVLW  A6
+0A76:  MOVWF  18
+0A77:  MOVLW  90
+0A78:  BCF    03.5
+0A79:  MOVWF  18
+0A7A:  CLRF   72
+0A7B:  CLRF   71
+0A7C:  MOVLW  FF
+0A7D:  MOVWF  73
+0A7E:  BSF    03.5
+0A7F:  BSF    1F.0
+0A80:  BSF    1F.1
+0A81:  BSF    1F.2
+0A82:  BCF    1F.3
+0A83:  MOVLW  07
+0A84:  MOVWF  1C
+0A85:  BCF    03.7
+....................  
 ....................     //setup spi line  
-....................      
-....................    setup_spi(SPI_MASTER|SPI_MODE_0|SPI_CLK_DIV_16);  
+....................  
+....................     setup_spi(SPI_MASTER | SPI_MODE_0 | SPI_CLK_DIV_16); 
 *
-08A0:  BCF    14.5
-08A1:  BCF    73.5
-08A2:  MOVF   73,W
-08A3:  BSF    03.5
-08A4:  MOVWF  07
-08A5:  BSF    73.4
-08A6:  MOVF   73,W
-08A7:  MOVWF  07
-08A8:  BCF    73.3
-08A9:  MOVF   73,W
-08AA:  MOVWF  07
-08AB:  MOVLW  21
-08AC:  BCF    03.5
-08AD:  MOVWF  14
-08AE:  MOVLW  40
-08AF:  BSF    03.5
-08B0:  MOVWF  14
-....................     
-....................    delay_ms(20); 
-08B1:  MOVLW  14
-08B2:  MOVWF  3D
-08B3:  BCF    0A.3
-08B4:  BCF    03.5
-08B5:  CALL   0B1
-08B6:  BSF    0A.3
+0AB7:  BCF    03.5
+0AB8:  BCF    14.5
+0AB9:  BCF    73.5
+0ABA:  MOVF   73,W
+0ABB:  BSF    03.5
+0ABC:  MOVWF  07
+0ABD:  BSF    73.4
+0ABE:  MOVF   73,W
+0ABF:  MOVWF  07
+0AC0:  BCF    73.3
+0AC1:  MOVF   73,W
+0AC2:  MOVWF  07
+0AC3:  MOVLW  21
+0AC4:  BCF    03.5
+0AC5:  MOVWF  14
+0AC6:  MOVLW  40
+0AC7:  BSF    03.5
+0AC8:  MOVWF  14
+....................  
+....................     delay_ms(20); 
+0AC9:  MOVLW  14
+0ACA:  MOVWF  54
+0ACB:  BCF    0A.3
+0ACC:  BCF    03.5
+0ACD:  CALL   104
+0ACE:  BSF    0A.3
 ....................  
 ....................     //init lcd and put some string 
 ....................     lcd_init(); 
-08B7:  BCF    0A.3
-08B8:  GOTO   190
-08B9:  BSF    0A.3
-....................      
-....................     lcd_putc("\f Starting...");     
-08BA:  MOVLW  58
-08BB:  BSF    03.6
-08BC:  MOVWF  0D
-08BD:  MOVLW  00
-08BE:  MOVWF  0F
-08BF:  BCF    0A.3
-08C0:  BCF    03.6
-08C1:  CALL   22C
-08C2:  BSF    0A.3
-....................      
-....................     printf("\r\nstarting..");//output to terminal     
-08C3:  MOVLW  5F
-08C4:  BSF    03.6
-08C5:  MOVWF  0D
-08C6:  MOVLW  00
-08C7:  MOVWF  0F
-08C8:  BCF    0A.3
-08C9:  BCF    03.6
-08CA:  CALL   27C
-08CB:  BSF    0A.3
-....................      
+0ACF:  BCF    0A.3
+0AD0:  GOTO   1E3
+0AD1:  BSF    0A.3
+....................  
+....................     lcd_putc("\f Starting..."); 
+0AD2:  MOVLW  C9
+0AD3:  BSF    03.6
+0AD4:  MOVWF  0D
+0AD5:  MOVLW  00
+0AD6:  MOVWF  0F
+0AD7:  BCF    0A.3
+0AD8:  BCF    03.6
+0AD9:  CALL   285
+0ADA:  BSF    0A.3
+....................  
+....................     printf("\r\nstarting.."); //output to terminal     
+0ADB:  MOVLW  D0
+0ADC:  BSF    03.6
+0ADD:  MOVWF  0D
+0ADE:  MOVLW  00
+0ADF:  MOVWF  0F
+0AE0:  BCF    0A.3
+0AE1:  BCF    03.6
+0AE2:  CALL   2F9
+0AE3:  BSF    0A.3
+....................  
 ....................     //initialize RFID Reader 
-....................      
-....................     delay_ms(100);    
-08CC:  MOVLW  64
-08CD:  BSF    03.5
-08CE:  MOVWF  3D
-08CF:  BCF    0A.3
-08D0:  BCF    03.5
-08D1:  CALL   0B1
-08D2:  BSF    0A.3
+....................  
+....................     delay_ms(100); 
+0AE4:  MOVLW  64
+0AE5:  BSF    03.5
+0AE6:  MOVWF  54
+0AE7:  BCF    0A.3
+0AE8:  BCF    03.5
+0AE9:  CALL   104
+0AEA:  BSF    0A.3
 ....................     MFRC_begin(); 
-08D3:  BCF    0A.3
-08D4:  GOTO   328
-08D5:  BSF    0A.3
-....................      
+0AEB:  BCF    0A.3
+0AEC:  GOTO   3C9
+0AED:  BSF    0A.3
+....................  
 ....................     //check if the card reader is connected. 
 ....................     CheckRFIDHardware(); 
-08D6:  BCF    0A.3
-08D7:  GOTO   404
-08D8:  BSF    0A.3
-....................      
+0AEE:  BCF    0A.3
+0AEF:  GOTO   4CD
+0AF0:  BSF    0A.3
+....................  
 ....................     /////   
-....................      
-....................      
-....................     while(TRUE){ 
+....................  
+....................  
+....................     while (TRUE) { 
 ....................  
 ....................         //         
 ....................         //      //  Check to see if a Tag was detected 
 ....................         //     // If yes, then the variable FoundTag will contain "MI_OK" 
-....................             FoundTag = requestTag(MF1_REQIDL, TagData); 
-08D9:  MOVLW  26
-08DA:  MOVWF  75
-08DB:  CLRF   7C
-08DC:  MOVLW  29
-08DD:  MOVWF  7B
-08DE:  BCF    0A.3
-08DF:  GOTO   5F6
-08E0:  BSF    0A.3
-08E1:  MOVF   78,W
-08E2:  MOVWF  27
+....................         FoundTag = requestTag(MF1_REQIDL, TagData); 
+0AF1:  MOVLW  26
+0AF2:  BSF    03.5
+0AF3:  MOVWF  31
+0AF4:  CLRF   33
+0AF5:  MOVLW  29
+0AF6:  MOVWF  32
+0AF7:  BCF    0A.3
+0AF8:  BCF    03.5
+0AF9:  GOTO   6ED
+0AFA:  BSF    0A.3
+0AFB:  MOVF   78,W
+0AFC:  MOVWF  27
 ....................  
-....................             // 
-....................             //If found tag 
-....................             if(FoundTag == MI_OK){     
-08E3:  MOVF   27,F
-08E4:  BTFSS  03.2
-08E5:  GOTO   25D
-....................                  
-....................                 printf("\r\nFound Tag: "); 
-08E6:  MOVLW  66
-08E7:  BSF    03.6
-08E8:  MOVWF  0D
-08E9:  MOVLW  00
-08EA:  MOVWF  0F
-08EB:  BCF    0A.3
-08EC:  BCF    03.6
-08ED:  CALL   27C
-08EE:  BSF    0A.3
+....................         // 
+....................         //If found tag 
+....................         if (FoundTag == MI_OK) { 
+0AFD:  MOVF   27,F
+0AFE:  BTFSS  03.2
+0AFF:  GOTO   3B5
 ....................  
-....................                 ReadTag = antiCollision(TagData); 
-08EF:  CLRF   76
-08F0:  MOVLW  29
-08F1:  MOVWF  75
-08F2:  BCF    0A.3
-08F3:  GOTO   626
-08F4:  BSF    0A.3
-08F5:  MOVF   78,W
-08F6:  MOVWF  28
+....................             printf("\r\nFound Tag: "); 
+0B00:  MOVLW  D7
+0B01:  BSF    03.6
+0B02:  MOVWF  0D
+0B03:  MOVLW  00
+0B04:  MOVWF  0F
+0B05:  BCF    0A.3
+0B06:  BCF    03.6
+0B07:  CALL   2F9
+0B08:  BSF    0A.3
 ....................  
-....................                 ///has tag passed anti collision test? 
-....................                 if(ReadTag == MI_OK){ 
-08F7:  MOVF   28,F
-08F8:  BTFSS  03.2
-08F9:  GOTO   25D
-....................                      
-....................                     //then put out UUID  
-....................                     for(i=0;i<=2;i++) 
-08FA:  CLRF   3E
-08FB:  MOVF   3E,W
-08FC:  SUBLW  02
-08FD:  BTFSS  03.0
-08FE:  GOTO   126
-....................                     { 
-....................                      sprintf(buffer2,"%2X",(TagData[i])); //display version in hexadecimal 
-08FF:  MOVLW  29
-0900:  ADDWF  3E,W
-0901:  MOVWF  04
-0902:  BCF    03.7
-0903:  MOVF   00,W
-0904:  MOVWF  75
-0905:  CLRF   72
-0906:  MOVLW  51
-0907:  MOVWF  71
-0908:  MOVF   75,W
-0909:  MOVWF  76
-090A:  MOVLW  37
-090B:  MOVWF  7B
-090C:  BCF    0A.3
-090D:  CALL   686
-090E:  BSF    0A.3
-....................                      delay_ms(20); 
-090F:  MOVLW  14
-0910:  BSF    03.5
-0911:  MOVWF  3D
-0912:  BCF    0A.3
-0913:  BCF    03.5
-0914:  CALL   0B1
-0915:  BSF    0A.3
-....................                      printf(buffer2); 
-0916:  MOVLW  51
-0917:  MOVWF  04
-0918:  BCF    03.7
-0919:  BCF    0A.3
-091A:  CALL   6A7
-091B:  BSF    0A.3
-....................                      printf(", "); 
-091C:  MOVLW  2C
-091D:  BTFSS  0C.4
-091E:  GOTO   11D
-091F:  MOVWF  19
-0920:  MOVLW  20
-0921:  BTFSS  0C.4
-0922:  GOTO   121
-0923:  MOVWF  19
-0924:  INCF   3E,F
-0925:  GOTO   0FB
-....................                     } 
+....................             ReadTag = antiCollision(TagData); 
+0B09:  BSF    03.5
+0B0A:  CLRF   32
+0B0B:  MOVLW  29
+0B0C:  MOVWF  31
+0B0D:  BCF    0A.3
+0B0E:  BCF    03.5
+0B0F:  GOTO   71F
+0B10:  BSF    0A.3
+0B11:  MOVF   78,W
+0B12:  MOVWF  28
 ....................  
-....................                     sprintf(buffer2,"%2X",(TagData[i])); //display version in hexadecimal 
-0926:  MOVLW  29
-0927:  ADDWF  3E,W
-0928:  MOVWF  04
-0929:  BCF    03.7
-092A:  MOVF   00,W
-092B:  MOVWF  75
-092C:  CLRF   72
-092D:  MOVLW  51
-092E:  MOVWF  71
-092F:  MOVF   75,W
-0930:  MOVWF  76
-0931:  MOVLW  37
-0932:  MOVWF  7B
-0933:  BCF    0A.3
-0934:  CALL   686
-0935:  BSF    0A.3
+....................             ///has tag passed anti collision test? 
+....................             if (ReadTag == MI_OK) { 
+0B13:  MOVF   28,F
+0B14:  BTFSS  03.2
+0B15:  GOTO   3B5
+....................  
+....................                 //then put out UUID  
+....................                 for (i = 0; i <= 2; i++) { 
+0B16:  CLRF   3E
+0B17:  MOVF   3E,W
+0B18:  SUBLW  02
+0B19:  BTFSS  03.0
+0B1A:  GOTO   344
+....................                     sprintf(buffer2, "%2X", (TagData[i])); //display version in hexadecimal 
+0B1B:  MOVLW  29
+0B1C:  ADDWF  3E,W
+0B1D:  MOVWF  04
+0B1E:  BCF    03.7
+0B1F:  MOVF   00,W
+0B20:  BSF    03.5
+0B21:  MOVWF  31
+0B22:  CLRF   72
+0B23:  MOVLW  51
+0B24:  MOVWF  71
+0B25:  MOVF   31,W
+0B26:  MOVWF  32
+0B27:  MOVLW  37
+0B28:  MOVWF  33
+0B29:  BCF    0A.3
+0B2A:  BCF    03.5
+0B2B:  CALL   783
+0B2C:  BSF    0A.3
+....................                     delay_ms(20); 
+0B2D:  MOVLW  14
+0B2E:  BSF    03.5
+0B2F:  MOVWF  54
+0B30:  BCF    0A.3
+0B31:  BCF    03.5
+0B32:  CALL   104
+0B33:  BSF    0A.3
 ....................                     printf(buffer2); 
-0936:  MOVLW  51
-0937:  MOVWF  04
-0938:  BCF    03.7
-0939:  BCF    0A.3
-093A:  CALL   6A7
-093B:  BSF    0A.3
-....................                      
-....................                     memcpy(serial,TagData,5); 
-093C:  MOVF   29,W
-093D:  MOVWF  39
-093E:  MOVF   2A,W
-093F:  MOVWF  3A
-0940:  MOVF   2B,W
-0941:  MOVWF  3B
-0942:  MOVF   2C,W
-0943:  MOVWF  3C
-0944:  MOVF   2D,W
-0945:  MOVWF  3D
-....................                      
-....................                     //now get SAK for card version check 
-....................                     byte sak = selectTag(serial); 
-0946:  CLRF   76
-0947:  MOVLW  39
-0948:  MOVWF  75
-0949:  BCF    0A.3
-094A:  GOTO   726
-094B:  BSF    0A.3
-094C:  MOVF   78,W
-094D:  MOVWF  74
-....................                      
-....................                     printf("\r\nSAK: 0x%2x",sak); 
-094E:  MOVLW  6D
-094F:  BSF    03.6
-0950:  MOVWF  0D
-0951:  MOVLW  00
-0952:  MOVWF  0F
-0953:  BCF    03.0
-0954:  MOVLW  09
-0955:  MOVWF  76
-0956:  BCF    0A.3
-0957:  BCF    03.6
-0958:  CALL   389
-0959:  BSF    0A.3
-095A:  MOVF   74,W
-095B:  MOVWF  76
-095C:  MOVLW  57
-095D:  MOVWF  7B
-095E:  BCF    0A.3
-095F:  CALL   3E1
-0960:  BSF    0A.3
-....................                      
-....................                      
-....................                     if(UID_FAILED == sak){ 
-0961:  MOVF   74,F
-0962:  BTFSS  03.2
-0963:  GOTO   16E
-....................                         printf("\r\n Failed to read card"); 
-0964:  MOVLW  74
-0965:  BSF    03.6
-0966:  MOVWF  0D
-0967:  MOVLW  00
-0968:  MOVWF  0F
-0969:  BCF    0A.3
-096A:  BCF    03.6
-096B:  CALL   27C
-096C:  BSF    0A.3
-....................                     } 
-096D:  GOTO   25D
-....................                     //UID was read incompletely 
-....................                     else if(UID_NOT_COMPLETE == sak){ 
-096E:  MOVF   74,W
-096F:  SUBLW  04
-0970:  BTFSS  03.2
-0971:  GOTO   17C
-....................                         printf("\r\n Incomplete UID"); 
-0972:  MOVLW  80
-0973:  BSF    03.6
-0974:  MOVWF  0D
-0975:  MOVLW  00
-0976:  MOVWF  0F
-0977:  BCF    0A.3
-0978:  BCF    03.6
-0979:  CALL   27C
-097A:  BSF    0A.3
-....................                     } 
-097B:  GOTO   25D
-....................                     else{ 
-....................                         printf("\r\n Is a Mifare Card"); 
-097C:  MOVLW  89
-097D:  BSF    03.6
-097E:  MOVWF  0D
-097F:  MOVLW  00
-0980:  MOVWF  0F
-0981:  BCF    0A.3
-0982:  BCF    03.6
-0983:  CALL   27C
-0984:  BSF    0A.3
-....................                          
-....................                         //everything went well so far                         
-....................                         //now start reading memory 
-....................                         //s50 has 64 blocks of memory 
-....................                         for(i=0;i<64;i++){ 
-0985:  CLRF   3E
-0986:  MOVF   3E,W
-0987:  SUBLW  3F
-0988:  BTFSS  03.0
-0989:  GOTO   25C
-....................                             // Try to authenticate each block first with the A key. 
-....................                             status = authenticate(MF1_AUTHENT1A, i, keyA, serial); 
-098A:  MOVLW  60
-098B:  MOVWF  75
-098C:  MOVF   3E,W
-098D:  MOVWF  76
-098E:  CLRF   7C
-098F:  MOVLW  65
-0990:  MOVWF  7B
-0991:  CLRF   7E
-0992:  MOVLW  39
-0993:  MOVWF  7D
-0994:  BCF    0A.3
-0995:  CALL   77C
-0996:  BSF    0A.3
-0997:  MOVF   78,W
-0998:  MOVWF  40
-....................                             if(MI_OK == status){ 
-0999:  MOVF   40,F
-099A:  BTFSS  03.2
-099B:  GOTO   1ED
-....................                                // printf("Authenticated block 0x%2X with A\r\n",i); 
-....................                                 printf("\r\n"); //a new line each block 
-099C:  MOVLW  0D
-099D:  BTFSS  0C.4
-099E:  GOTO   19D
-099F:  MOVWF  19
-09A0:  MOVLW  0A
-09A1:  BTFSS  0C.4
-09A2:  GOTO   1A1
-09A3:  MOVWF  19
-....................                                 //now read the block i  
-....................                                 status = readFromTag(i,data); 
-09A4:  MOVF   3E,W
-09A5:  MOVWF  75
-09A6:  CLRF   7C
-09A7:  MOVLW  41
-09A8:  MOVWF  7B
-09A9:  CALL   000
-09AA:  MOVF   78,W
-09AB:  MOVWF  40
-....................                                 if(MI_OK == status){ 
-09AC:  MOVF   40,F
-09AD:  BTFSS  03.2
-09AE:  GOTO   1E3
-....................                                     for(j=0;j<15;j++){ 
-09AF:  CLRF   3F
-09B0:  MOVF   3F,W
-09B1:  SUBLW  0E
-09B2:  BTFSS  03.0
-09B3:  GOTO   1D3
-....................                                         printf("0x%2X, ",data[j]); 
-09B4:  MOVLW  41
-09B5:  ADDWF  3F,W
-09B6:  MOVWF  04
-09B7:  BCF    03.7
-09B8:  MOVF   00,W
-09B9:  MOVWF  75
-09BA:  MOVLW  30
-09BB:  BTFSS  0C.4
-09BC:  GOTO   1BB
-09BD:  MOVWF  19
-09BE:  MOVLW  78
-09BF:  BTFSS  0C.4
-09C0:  GOTO   1BF
-09C1:  MOVWF  19
-09C2:  MOVF   75,W
-09C3:  MOVWF  76
-09C4:  MOVLW  37
-09C5:  MOVWF  7B
-09C6:  BCF    0A.3
-09C7:  CALL   3E1
-09C8:  BSF    0A.3
-09C9:  MOVLW  2C
-09CA:  BTFSS  0C.4
-09CB:  GOTO   1CA
-09CC:  MOVWF  19
-09CD:  MOVLW  20
-09CE:  BTFSS  0C.4
-09CF:  GOTO   1CE
-09D0:  MOVWF  19
-09D1:  INCF   3F,F
-09D2:  GOTO   1B0
-....................                                     } 
-....................                                      printf("0x%2X",data[15]); 
-09D3:  MOVLW  30
-09D4:  BTFSS  0C.4
-09D5:  GOTO   1D4
-09D6:  MOVWF  19
-09D7:  MOVLW  78
-09D8:  BTFSS  0C.4
-09D9:  GOTO   1D8
-09DA:  MOVWF  19
-09DB:  MOVF   50,W
-09DC:  MOVWF  76
-09DD:  MOVLW  37
-09DE:  MOVWF  7B
-09DF:  BCF    0A.3
-09E0:  CALL   3E1
-09E1:  BSF    0A.3
-....................                                 }else{ 
-09E2:  GOTO   1EC
-....................                                     printf("Read failed\r\n"); 
-09E3:  MOVLW  93
-09E4:  BSF    03.6
-09E5:  MOVWF  0D
-09E6:  MOVLW  00
-09E7:  MOVWF  0F
-09E8:  BCF    0A.3
-09E9:  BCF    03.6
-09EA:  CALL   27C
-09EB:  BSF    0A.3
-....................                                 } 
-....................                                  
-....................                             }else{ 
-09EC:  GOTO   25A
-....................                                 //try to authenticate with key B 
-....................                                  status = authenticate(MF1_AUTHENT1B, i, keyB, serial); 
-09ED:  MOVLW  61
-09EE:  MOVWF  75
-09EF:  MOVF   3E,W
-09F0:  MOVWF  76
-09F1:  CLRF   7C
-09F2:  MOVLW  6B
-09F3:  MOVWF  7B
-09F4:  CLRF   7E
-09F5:  MOVLW  39
-09F6:  MOVWF  7D
-09F7:  BCF    0A.3
-09F8:  CALL   77C
-09F9:  BSF    0A.3
-09FA:  MOVF   78,W
-09FB:  MOVWF  40
-....................                                  if(MI_OK == status){ 
-09FC:  MOVF   40,F
-09FD:  BTFSS  03.2
-09FE:  GOTO   247
-....................                                      //printf("Authenticated block 0x%2X with key B",i); 
-....................                                       printf("\r\n"); //a new line each block 
-09FF:  MOVLW  0D
-0A00:  BTFSS  0C.4
-0A01:  GOTO   200
-0A02:  MOVWF  19
-0A03:  MOVLW  0A
-0A04:  BTFSS  0C.4
-0A05:  GOTO   204
-0A06:  MOVWF  19
-....................                                       
-....................                                      //read from block 
-....................                                      status = readFromTag(i,data); 
-0A07:  MOVF   3E,W
-0A08:  MOVWF  75
-0A09:  CLRF   7C
-0A0A:  MOVLW  41
-0A0B:  MOVWF  7B
-0A0C:  CALL   000
-0A0D:  MOVF   78,W
-0A0E:  MOVWF  40
-....................                                       
-....................                                      if(MI_OK == status){ 
-0A0F:  MOVF   40,F
-0A10:  BTFSS  03.2
-0A11:  GOTO   23D
-....................                                          for(j=0; j<15; j++){ 
-0A12:  CLRF   3F
-0A13:  MOVF   3F,W
-0A14:  SUBLW  0E
-0A15:  BTFSS  03.0
-0A16:  GOTO   22D
-....................                                              printf("%2X, ",data[j]); 
-0A17:  MOVLW  41
-0A18:  ADDWF  3F,W
-0A19:  MOVWF  04
-0A1A:  BCF    03.7
-0A1B:  MOVF   00,W
-0A1C:  MOVWF  75
-0A1D:  MOVWF  76
-0A1E:  MOVLW  37
-0A1F:  MOVWF  7B
-0A20:  BCF    0A.3
-0A21:  CALL   3E1
-0A22:  BSF    0A.3
-0A23:  MOVLW  2C
-0A24:  BTFSS  0C.4
-0A25:  GOTO   224
-0A26:  MOVWF  19
-0A27:  MOVLW  20
-0A28:  BTFSS  0C.4
-0A29:  GOTO   228
-0A2A:  MOVWF  19
-0A2B:  INCF   3F,F
-0A2C:  GOTO   213
-....................                                          } 
-....................                                          printf("%2X, ",data[15]); 
-0A2D:  MOVF   50,W
-0A2E:  MOVWF  76
-0A2F:  MOVLW  37
-0A30:  MOVWF  7B
-0A31:  BCF    0A.3
-0A32:  CALL   3E1
-0A33:  BSF    0A.3
-0A34:  MOVLW  2C
-0A35:  BTFSS  0C.4
-0A36:  GOTO   235
-0A37:  MOVWF  19
-0A38:  MOVLW  20
-0A39:  BTFSS  0C.4
-0A3A:  GOTO   239
-0A3B:  MOVWF  19
-....................                                      }else{ 
-0A3C:  GOTO   246
-....................                                          printf("Read failed \r\n"); 
-0A3D:  MOVLW  9A
-0A3E:  BSF    03.6
-0A3F:  MOVWF  0D
-0A40:  MOVLW  00
-0A41:  MOVWF  0F
-0A42:  BCF    0A.3
-0A43:  BCF    03.6
-0A44:  CALL   27C
-0A45:  BSF    0A.3
-....................                                      } 
-....................                                       
-....................                                  }else{ 
-0A46:  GOTO   25A
-....................                                      printf("Access denied at block 0x%2X",i); 
-0A47:  MOVLW  A2
-0A48:  BSF    03.6
-0A49:  MOVWF  0D
-0A4A:  MOVLW  00
-0A4B:  MOVWF  0F
-0A4C:  BCF    03.0
-0A4D:  MOVLW  19
-0A4E:  MOVWF  76
-0A4F:  BCF    0A.3
-0A50:  BCF    03.6
-0A51:  CALL   389
-0A52:  BSF    0A.3
-0A53:  MOVF   3E,W
-0A54:  MOVWF  76
-0A55:  MOVLW  37
-0A56:  MOVWF  7B
-0A57:  BCF    0A.3
-0A58:  CALL   3E1
-0A59:  BSF    0A.3
-....................                                  } 
-....................                             } 
-0A5A:  INCF   3E,F
-0A5B:  GOTO   186
-....................                         } 
-....................                          
-....................                         haltTag(); 
-0A5C:  GOTO   047
-....................                          
-....................                     } 
+0B34:  MOVLW  51
+0B35:  MOVWF  04
+0B36:  BCF    03.7
+0B37:  BCF    0A.3
+0B38:  CALL   7A8
+0B39:  BSF    0A.3
+....................                     printf(", "); 
+0B3A:  MOVLW  2C
+0B3B:  BTFSS  0C.4
+0B3C:  GOTO   33B
+0B3D:  MOVWF  19
+0B3E:  MOVLW  20
+0B3F:  BTFSS  0C.4
+0B40:  GOTO   33F
+0B41:  MOVWF  19
+0B42:  INCF   3E,F
+0B43:  GOTO   317
+....................                 } 
+....................  
+....................                 sprintf(buffer2, "%2X", (TagData[i])); //display version in hexadecimal 
+0B44:  MOVLW  29
+0B45:  ADDWF  3E,W
+0B46:  MOVWF  04
+0B47:  BCF    03.7
+0B48:  MOVF   00,W
+0B49:  BSF    03.5
+0B4A:  MOVWF  31
+0B4B:  CLRF   72
+0B4C:  MOVLW  51
+0B4D:  MOVWF  71
+0B4E:  MOVF   31,W
+0B4F:  MOVWF  32
+0B50:  MOVLW  37
+0B51:  MOVWF  33
+0B52:  BCF    0A.3
+0B53:  BCF    03.5
+0B54:  CALL   783
+0B55:  BSF    0A.3
+....................                 printf(buffer2); 
+0B56:  MOVLW  51
+0B57:  MOVWF  04
+0B58:  BCF    03.7
+0B59:  BCF    0A.3
+0B5A:  CALL   7A8
+0B5B:  BSF    0A.3
+....................  
+....................                 memcpy(serial, TagData, 5); 
+0B5C:  MOVF   29,W
+0B5D:  MOVWF  39
+0B5E:  MOVF   2A,W
+0B5F:  MOVWF  3A
+0B60:  MOVF   2B,W
+0B61:  MOVWF  3B
+0B62:  MOVF   2C,W
+0B63:  MOVWF  3C
+0B64:  MOVF   2D,W
+0B65:  MOVWF  3D
+....................  
+....................                 //now get SAK for card version check 
+....................                 byte sak = selectTag(serial); 
+0B66:  BSF    03.5
+0B67:  CLRF   32
+0B68:  MOVLW  39
+0B69:  MOVWF  31
+0B6A:  BCF    03.5
+0B6B:  GOTO   06E
+0B6C:  MOVF   78,W
+0B6D:  BSF    03.5
+0B6E:  MOVWF  30
+....................  
+....................                 printf("\r\nSAK: 0x%2x", sak); 
+0B6F:  MOVLW  DE
+0B70:  BCF    03.5
+0B71:  BSF    03.6
+0B72:  MOVWF  0D
+0B73:  MOVLW  00
+0B74:  MOVWF  0F
+0B75:  BCF    03.0
+0B76:  MOVLW  09
+0B77:  BSF    03.5
+0B78:  BCF    03.6
+0B79:  MOVWF  32
+0B7A:  BCF    0A.3
+0B7B:  BCF    03.5
+0B7C:  CALL   42A
+0B7D:  BSF    0A.3
+0B7E:  BSF    03.5
+0B7F:  MOVF   30,W
+0B80:  MOVWF  32
+0B81:  MOVLW  57
+0B82:  MOVWF  33
+0B83:  BCF    0A.3
+0B84:  BCF    03.5
+0B85:  CALL   4A6
+0B86:  BSF    0A.3
+....................  
+....................  
+....................                 if (UID_FAILED == sak) { 
+0B87:  BSF    03.5
+0B88:  MOVF   30,F
+0B89:  BTFSS  03.2
+0B8A:  GOTO   397
+....................                     printf("\r\n Failed to read card"); 
+0B8B:  MOVLW  E5
+0B8C:  BCF    03.5
+0B8D:  BSF    03.6
+0B8E:  MOVWF  0D
+0B8F:  MOVLW  00
+0B90:  MOVWF  0F
+0B91:  BCF    0A.3
+0B92:  BCF    03.6
+0B93:  CALL   2F9
+0B94:  BSF    0A.3
+....................                 }//UID was read incompletely 
+0B95:  GOTO   3B5
+0B96:  BSF    03.5
+....................                 else if (UID_NOT_COMPLETE == sak) { 
+0B97:  MOVF   30,W
+0B98:  SUBLW  04
+0B99:  BTFSS  03.2
+0B9A:  GOTO   3A7
+....................                     printf("\r\n Incomplete UID"); 
+0B9B:  MOVLW  F1
+0B9C:  BCF    03.5
+0B9D:  BSF    03.6
+0B9E:  MOVWF  0D
+0B9F:  MOVLW  00
+0BA0:  MOVWF  0F
+0BA1:  BCF    0A.3
+0BA2:  BCF    03.6
+0BA3:  CALL   2F9
+0BA4:  BSF    0A.3
+....................                 } else { 
+0BA5:  GOTO   3B5
+0BA6:  BSF    03.5
+....................                     printf("\r\n Is a Mifare Card"); 
+0BA7:  MOVLW  FA
+0BA8:  BCF    03.5
+0BA9:  BSF    03.6
+0BAA:  MOVWF  0D
+0BAB:  MOVLW  00
+0BAC:  MOVWF  0F
+0BAD:  BCF    0A.3
+0BAE:  BCF    03.6
+0BAF:  CALL   2F9
+0BB0:  BSF    0A.3
+....................  
+....................                     //everything went well so far                         
+....................                     //now start reading memory 
+....................                     readMifareCard(); 
+0BB1:  GOTO   17E
+....................                     //writeMifare(); 
+....................                     
+....................  
+....................                     haltTag(); 
+0BB2:  BCF    0A.3
+0BB3:  GOTO   7C6
+0BB4:  BSF    0A.3
 ....................                      
 ....................  
 ....................                 } 
 ....................  
-....................                 
-....................                 } 
-....................              
-....................             delay_ms(5000); 
-0A5D:  MOVLW  14
-0A5E:  MOVWF  75
-0A5F:  MOVLW  FA
-0A60:  BSF    03.5
-0A61:  MOVWF  3D
-0A62:  BCF    0A.3
-0A63:  BCF    03.5
-0A64:  CALL   0B1
-0A65:  BSF    0A.3
-0A66:  DECFSZ 75,F
-0A67:  GOTO   25F
-0A68:  GOTO   0D9
-.................... //     
+....................  
+....................             } 
+....................  
+....................  
+....................         } 
+....................  
+....................         delay_ms(2000); 
+0BB5:  MOVLW  08
+0BB6:  BSF    03.5
+0BB7:  MOVWF  31
+0BB8:  MOVLW  FA
+0BB9:  MOVWF  54
+0BBA:  BCF    0A.3
+0BBB:  BCF    03.5
+0BBC:  CALL   104
+0BBD:  BSF    0A.3
+0BBE:  BSF    03.5
+0BBF:  DECFSZ 31,F
+0BC0:  GOTO   3B8
+0BC1:  BCF    03.5
+0BC2:  GOTO   2F1
+....................         //     
 ....................     } 
-....................      
+....................  
 ....................     return; 
 .................... } 
 ....................  
-0A69:  SLEEP
+0BC3:  SLEEP
 
 Configuration Fuses:
    Word  1: 3F71   XT NOWDT PUT BROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

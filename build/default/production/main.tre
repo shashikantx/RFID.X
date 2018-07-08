@@ -1,8 +1,8 @@
 ÀÄRFID
-   ÀÄMAIN  1/498  Ram=2
+   ÀÄMAIN  1/342  Ram=2
       ÃÄ@cinit1  (Inline)  Ram=0
       ÃÄ@delay_ms1  0/21  Ram=1
-      ÃÄlcd_init  0/80  Ram=7
+      ÃÄlcd_init  0/84  Ram=6
       ³  ÃÄ@delay_ms1  0/21  Ram=1
       ³  ÃÄlcd_send_nibble  0/53  Ram=1
       ³  ÃÄ@delay_ms1  0/21  Ram=1
@@ -14,8 +14,8 @@
       ³     ³  ÀÄlcd_read_nibble  0/51  Ram=2
       ³     ÃÄlcd_send_nibble  0/53  Ram=1
       ³     ÀÄlcd_send_nibble  0/53  Ram=1
-      ÃÄ@PSTRINGC7_666  0/80  Ram=5
-      ³  ÃÄlcd_putc  0/56  Ram=1
+      ÃÄ@PSTRINGC7_666  0/116  Ram=4
+      ³  ÃÄlcd_putc  0/58  Ram=1
       ³  ³  ÃÄlcd_gotoxy  0/20  Ram=4
       ³  ³  ³  ÀÄlcd_send_byte  0/98  Ram=3
       ³  ³  ³     ÀÄ*
@@ -28,9 +28,9 @@
       ³  ³  ³  ÀÄ*
       ³  ³  ÀÄlcd_send_byte  0/98  Ram=3
       ³  ³     ÀÄ*
-      ³  ÀÄlcd_putc  0/56  Ram=1
+      ³  ÀÄlcd_putc  0/58  Ram=1
       ³     ÀÄ*
-      ÃÄ@PSTRINGC7_19200_62_63  0/82  Ram=5
+      ÃÄ@PSTRINGC7_19200_62_63  0/118  Ram=4
       ÃÄ@delay_ms1  0/21  Ram=1
       ÃÄMFRC_begin  0/97  Ram=0
       ³  ÃÄreset  (Inline)  Ram=0
@@ -51,32 +51,32 @@
       ³  ÀÄsetBitMask  0/18  Ram=4
       ³     ÃÄreadFromRegister  0/39  Ram=3
       ³     ÀÄwriteToRegister  0/33  Ram=3
-      ÃÄCheckRFIDHardware  0/228  Ram=2
-      ³  ÃÄ@PSTRINGC7_666  0/80  Ram=5
+      ÃÄCheckRFIDHardware  0/274  Ram=2
+      ³  ÃÄ@PSTRINGC7_666  0/116  Ram=4
       ³  ³  ÀÄ*
-      ³  ÃÄ@PSTRINGC7_19200_62_63  0/82  Ram=5
+      ³  ÃÄ@PSTRINGC7_19200_62_63  0/118  Ram=4
       ³  ÃÄreadFromRegister  0/39  Ram=3
       ³  ÃÄ@delay_ms1  0/21  Ram=1
-      ³  ÃÄ@PSTRINGC7_666  0/80  Ram=5
+      ³  ÃÄ@PSTRINGC7_666  0/116  Ram=4
       ³  ³  ÀÄ*
-      ³  ÃÄ@PSTRINGC7_19200_62_63  0/82  Ram=5
+      ³  ÃÄ@PSTRINGC7_19200_62_63  0/118  Ram=4
       ³  ÃÄ@delay_ms1  0/21  Ram=1
-      ³  ÃÄ@PSTRINGC7_666  0/80  Ram=5
+      ³  ÃÄ@PSTRINGC7_666  0/116  Ram=4
       ³  ³  ÀÄ*
       ³  ÃÄ@PSTRINGCN7_666  (Inline)  Ram=5
-      ³  ³  ÃÄlcd_putc  0/56  Ram=1
+      ³  ³  ÃÄlcd_putc  0/58  Ram=1
       ³  ³  ³  ÀÄ*
-      ³  ³  ÀÄlcd_putc  0/56  Ram=1
+      ³  ³  ÀÄlcd_putc  0/58  Ram=1
       ³  ³     ÀÄ*
       ³  ÃÄ@PRINTF_X_666  (Inline)  Ram=2
-      ³  ³  ÃÄlcd_putc  0/56  Ram=1
+      ³  ³  ÃÄlcd_putc  0/58  Ram=1
       ³  ³  ³  ÀÄ*
-      ³  ³  ÀÄlcd_putc  0/56  Ram=1
+      ³  ³  ÀÄlcd_putc  0/58  Ram=1
       ³  ³     ÀÄ*
-      ³  ÃÄ@PSTRINGCN7_19200_62_63  0/88  Ram=5
-      ³  ÃÄ@PRINTF_X_19200_62_63  0/35  Ram=2
+      ³  ÃÄ@PSTRINGCN7_19200_62_63  0/124  Ram=5
+      ³  ÃÄ@PRINTF_X_19200_62_63  0/39  Ram=2
       ³  ÀÄ@delay_ms1  0/21  Ram=1
-      ÃÄrequestTag  0/48  Ram=9
+      ÃÄrequestTag  0/50  Ram=7
       ³  ÃÄwriteToRegister  0/33  Ram=3
       ³  ÀÄcommandTag  0/251  Ram=17
       ³     ÃÄwriteToRegister  0/33  Ram=3
@@ -98,21 +98,21 @@
       ³     ÃÄreadFromRegister  0/39  Ram=3
       ³     ÃÄreadFromRegister  0/39  Ram=3
       ³     ÀÄreadFromRegister  0/39  Ram=3
-      ÃÄ@PSTRINGC7_19200_62_63  0/82  Ram=5
-      ÃÄantiCollision  0/83  Ram=8
+      ÃÄ@PSTRINGC7_19200_62_63  0/118  Ram=4
+      ÃÄantiCollision  0/85  Ram=8
       ³  ÃÄwriteToRegister  0/33  Ram=3
       ³  ÀÄcommandTag  0/251  Ram=17
       ³     ÀÄ*
-      ÃÄ@PRINTF_X_1049  0/33  Ram=2
-      ³  ÃÄ@SPRINTF  0/13  Ram=1
-      ³  ÀÄ@SPRINTF  0/13  Ram=1
+      ÃÄ@PRINTF_X_1050  0/37  Ram=2
+      ³  ÃÄ@SPRINTF  0/15  Ram=1
+      ³  ÀÄ@SPRINTF  0/15  Ram=1
       ÃÄ@delay_ms1  0/21  Ram=1
-      ÃÄ@PSTRINGR_19200_62_63  0/23  Ram=2
-      ÃÄ@PRINTF_X_1049  0/33  Ram=2
+      ÃÄ@PSTRINGR_19200_62_63  0/30  Ram=2
+      ÃÄ@PRINTF_X_1050  0/37  Ram=2
       ³  ÀÄ*
-      ÃÄ@PSTRINGR_19200_62_63  0/23  Ram=2
-      ÃÄselectTag  0/86  Ram=18
-      ³  ÃÄcalculateCRC  0/104  Ram=9
+      ÃÄ@PSTRINGR_19200_62_63  0/30  Ram=2
+      ÃÄselectTag  1/86  Ram=18
+      ³  ÃÄcalculateCRC  1/110  Ram=9
       ³  ³  ÃÄclearBitMask  0/19  Ram=4
       ³  ³  ³  ÀÄ*
       ³  ³  ÃÄsetBitMask  0/18  Ram=4
@@ -124,34 +124,35 @@
       ³  ³  ÀÄreadFromRegister  0/39  Ram=3
       ³  ÀÄcommandTag  0/251  Ram=17
       ³     ÀÄ*
-      ÃÄ@PSTRINGCN7_19200_62_63  0/88  Ram=5
-      ÃÄ@PRINTF_X_19200_62_63  0/35  Ram=2
-      ÃÄ@PSTRINGC7_19200_62_63  0/82  Ram=5
-      ÃÄ@PSTRINGC7_19200_62_63  0/82  Ram=5
-      ÃÄ@PSTRINGC7_19200_62_63  0/82  Ram=5
-      ÃÄauthenticate  0/107  Ram=24
-      ³  ÃÄcommandTag  0/251  Ram=17
+      ÃÄ@PSTRINGCN7_19200_62_63  0/124  Ram=5
+      ÃÄ@PRINTF_X_19200_62_63  0/39  Ram=2
+      ÃÄ@PSTRINGC7_19200_62_63  0/118  Ram=4
+      ÃÄ@PSTRINGC7_19200_62_63  0/118  Ram=4
+      ÃÄ@PSTRINGC7_19200_62_63  0/118  Ram=4
+      ÃÄreadMifareCard  1/240  Ram=1
+      ³  ÃÄauthenticate  1/111  Ram=24
+      ³  ³  ÃÄcommandTag  0/251  Ram=17
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄreadFromRegister  0/39  Ram=3
+      ³  ÃÄreadFromTag  1/75  Ram=7
+      ³  ³  ÃÄcalculateCRC  1/110  Ram=9
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄcommandTag  0/251  Ram=17
+      ³  ³     ÀÄ*
+      ³  ÃÄ@PRINTF_X_19200_62_63  0/39  Ram=2
+      ³  ÃÄ@PRINTF_X_19200_62_63  0/39  Ram=2
+      ³  ÃÄ@PSTRINGC7_19200_62_63  0/118  Ram=4
+      ³  ÃÄauthenticate  1/111  Ram=24
       ³  ³  ÀÄ*
-      ³  ÀÄreadFromRegister  0/39  Ram=3
-      ÃÄreadFromTag  1/71  Ram=9
-      ³  ÃÄcalculateCRC  0/104  Ram=9
+      ³  ÃÄreadFromTag  1/75  Ram=7
       ³  ³  ÀÄ*
-      ³  ÀÄcommandTag  0/251  Ram=17
-      ³     ÀÄ*
-      ÃÄ@PRINTF_X_19200_62_63  0/35  Ram=2
-      ÃÄ@PRINTF_X_19200_62_63  0/35  Ram=2
-      ÃÄ@PSTRINGC7_19200_62_63  0/82  Ram=5
-      ÃÄauthenticate  0/107  Ram=24
-      ³  ÀÄ*
-      ÃÄreadFromTag  1/71  Ram=9
-      ³  ÀÄ*
-      ÃÄ@PRINTF_X_19200_62_63  0/35  Ram=2
-      ÃÄ@PRINTF_X_19200_62_63  0/35  Ram=2
-      ÃÄ@PSTRINGC7_19200_62_63  0/82  Ram=5
-      ÃÄ@PSTRINGCN7_19200_62_63  0/88  Ram=5
-      ÃÄ@PRINTF_X_19200_62_63  0/35  Ram=2
-      ÃÄhaltTag  1/49  Ram=6
-      ³  ÃÄcalculateCRC  0/104  Ram=9
+      ³  ÃÄ@PRINTF_X_19200_62_63  0/39  Ram=2
+      ³  ÃÄ@PRINTF_X_19200_62_63  0/39  Ram=2
+      ³  ÃÄ@PSTRINGC7_19200_62_63  0/118  Ram=4
+      ³  ÃÄ@PSTRINGCN7_19200_62_63  0/124  Ram=5
+      ³  ÀÄ@PRINTF_X_19200_62_63  0/39  Ram=2
+      ÃÄhaltTag  0/47  Ram=6
+      ³  ÃÄcalculateCRC  1/110  Ram=9
       ³  ³  ÀÄ*
       ³  ÃÄcommandTag  0/251  Ram=17
       ³  ³  ÀÄ*

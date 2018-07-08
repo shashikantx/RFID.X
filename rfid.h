@@ -549,7 +549,7 @@ int readFromTag(byte block, byte *result) {
 /*!
   @brief   Tries to write to a block on the current tag.
   @param   block  The block that we want to write to.
-  @param   data   The data that we shoudl write to the block.
+  @param   data   The data that we should write to the block.
   @returns Returns the status of the collision detection.
            MI_ERR        if something went wrong,
            MI_OK         if everything went OK.
@@ -568,7 +568,9 @@ int writeToTag(byte block, byte *data) {
     status = MI_ERR;
   }
 
+
   if (status == MI_OK) {
+      
     for (i = 0; i < 16; i++) {
       buffer[i] = data[i];
     }

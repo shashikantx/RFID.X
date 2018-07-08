@@ -1,4 +1,5 @@
-Compiling C:\Users\Shashikant\Documents\GitHub\RFID.X\main on 05-Jul-18 at 13:49
-      Memory usage:   ROM=32%      RAM=25% - 36%
-      0 Errors,  0 Warnings.
+Compiling C:\Users\Shashikant\Documents\GitHub\RFID.X\main on 07-Jul-18 at 13:31
+C:\Users\Shashikant\Documents\GitHub\RFID.X\main.c:166:9:  Warning#202  Variable never used:   block
+      Memory usage:   ROM=37%      RAM=29% - 40%
+      0 Errors,  1 Warnings.
 Build Successful.
