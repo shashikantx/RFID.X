@@ -1,0 +1,303 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     rs232_errors
+021-022 strtok.save
+023-026 _Randseed
+027     FoundTag
+028     ReadTag
+029-038 TagData
+039-03D serial
+03E     i
+03F     j
+040     status
+041-050 data
+051-064 buffer2
+065-06A keyA
+06B-070 keyB
+071-072 @sprintf_string
+073     @TRIS_C
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+0A0-0AF writeableData
+0B0     MAIN.sak
+0B1-0C0 MAIN.readData
+0C1-0D0 MAIN.wData
+0D1     CheckRFIDHardware.version
+0D1     requestTag.mode
+0D1-0D2 selectTag.serial
+0D1     writeBlock.sector
+0D1     lcd_init.i
+0D1     haltTag.status
+0D1-0D2 antiCollision.serial
+0D1     readBlock.sector
+0D1     readAll.@SCRATCH1
+0D1     MAIN.@SCRATCH1
+0D1     @PSTRINGR_19200_62_63.@SCRATCH1
+0D2     haltTag.len
+0D2-0D3 requestTag.data
+0D2     @PRINTF_X_666.P1
+0D2     writeBlock.block
+0D2     @PRINTF_X_1051.P1
+0D2     @PSTRINGCN7_666.P2
+0D2-0D5 lcd_init.LCD_INIT_STRING
+0D2     readBlock.block
+0D2     CheckRFIDHardware.@SCRATCH1
+0D2     @PSTRINGC7_666.@SCRATCH1
+0D2     @PSTRINGR_19200_62_63.@SCRATCH2
+0D3-0D6 haltTag.buffer
+0D3     antiCollision.status
+0D3     @PRINTF_X_1051.P1
+0D3-0D4 writeBlock.writeData
+0D3     @PRINTF_X_666.P1
+0D3     selectTag.i
+0D3-0D4 readBlock.readData
+0D3     @PSTRINGC7_666.@SCRATCH2
+0D3     @PSTRINGCN7_666.@SCRATCH1
+0D4     selectTag.status
+0D4     antiCollision.i
+0D4     @SPRINTF.P1
+0D4     requestTag.status
+0D4     @PSTRINGC7_666.@SCRATCH3
+0D4     @PSTRINGCN7_666.@SCRATCH2
+0D5     antiCollision.len
+0D5     requestTag.len
+0D5     selectTag.len
+0D5     writeBlock.writeBlock
+0D5     readBlock.readBlock
+0D5     @PSTRINGC7_666.@SCRATCH4
+0D5     @PSTRINGCN7_666.@SCRATCH3
+0D6-0E4 readBlock.blockData
+0D6     antiCollision.check
+0D6     lcd_putc.c
+0D6     selectTag.sak
+0D6     writeToTag.block
+0D6     lcd_init.@SCRATCH1
+0D6     requestTag.@SCRATCH1
+0D6     @PSTRINGCN7_666.@SCRATCH4
+0D6     writeBlock.@SCRATCH1
+0D7     lcd_gotoxy.x
+0D7-0DF selectTag.buffer
+0D7-0D8 writeToTag.data
+0D7     requestTag.@SCRATCH2
+0D7     antiCollision.@SCRATCH1
+0D8     lcd_gotoxy.y
+0D8     antiCollision.@SCRATCH2
+0D9     lcd_gotoxy.address
+0D9     writeToTag.status
+0DA     writeToTag.i
+0DA     lcd_gotoxy.@SCRATCH1
+0DB     writeToTag.len
+0DB     lcd_send_byte.address
+0DC-0ED writeToTag.buffer
+0DC     lcd_send_byte.n
+0DD     lcd_read_byte.low
+0DD     lcd_send_byte.@SCRATCH1
+0DE     lcd_read_byte.high
+0DE     lcd_send_nibble.n
+0DF     lcd_read_nibble.n
+0DF     lcd_read_byte.@SCRATCH1
+0E0     lcd_read_nibble.@SCRATCH1
+0E0     selectTag.@SCRATCH1
+0E1     selectTag.@SCRATCH2
+0E2     selectTag.@SCRATCH3
+0E5     readFromTag.block
+0E5     @PRINTF_X_19200_62_63.P1
+0E5     authenticate.mode
+0E5     @PSTRINGCN7_19200_62_63.P1
+0E5     @PSTRINGC7_19200_62_63.@SCRATCH1
+0E5     readBlock.@SCRATCH1
+0E6     authenticate.block
+0E6-0E7 readFromTag.result
+0E6     @PRINTF_X_19200_62_63.P1
+0E6     @PSTRINGC7_19200_62_63.@SCRATCH2
+0E6     @PSTRINGCN7_19200_62_63.@SCRATCH1
+0E6     readBlock.@SCRATCH2
+0E7-0E8 authenticate.key
+0E7     @PSTRINGC7_19200_62_63.@SCRATCH3
+0E7     @PSTRINGCN7_19200_62_63.@SCRATCH2
+0E7     readBlock.@SCRATCH3
+0E8     readFromTag.status
+0E8     @PSTRINGC7_19200_62_63.@SCRATCH4
+0E8     @PSTRINGCN7_19200_62_63.@SCRATCH3
+0E9-0EA authenticate.serial
+0E9     readFromTag.len
+0E9     @PSTRINGCN7_19200_62_63.@SCRATCH4
+0EA     readFromTag.@SCRATCH1
+0EB     authenticate.i
+0EB     readFromTag.@SCRATCH2
+0EC     authenticate.status
+0ED     authenticate.len
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+110-111 calculateCRC.data
+110-11B authenticate.buffer
+110     writeToTag.@SCRATCH1
+111     writeToTag.@SCRATCH2
+112     calculateCRC.len
+112     writeToTag.@SCRATCH3
+113-114 calculateCRC.result
+115     calculateCRC.i
+116     calculateCRC.n
+117     calculateCRC.@SCRATCH1
+118     calculateCRC.@SCRATCH2
+11C     commandTag.cmd
+11C     authenticate.@SCRATCH1
+11D-11E commandTag.data
+11D     authenticate.@SCRATCH2
+11E     authenticate.@SCRATCH3
+11F     commandTag.dlen
+120-121 commandTag.result
+122-123 commandTag.rlen
+124     commandTag.status
+125     commandTag.irqEn
+126     commandTag.waitIRq
+127     commandTag.lastBits
+128     commandTag.n
+129     commandTag.i
+12A     setBitMask.addr
+12A     @delay_ms1.P1
+12A     clearBitMask.addr
+12A     commandTag.@SCRATCH1
+12B     clearBitMask.mask
+12B     setBitMask.mask
+12B     commandTag.@SCRATCH2
+12C     clearBitMask.current
+12C     setBitMask.current
+12C     commandTag.@SCRATCH3
+12D     readFromRegister.addr
+12D     setBitMask.@SCRATCH1
+12D     clearBitMask.@SCRATCH1
+12E     readFromRegister.val
+12E     writeToRegister.addr
+12F     writeToRegister.val
+12F     readFromRegister.@SCRATCH1
+130     writeToRegister.@SCRATCH1
+
+ROM Allocation:
+000004  @const1050.call
+00000E  @const1055.call
+00001E  @const1057.call
+00002F  @const1058.call
+000039  @const1059.call
+000040  @const1060.call
+000044  @const1066.call
+000058  @const1073.call
+00006A  @const1077.call
+000071  @const1078.call
+000084  @const1082.call
+00008C  @const1083.call
+00009B  @const1090.call
+0000AD  @const1092.call
+0000B4  @const1093.call
+0000C7  @const1095.call
+0000CF  @const1096.call
+0000DE  @const1102.call
+0000EC  @const1103.call
+0000F6  @const1104.call
+0000FE  @const1105.call
+00010C  @const1106.call
+000116  @const1107.call
+00011D  @const1108.call
+000131  @const1113.call
+000138  @const1114.call
+00013F  @const1115.call
+000146  @const1124.call
+00014D  @const1125.call
+000159  @const1126.call
+000162  @const1127.call
+00016C  @delay_ms1
+000181  lcd_send_nibble
+0001B6  lcd_read_nibble
+0001E9  lcd_send_byte
+0001F1  lcd_read_byte
+00024B  lcd_init
+0002A1  lcd_gotoxy
+0002B5  lcd_putc
+0002EF  @PSTRINGC7_666
+000363  @PSTRINGC7_19200_62_63
+0003D9  writeToRegister
+0003FA  readFromRegister
+000423  setBitMask
+000435  MFRC_begin
+000439  reset
+000496  @PSTRINGCN7_19200_62_63
+000512  @PRINTF_X_19200_62_63
+000539  CheckRFIDHardware
+000589  @PSTRINGCN7_666
+000603  @PRINTF_X_666
+000651  clearBitMask
+000664  commandTag
+00075F  requestTag
+0007A3  @SPRINTF
+0007B2  @PRINTF_X_1051
+0007D7  @PSTRINGR_19200_62_63
+000800  antiCollision
+00086D  calculateCRC
+0008DB  selectTag
+000933  authenticate
+0009C2  readFromTag
+000A2B  readAll
+000B65  readBlock
+000C8F  writeToTag
+000D21  writeBlock
+000DCB  haltTag
+000E00  @cinit1
+000E00  MAIN
+000E17  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    C:\Users\Shashikant\Documents\GitHub\RFID.X\
+
+Project Files:
+    main.c                                                  [18-Feb-19 01:43  CRC=549F0E7A]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [02-Apr-18 08:19  CRC=63418C39]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c   [22-Feb-16 10:05  CRC=D1A6378A]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdio.h [31-Jul-07 15:24  CRC=4E4534F4]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h [26-Mar-15 13:34  CRC=C4814297]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [05-Sep-14 12:47  CRC=897CEC6C]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-Jan-08 15:55  CRC=2D1F019F]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h [29-Jun-16 10:34  CRC=7E9CC16B]
+    rfid.h                                                  [07-Jul-18 13:27  CRC=039FEFD8]
+
+Source signature=D8C5D8EE
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=3798
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

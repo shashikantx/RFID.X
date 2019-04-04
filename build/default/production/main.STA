@@ -1,29 +1,29 @@
 
-ROM used:   3001/8192 (37%)
-            3012/8192 (37%) including unused fragments
+ROM used:   3356/8192 (41%)
+            3381/8192 (41%) including unused fragments
 
             0.8 Average locations per line
             4.0 Average locations per statement
 
-RAM used:   107/368 (29%) at main() level
-            148/368 (40%) worst case
+RAM used:   146/368 (40%) at main() level
+            214/368 (58%) worst case
 
-Stack used: 5 worst case (5 in main + 0 for interrupts)
+Stack used: 0 worst case (0 in main + 0 for interrupts)
 Stack size: 8
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-  297   109  15  main.c
+  480   197  24  main.c
   684     0   0  ..\..\..\..\..\Program Files (x86)\PICC\devices\16F877A.h
-  456   100  13  ..\..\..\..\..\Program Files (x86)\PICC\drivers\lcd.c
+  456   100  12  ..\..\..\..\..\Program Files (x86)\PICC\drivers\lcd.c
    37     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdio.h
   435     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h
    32     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h
    28     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h
- 1352   359  48  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
-  608   179  24  rfid.h
+ 1352   359  43  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
+  608   179  21  rfid.h
 ----- -----
- 3929   747 Total
+ 4112   835 Total
 
 Page ROM  %  RAM    Vol Diff  Functions:
 ---- --- --- ---    --- ----  ----------
@@ -32,78 +32,94 @@ Page ROM  %  RAM    Vol Diff  Functions:
 0     51   2    2    262  3.7  lcd_read_nibble
 0     53   2    1    399  2.4  lcd_send_nibble
 0     98   3    3    415  3.7  lcd_send_byte
-0     84   3    6    852  6.2  lcd_init
+0     86   3    6    852  6.2  lcd_init
 0     20   1    4    208  6.3  lcd_gotoxy
 0     58   2    1    354  4.7  lcd_putc
 0     33   1    3    123  2.8  writeToRegister
-0     39   1    3    169  3.8  readFromRegister
+0     41   1    3    169  3.8  readFromRegister
 0     18   1    4    100  3.3  setBitMask
 0     19   1    4    110  3.8  clearBitMask
  Inline         0     25  1.2  reset
-0     97   3    0    431  1.9  MFRC_begin
-0    251   8   17   2270 15.8  commandTag
-0     50   2    7    312  6.0  requestTag
-0     85   3    8    586  9.0  antiCollision
-1    110   4    9    599  8.9  calculateCRC
-1     86   3   18    650  8.7  selectTag
-1    111   4   24    754  9.0  authenticate
-1     75   2    7    382  6.0  readFromTag
-0     47   2    6    307  3.9  haltTag
-0    274   9    2    351  3.2  CheckRFIDHardware
-0     10   0    0             @const1049
+0     95   3    0    431  1.9  MFRC_begin
+0    251   7   17   2270 15.8  commandTag
+1     72   2    7    312  6.0  requestTag
+1    109   3    8    586  9.0  antiCollision
+1    118   4    9    599  8.9  calculateCRC
+1     88   3   18    650  8.7  selectTag
+ Inline        26    754  9.0  authenticate
+ Inline        44   1072  8.1  writeToTag
+1     53   2    6    307  3.9  haltTag
+0    281   8    2    383  3.6  CheckRFIDHardware
+0     16   0    0             @const1051
 0     15   0    1             @SPRINTF
-0    116   4    4             @PSTRINGC7_666
-0     16   1    0             @const1054
 0    118   4    4             @PSTRINGC7_19200_62_63
 0     17   1    0             @const1056
-0     10   0    0             @const1057
-0      7   0    0             @const1058
-0      4   0    0             @const1059
+0    116   3    4             @PSTRINGC7_666
+0     10   0    0             @const1058
+0      7   0    0             @const1059
+0      4   0    0             @const1060
  Inline         5             @PSTRINGCN7_666
  Inline         2             @PRINTF_X_666
-0     20   1    0             @const1065
+0     20   1    0             @const1066
 0    124   4    5             @PSTRINGCN7_19200_62_63
 0     39   1    2             @PRINTF_X_19200_62_63
-1    240   8    1   1080  5.8  readMifareCard
-0      7   0    0             @const1075
-0      8   0    0             @const1079
-0     15   0    0             @const1080
-0     14   0    0             @const1083
-0     10   0    0             @const1084
-0      8   0    0             @const1085
-0     14   0    0             @const1086
-0     10   0    0             @const1087
-0      7   0    0             @const1088
+0     18   1    0             @const1073
+0      7   0    0             @const1077
+0     19   1    0             @const1078
+0      8   0    0             @const1082
+0     15   0    0             @const1083
 0     20   1    0             @const1089
-1    342  11    2   1205  7.2  MAIN
-0      7   0    0             @const1094
-0      7   0    0             @const1095
-0      7   0    0             @const1096
-0     37   1    2             @PRINTF_X_1050
-0     30   1    2             @PSTRINGR_19200_62_63
-0      7   0    0             @const1105
-0     12   0    0             @const1106
-0      9   0    0             @const1107
-0     10   0    0             @const1108
+0      7   0    0             @const1091
+0     19   1    0             @const1092
+0      8   0    0             @const1094
+0     15   0    0             @const1095
+0     14   0    0             @const1101
+0     10   0    0             @const1102
+0      8   0    0             @const1103
+0     14   0    0             @const1104
+0     10   0    0             @const1105
+0      7   0    0             @const1106
+0     20   1    0             @const1107
+1    371  11    8    420  5.1  writeLockedBlock
+0     15   0    0             @const1114
+0     10   0    0             @const1115
+0      8   0    0             @const1116
+0     19   1    0             @const1117
+0     21   1    0             @const1124
+0      7   0    0             @const1126
+0     18   1    0             @const1127
+1    451  13   35   1972  8.0  MAIN
+0      7   0    0             @const1141
+0      7   0    0             @const1142
+0     11   0    0             @const1143
+0     13   0    0             @const1144
+0      7   0    0             @const1145
+0      7   0    0             @const1146
+1     41   1    2             @PRINTF_X_1052
+1     30   1    2             @PSTRINGR_19200_62_63
+0      7   0    0             @const1155
+0     12   0    0             @const1156
+0      9   0    0             @const1157
+0     11   0    0             @const1158
  Inline         0             @cinit1
 
 Program metrics:
     Functions               24
-    Statements              747
-    Comments                1125
-    Volume (V)              21834
-    Difficulty (D)          126.3
-    Effort to implement (E) 2758394
-    Time to implement (T)   42 hours, 34 minutes
+    Statements              835
+    Comments                1166
+    Volume (V)              23061
+    Difficulty (D)          127.5
+    Effort to implement (E) 2940532
+    Time to implement (T)   45 hours, 23 minutes
     Est Delivered Bugs (B)  7
-    Cyclomatic Complexity   48
-    Maintainability (MI)    33
+    Cyclomatic Complexity   47
+    Maintainability (MI)    28
 
  Segment     Used  Free
 -----------  ----  ----
 00000-00003     4  0  
-00004-007FF  2033  11  
-00800-00FFF   964  1084  
+00004-007FF  2019  25  
+00800-00FFF  1333  715  
 01000-017FF     0  2048  
 01800-01FFF     0  2048  
 

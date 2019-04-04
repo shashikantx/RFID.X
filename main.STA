@@ -1,0 +1,121 @@
+
+ROM used:   3967/8192 (48%)
+            3978/8192 (49%) including unused fragments
+
+            1.0 Average locations per line
+            5.1 Average locations per statement
+
+RAM used:   139/368 (38%) at main() level
+            202/368 (55%) worst case
+
+Stack used: 5 worst case (5 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  357   146  19  main.c
+  684     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h
+  456   100  13  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c
+   37     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdio.h
+  435     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h
+   32     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h
+   28     0   0  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h
+ 1352   359  46  ..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h
+  608   179  23  rfid.h
+----- -----
+ 3989   784 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     21   1    1             @delay_ms1
+ Inline         3    760  4.5  lcd_read_byte
+0     51   1    2    262  3.7  lcd_read_nibble
+0     53   1    1    399  2.4  lcd_send_nibble
+0     98   2    3    415  3.7  lcd_send_byte
+0     86   2    6    852  6.2  lcd_init
+0     20   1    4    208  6.3  lcd_gotoxy
+0     58   1    1    354  4.7  lcd_putc
+0     33   1    3    123  2.8  writeToRegister
+0     41   1    3    169  3.8  readFromRegister
+0     18   0    4    100  3.3  setBitMask
+0     19   0    4    110  3.8  clearBitMask
+ Inline         0     25  1.2  reset
+0     97   2    0    431  1.9  MFRC_begin
+0    251   6   17   2270 15.8  commandTag
+0     68   2    7    312  6.0  requestTag
+1    109   3    8    586  9.0  antiCollision
+1    110   3    9    599  8.9  calculateCRC
+1     88   2   18    650  8.7  selectTag
+1    143   4   26    754  9.0  authenticate
+1    105   3    7    382  6.0  readFromTag
+1    146   4   29   1072  8.1  writeToTag
+1     53   1    6    307  3.9  haltTag
+0    280   7    2    351  3.2  CheckRFIDHardware
+0     10   0    0             @const1050
+0     15   0    1             @SPRINTF
+0    116   3    4             @PSTRINGC7_666
+0     16   0    0             @const1055
+0    118   3    4             @PSTRINGC7_19200_62_63
+0     17   0    0             @const1057
+0     10   0    0             @const1058
+0      7   0    0             @const1059
+0      4   0    0             @const1060
+ Inline         5             @PSTRINGCN7_666
+ Inline         2             @PRINTF_X_666
+0     20   1    0             @const1066
+0    124   3    5             @PSTRINGCN7_19200_62_63
+0     39   1    2             @PRINTF_X_19200_62_63
+1    314   8    1   1174  5.8  readAll
+0     18   0    0             @const1073
+0      7   0    0             @const1077
+0     19   0    0             @const1078
+0      8   0    0             @const1082
+0     15   0    0             @const1083
+1    298   8   23   1257  7.1  readBlock
+0     18   0    0             @const1090
+0      7   0    0             @const1092
+0     19   0    0             @const1093
+0      8   0    0             @const1095
+0     15   0    0             @const1096
+1    170   4    6    738  5.0  writeBlock
+0     14   0    0             @const1102
+0     10   0    0             @const1103
+0      8   0    0             @const1104
+0     14   0    0             @const1105
+0     10   0    0             @const1106
+0      7   0    0             @const1107
+0     20   1    0             @const1108
+1    394  10   34   1673  7.4  MAIN
+0      7   0    0             @const1113
+0      7   0    0             @const1114
+0      7   0    0             @const1115
+0     37   1    2             @PRINTF_X_1051
+0     30   1    2             @PSTRINGR_19200_62_63
+0      7   0    0             @const1124
+0     12   0    0             @const1125
+0      9   0    0             @const1126
+0     10   0    0             @const1127
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               27
+    Statements              784
+    Comments                1138
+    Volume (V)              28286
+    Difficulty (D)          146.3
+    Effort to implement (E) 4138062
+    Time to implement (T)   63 hours, 52 minutes
+    Est Delivered Bugs (B)  9
+    Cyclomatic Complexity   62
+    Maintainability (MI)    50
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF  2033  11  
+00800-00FFF  1930  118  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

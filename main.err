@@ -1,0 +1,6 @@
+Compiling C:\Users\Shashikant\Documents\GitHub\RFID.X\main on 19-Feb-19 at 00:51
+>>> Warning 202 "main.c" Line 76(6,19): Variable never used:   writeableData
+>>> Warning 202 "main.c" Line 171(10,19): Variable never used:   blockData
+      Memory usage:   ROM=48%      RAM=38% - 55%
+      0 Errors,  2 Warnings.
+Build Successful.

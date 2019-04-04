@@ -1,10 +1,9 @@
 D G "__PCM__" 0 0 ""5.078""
 D G "__DEVICE__" 0 0 ""
-D G "__DATE__" 0 0 ""4-APR-19""
-D G "__TIME__" 0 0 ""22:51:25""
+D G "__DATE__" 0 0 ""19-FEB-19""
+D G "__TIME__" 0 0 ""00:51:27""
 D G "_UNICODE" 0 0 ""?""
-D G "__EVAL" 0 0 ""?""
-D G "__16F877A" 0 0 "1" "* File:   main.c"
+D G "__EVAL" 0 0 ""?"" "* File:   main.c"
 C G "" 0 1 1 "*"
 C G "" 0 1 2 "*"
 c L "set_tris_a" 1 1 6 "FUNCTION"
@@ -1873,77 +1872,45 @@ V G "data" 0 66 "int8[16]" `1043  "to store any data"
 V G "buffer2" 0 68 "int8[20]" `1044  "keys for the card"
 V G "keyA" 0 71 "int8[6]" `1045 
 V G "keyB" 0 72 "int8[6]" `1046 
-V G "LockKey" 0 74 "int8[6]" `1047 
-V G "writeableData" 0 78 "int8[1]" `1048 
+V G "writeableData" 0 76 "int8[1]" `1047 
 C L "CheckRFIDHardware" 0 43 1 "FUNCTION"
-F N "CheckRFIDHardware" 0 86 ""
-F G "CheckRFIDHardware" 0 86 "int8()" `1049 
-V L "version" 0 88 "int8" `1050  "/Version of RFID read/writer is stored"
-C L "CheckRFIDHardware" 0 43 2 "FUNCTION"
+F N "CheckRFIDHardware" 0 84 ""
+F G "CheckRFIDHardware" 0 84 "void()" `1048 
+V L "version" 0 86 "int8" `1049  "/Version of RFID read/writer is stored 0x92 is version 2.0"
+C L "CheckRFIDHardware" 0 43 1 "FUNCTION"
 C L "CheckRFIDHardware" 0 43 1 "FUNCTION"
 C L "CheckRFIDHardware" 0 43 1 "FUNCTION"
 C L "readAll" 0 43 2 "FUNCTION"
-F N "readAll" 0 125 ""
-F G "readAll" 0 125 "void()" `1072  "s50 has 64 blocks of memory"
+F N "readAll" 0 118 ""
+F G "readAll" 0 118 "void()" `1072  "s50 has 64 blocks of memory"
 C L "readAll" 0 43 1 "FUNCTION"
 C L "readAll" 0 43 2 "FUNCTION"
 C L "readAll" 0 43 1 "FUNCTION"
 C L "readAll" 0 43 2 "FUNCTION"
-C L "readBlock" 0 43 6 "FUNCTION"
-F N "readBlock" 0 183 ""
-V L "sector" 0 183 "int8" `1085 
-V L "block" 0 183 "int8" `1086 
-V L "readData" 0 183 "*int8" `1087 
-F G "readBlock" 0 183 "void(int8 sector,int8 block,*int8 readData)" `1084  "calculate block number for given sector and"
-C L "readBlock" 0 43 1 "FUNCTION"
-V L "readBlock" 0 188 "int8" `1088 
-C L "readBlock" 0 43 1 "FUNCTION"
+F N "readBlock" 0 167 ""
+V L "sector" 0 167 "int8" `1085 
+V L "block" 0 167 "int8" `1086 
+V L "readData" 0 167 "*int8" `1087 
+F G "readBlock" 0 167 "void(int8 sector,int8 block,*int8 readData)" `1084 
+V L "readBlock" 0 169 "int8" `1088 
+V L "blockData" 0 171 "int8[15]" `1089  "Try to authenticate each block first with the A key."
 C L "readBlock" 0 43 2 "FUNCTION"
 C L "readBlock" 0 43 1 "FUNCTION"
 C L "readBlock" 0 43 2 "FUNCTION"
-F N "writeBlock" 0 231 ""
-V L "sector" 0 231 "int8" `1097 
-V L "block" 0 231 "int8" `1098 
-V L "writeData" 0 231 "*int8" `1099 
-F G "writeBlock" 0 231 "void(int8 sector,int8 block,*int8 writeData)" `1096  "calculate block number for given sector and"
+F N "writeBlock" 0 215 ""
+V L "sector" 0 215 "int8" `1098 
+V L "block" 0 215 "int8" `1099 
+V L "writeData" 0 215 "*int8" `1100 
+F G "writeBlock" 0 215 "void(int8 sector,int8 block,*int8 writeData)" `1097 
+V L "writeBlock" 0 217 "int8" `1101 
 C L "writeBlock" 0 43 1 "FUNCTION"
-V L "writeBlock" 0 235 "int8" `1100 
 C L "writeBlock" 0 43 1 "FUNCTION"
-C L "writeBlock" 0 43 1 "FUNCTION"
-F N "writeLockedBlock" 0 269 ""
-V L "sector" 0 269 "int8" `1109 
-V L "block" 0 269 "int8" `1110 
-V L "writeData" 0 269 "*int8" `1111 
-V L "LockKey" 0 269 "*int8" `1112 
-F G "writeLockedBlock" 0 269 "void(int8 sector,int8 block,*int8 writeData,*int8 LockKey)" `1108 
-V L "writeBlock" 0 271 "int8" `1113 
-C L "writeLockedBlock" 0 43 1 "FUNCTION"
-F N "readLockedBlock" 0 293 ""
-V L "sector" 0 293 "int8" `1119 
-V L "block" 0 293 "int8" `1120 
-V L "readData" 0 293 "*int8" `1121 
-V L "LockKey" 0 293 "*int8" `1122 
-F G "readLockedBlock" 0 293 "void(int8 sector,int8 block,*int8 readData,*int8 LockKey)" `1118  "calculate block number for given sector and"
-C L "readLockedBlock" 0 43 1 "FUNCTION"
-V L "readBlock" 0 298 "int8" `1123 
-C L "readLockedBlock" 0 43 1 "FUNCTION"
-C L "readLockedBlock" 0 43 2 "FUNCTION"
-C L "LockSector" 0 43 3 "FUNCTION"
-F N "LockSector" 0 326 ""
-V L "sector" 0 326 "int8" `1129 
-V L "readKey" 0 326 "*int8" `1130 
-V L "writeKey" 0 326 "*int8" `1131 
-F G "LockSector" 0 326 "void(int8 sector,*int8 readKey,*int8 writeKey)" `1128 
-V L "accessBit" 0 328 "int8[16]" `1132 
-V L "i" 0 330 "int8" `1133 
-V L "j" 0 342 "int8" `1134 
-V L "a" 0 346 "int8" `1135 
-F N "MAIN" 0 354 ""
-F G "MAIN" 0 354 "void()" `1137  "setup spi line"
+F N "MAIN" 0 252 ""
+F G "MAIN" 0 252 "void()" `1109  "setup spi line"
 C L "MAIN" 0 43 1 "FUNCTION"
 C L "MAIN" 0 43 2 "FUNCTION"
 C L "MAIN" 0 43 1 "FUNCTION"
-C L "MAIN" 0 43 2 "FUNCTION"
+C L "MAIN" 0 43 1 "FUNCTION"
 C L "MAIN" 0 43 2 "FUNCTION"
 C L "MAIN" 0 43 1 "FUNCTION"
 C L "MAIN" 0 43 1 "FUNCTION"
@@ -1953,16 +1920,15 @@ C L "MAIN" 0 43 1 "FUNCTION"
 C L "MAIN" 0 43 1 "FUNCTION"
 C L "MAIN" 0 43 1 "FUNCTION"
 C L "MAIN" 0 43 1 "FUNCTION"
-V L "sak" 0 421 "int8" `1154 
+V L "sak" 0 308 "int8" `1123 
 C L "MAIN" 0 43 1 "FUNCTION"
-C L "MAIN" 0 43 5 "FUNCTION"
-V L "readData" 0 440 "int8[16]" `1159  "if you want to read from"
-C L "MAIN" 0 43 5 "FUNCTION"
-V L "x" 0 452 "int8" `1160 
+C L "MAIN" 0 43 3 "FUNCTION"
 C L "MAIN" 0 43 1 "FUNCTION"
-V L "writeData" 0 457 "int8[1]" `1162 
+V L "readData" 0 327 "int8[16]" `1128  "if you want to read"
+C L "MAIN" 0 43 3 "FUNCTION"
 C L "MAIN" 0 43 1 "FUNCTION"
-C L "MAIN" 0 43 4 "FUNCTION"
+V L "wData" 0 337 "int8[1]" `1129 
+C L "MAIN" 0 43 1 "FUNCTION"
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 0

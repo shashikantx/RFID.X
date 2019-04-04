@@ -14,13 +14,37 @@ Type=4
 forcecoff=0
 
 [ProjectLog]
-Days=1
+Days=4
 D1=02-07-2018
 D1_L=2
 D1_L1=[47599]Project Opened.
 D1_L2=[47606]Project Closed.
+D2=15-02-2019
+D2_L=4
+D2_L1=[48176]Project Opened.
+D2_L2=[48195]Project Closed.
+D2_L3=[48406]Project Opened.
+D2_L4=[48480]Project Closed.
+D3=19-02-2019
+D3_L=2
+D3_L1=[3076]Project Opened.
+D3_L2=[3127]Project Closed.
+D4=04-04-2019
+D4_L=2
+D4_L1=[79385]Project Opened.
+D4_L2=[79414]Project Closed.
 [build\default\debug\main.c]
 Type=4
+
+[Opened Files]
+1=main.c
+t1=1
+Count=1
+[main.c]
+Type=4
+
+[defines]
+buildcount=1
 [Units]
 Count=1
 1=main (main)
