@@ -6,20 +6,25 @@
  */
 
 //Options
-#include <16F877A.h>
+#include <16F18855.h>
 //#include<18F45K22.h>
 #fuses NOPROTECT,NOLVP,NOWDT
-#use delay(crystal=4000000)
+#use delay(oscillator=4000000)
+
+//pin configuration remapped
+#pin_select SDO1=PIN_C5
+#pin_select TX1=PIN_C6
+
 #use rs232( baud=19200, xmit=PIN_C6, rcv=PIN_C7, bits=8,ERRORS)
 
 //LCD module connections
-#define LCD_RS_PIN PIN_D0
-#define LCD_RW_PIN PIN_D1
-#define LCD_ENABLE_PIN PIN_D2
-#define LCD_DATA4 PIN_D4
-#define LCD_DATA5 PIN_D5
-#define LCD_DATA6 PIN_D6
-#define LCD_DATA7 PIN_D7
+#define LCD_RS_PIN PIN_B2
+#define LCD_RW_PIN PIN_B1
+#define LCD_ENABLE_PIN PIN_B3
+#define LCD_DATA4 PIN_B4
+#define LCD_DATA5 PIN_B5
+#define LCD_DATA6 PIN_B6
+#define LCD_DATA7 PIN_B7
 //End LCD module connections
 
 #define CS PIN_A5

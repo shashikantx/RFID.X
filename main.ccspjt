@@ -1,6 +1,6 @@
 [PROJECT]
 Target=build\default\production\main.hex
-Processor_Text=PIC16F877A
+Processor_Text=PIC16F18855
 CCSVersion=5.078
 Compiler=PCM
 [Target Data]
@@ -14,7 +14,7 @@ Type=4
 forcecoff=0
 
 [ProjectLog]
-Days=4
+Days=5
 D1=02-07-2018
 D1_L=2
 D1_L1=[47599]Project Opened.
@@ -33,6 +33,10 @@ D4=04-04-2019
 D4_L=2
 D4_L1=[79385]Project Opened.
 D4_L2=[79414]Project Closed.
+D5=05-04-2019
+D5_L=2
+D5_L1=[36480]Project Opened.
+D5_L2=[36520]Project Closed.
 [build\default\debug\main.c]
 Type=4
 
